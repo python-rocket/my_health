@@ -1,0 +1,6 @@
+.env
+.venv/
+venv/
+modules/ai_doctor/
+modules/study_summarizer/
+modules/health_test_uploader/

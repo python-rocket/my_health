@@ -1,0 +1,226 @@
+# My Health Frontend - Features Guide
+
+Important: Here you will find all features and its status. If the status is done its already implemented. If the status is "todo" means the feature still needs to be implemented.
+
+## User Features
+
+### Feature: Preference Channels
+
+**Description:**
+Users can view all available YouTube channels in the Preferences tab and select multiple channels as favorites. Selected favorite channels are displayed in the Cockpit tab. When users ask questions in the Ask tab, the system automatically appends the favorite channel names to the prompt as context, ensuring the AI only considers information from those specific channels.
+
+**Status:**
+- done
+
+**Technical Requirements:**
+
+- **UI Components:**
+  - Preferences tab must be available and accessible
+  - Cockpit tab must be available and accessible
+  - Ask tab must be available and accessible
+  - Clickable channel list in Preferences tab with visual favorite indicator (star icon)
+  - Display of favorite channels in Cockpit tab
+
+- **Backend API:**
+  - `GET /api/channels` endpoint to fetch all channels from PostgreSQL
+  - `GET /api/preferences` endpoint to retrieve user's favorite channels
+  - `POST /api/preferences` endpoint to save favorite channels
+
+- **Frontend Logic:**
+  - Function to fetch all channels from API
+  - Function to fetch user preferences
+  - Function to toggle channel favorite status
+  - Function to filter channels by favorites for Cockpit display
+  - Function to append favorite channels to Ask prompts automatically
+
+- **Data Storage:**
+  - Preferences stored in `modules/frontend/dist/preferences.json`
+  - Format: `{ "favoriteChannels": ["Channel1", "Channel2"], ... }`
+
+- **Database:**
+  - PostgreSQL `channels` table with `name` column
+  - Query: `SELECT name FROM channels WHERE name IS NOT NULL;`
+
+---
+
+### Feature: Preference Solutions
+
+**Description:**
+Users can view all available health solutions in the Preferences tab and select multiple solutions as favorites. Selected favorite solutions are displayed in the Cockpit tab. This allows users to focus on their preferred health interventions and track them in one place.
+
+**Status:**
+- done
+
+**Technical Requirements:**
+
+- **UI Components:**
+  - Preferences tab must display all solutions
+  - Clickable solution list with visual favorite indicator (star icon)
+  - Display of favorite solutions in Cockpit tab
+  - Empty state message when no favorites selected
+
+- **Backend API:**
+  - `GET /api/solutions` endpoint to fetch all solutions from PostgreSQL
+  - `GET /api/preferences` endpoint to retrieve user's favorite solutions
+  - `POST /api/preferences` endpoint to save favorite solutions
+
+- **Frontend Logic:**
+  - Function to fetch all solutions from API
+  - Function to toggle solution favorite status
+  - Function to filter solutions by favorites for Cockpit display
+  - Real-time UI update when preferences change
+
+- **Data Storage:**
+  - Preferences stored in same JSON file as channels
+  - Format: `{ "favoriteSolutions": ["Solution1", "Solution2"], ... }`
+
+- **Database:**
+  - PostgreSQL `solutions` table with `name` column
+  - Query: `SELECT name FROM solutions WHERE name IS NOT NULL;`
+
+---
+
+### Feature: Cockpit View
+
+**Description:**
+The Cockpit tab serves as the main dashboard displaying only the user's favorite channels and solutions. It provides a filtered, personalized view of the user's preferred content. The view updates automatically when preferences change.
+
+**Status:**
+- done
+
+**Technical Requirements:**
+
+- **UI Components:**
+  - Two-column grid layout (channels and solutions)
+  - Card-based design with headers
+  - Scrollable lists for long content
+  - Loading states during data fetch
+  - Empty state messages when no favorites selected
+
+- **Frontend Logic:**
+  - Function to fetch user preferences
+  - Function to filter channels by favorites
+  - Function to filter solutions by favorites
+  - Auto-refresh when switching to Cockpit tab
+  - Error handling for failed API requests
+
+- **Data Flow:**
+  - Fetch preferences → Fetch all channels/solutions → Filter by favorites → Display
+
+---
+
+### Feature: Ask Question
+
+**Description:**
+Users can ask questions or provide prompts in the Ask tab. The system automatically enhances the prompt by appending instructions to only consider information from the user's favorite YouTube channels. The enhanced prompt is sent to the FastAPI backend, which processes it using OpenAI and returns the response. The response is displayed with HTML escaping for security.
+
+**Status:**
+- done
+
+**Technical Requirements:**
+
+- **UI Components:**
+  - Text input field for user prompt
+  - Submit button ("Ask")
+  - Response display area with scrollable container
+  - Loading state during processing
+  - Error display for failed requests
+
+- **Frontend Logic:**
+  - Function to fetch user preferences (favorite channels)
+  - Function to enhance prompt with channel context
+  - Function to make POST request to FastAPI endpoint
+  - Function to parse nested JSON response structure
+  - HTML escaping for XSS prevention while preserving line breaks
+  - Enter key support for submission
+
+- **Backend API:**
+  - FastAPI endpoint: `POST http://localhost:3002/ask`
+  - Request body: `{ "prompt": "user question" }`
+  - Response format: `{ "response": { "result": "answer" } }` or `{ "response": "answer" }`
+  - Error handling with appropriate status codes
+
+- **Prompt Enhancement:**
+  - If favorite channels exist, append: `"\n\nIMPORTANT: Only consider YouTube channels from the following list in your answer: [channel names]. Ignore any information from other channels."`
+  - If no favorite channels, send original prompt unchanged
+
+- **Python Backend:**
+  - FastAPI server running on port 3002
+  - Uses `ask.py` module with `Ask` class
+  - OpenAI integration for LLM processing
+  - CORS middleware enabled
+
+---
+
+### Feature: Profile Header
+
+**Description:**
+A header section displays at the top of the application showing a profile icon (letter "B") and welcome message "Welcome to your AI Doctor" with the user name "Bob". This provides a personalized greeting and visual identity for the application.
+
+**Status:**
+- done
+
+**Technical Requirements:**
+
+- **UI Components:**
+  - Header container with white background
+  - Profile icon circle with gradient background
+  - Welcome title and user name text
+  - Responsive layout
+
+- **Styling:**
+  - Gradient background for profile icon
+  - Card-based design with shadow
+  - Consistent typography and spacing
+
+---
+
+### Feature: pubmed preferences
+
+**Description:**
+- personal settings: can choose pubmed settings (e.g only clinical trials, only after 2000)
+
+**Status:**
+- done
+
+**Technical Requirements:**
+
+- **UI Components:**
+  - Add into the preferences another category "pubmed". Here a user can choose pubmed preferences. Those are then also used as input into the context when using "ask".
+  - Add the following preference options: 
+  ---> start and end date. It should refer to the "publish_date" in sql. 
+  ---> publication_types. It should contain all different options of column "publication_types". A user should be able to choose one or many.
+
+- **Backend API:**
+  - Add endpoints which reads from pubmed_studies to get the information that you need for this UI
+
+
+- **Data Storage:**
+  - Store those suer prefreences like they are stored currently
+
+- **Database:**
+  - Here how the table "pubmed_studies" schema looks:
+pmid	title	authors	publish_date	pmcid	abstract	publication_types	keywords
+10450563	Stereoisomers of glutathione: preparation and enzymatic reactivities	{"T Oikawa","T Yamauchi","H Kumagai","K Soda"}	1999 Apr;45(2):223-9.		We synthesized a series of stereoisomers of glutathione (GSH) and glutathione disulfide (GSSG) by the solid-phase method. These peptides were used to examine their reactivities with enzymes acting on glutathione. The glutathione reductase of yeast acted only on LL-GSSG. Glutathione S-transferase catalyzed the conjugation of 1-chloro-2,4-dinitrobenzene with LL-GSH and DL-GSH (Km (mM): for LL-GSH, 0.035; and for DL-GSH, 0.62), but the DD- and LD-diastereomers were inert. gamma-Glutamyl transpeptidase catalyzed the transfer of gamma-glutamyl moiety of LL-GSH and DL-GSH to taurine forming gamma-glutamyl taurine and cysteinyl taurine (Km (mM): for LL-GSH, 0.336; and for DL-GSH, 0.628), but the other diastereomers were not the substrates. The occurrence of L-cysteinyl residue in the tripeptides is required for the glutathione analogue to be a substrate of the enzymes.		
+10481925	Lymphocyte glutathione levels in acute leukemia	{"V Singh Ghalaut","S Kharb","P S Ghalaut","A Rawal"}	1999 Jul;285(1-2):85-9.		The current interest in the clinical significance of the glutathione estimation in leukemia is due to its widespread effect on the cell constituent and cell function of the hematopoietic system. It helps and protects the cells against free radicals and reactive oxygen products. The present study was conducted to estimate glutathione levels in lymphocytes of 20 patients with acute leukemia before and after chemotherapy to observe the relation of glutathione level to response to chemotherapy. Twenty age and sex matched healthy volunteers served as control. In acute myeloid leukemia, the levels were almost double than that of controls (P<0.001). In acute lymphoid leukemia they were 2.5 times of the control. Lymphocyte glutathione levels was higher in active phase of disease than in remission. Lymphocyte glutathione level could act as a marker of leukemic activity and may help to predict onset of relapse. But, it is not only the determinant of response to chemotherapy.		
+
+- **Prompt Enhancement:** (if applicable)
+  - When doing prompts with ask those settings should be provided as context
+
+---
+
+
+### Feature: channel recommendations
+In the UI in the cockpit i want to have top 3 channel recommendations.
+Check my sql database you can use the table v_channel_relations. It shows which channels are guests in other channels.
+Based on that create a node.js endpoint which gets for each channel the top other channels based on how ofter they where guests at the channel.
+For example for channel ultimathuman you might find out that the top guest is daveasprey with 5 visits.
+Now in the frontend: based on the channels that are in prefereces we want to see across all of them which other channels have the most guest visists.
+Find the 3 with the most guest visists on any of our preference channels. We want to calculate guest visist across all of our guest channels. 
+if for example daveasprey has 1 visit on my preferecne channel 1. And 3 visits on my preferece channel 2. Then overall he gets a score of 4 visits.
+But we only want to show channels which are currently not in preferences.
+Based on the overall score the node.js should execute a query to find the top3 channels. Then in the cockpit add a section "channel recommendations" where it should show
+3 recommended channels.
+
+**Status:**
+- done 
