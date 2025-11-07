@@ -1,0 +1,11 @@
+feature request:
+- In the cockpit UI there should be top 3 channel recommendations displayed.
+- The system uses the v_channel_relations table which shows which channels are guests in other channels.
+- A node.js endpoint gets for each channel the top other channels based on how often they were guests at that channel.
+- For example, for channel ultimathuman the top guest might be daveasprey with 5 visits.
+- Based on the channels that are in preferences, the system calculates across all of them which other channels have the most guest visits.
+- It finds the 3 channels with the most guest visits on any of the preference channels.
+- Guest visits are calculated across all favorite channels, so if daveasprey has 1 visit on preference channel 1 and 3 visits on preference channel 2, then overall he gets a score of 4 visits.
+- Only channels which are currently not in preferences are shown.
+- Based on the overall score, the node.js endpoint executes a query to find the top 3 channels.
+- Then in the cockpit a section called channel recommendations displays these 3 recommended channels.

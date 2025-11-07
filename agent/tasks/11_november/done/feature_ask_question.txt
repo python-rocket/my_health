@@ -1,0 +1,9 @@
+feature request:
+- Users can ask questions or provide prompts in the Ask tab.
+- The system automatically enhances the prompt by appending instructions to only consider information from the user's favorite YouTube channels.
+- The enhanced prompt is sent to the FastAPI backend, which processes it using OpenAI and returns the response.
+- The response is displayed with HTML escaping for security.
+- The UI includes a text input field for user prompts, a submit button, and a response display area with scrollable container.
+- Loading states appear during processing and errors are displayed for failed requests.
+- If favorite channels exist, the system appends instructions to only consider those channels.
+- The FastAPI endpoint runs on port 3002 and uses the ask.py module with OpenAI integration.

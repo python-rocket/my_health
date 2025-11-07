@@ -1,0 +1,6 @@
+feature request:
+- A header section displays at the top of the application showing a profile icon with the letter B and welcome message Welcome to your AI Doctor with the user name Bob.
+- This provides a personalized greeting and visual identity for the application.
+- The header container has a white background with a profile icon circle featuring a gradient background.
+- The welcome title and user name text are displayed with responsive layout.
+- The styling uses gradient backgrounds for the profile icon, card-based design with shadow, and consistent typography and spacing.

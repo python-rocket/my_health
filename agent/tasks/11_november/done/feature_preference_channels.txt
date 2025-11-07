@@ -1,0 +1,9 @@
+feature request:
+- Users can view all available YouTube channels in the Preferences tab and select multiple channels as favorites.
+- Selected favorite channels are displayed in the Cockpit tab.
+- When users ask questions in the Ask tab, the system automatically appends the favorite channel names to the prompt as context, ensuring the AI only considers information from those specific channels.
+- The Preferences tab must be available and accessible with a clickable channel list showing visual favorite indicators.
+- The Cockpit tab displays favorite channels.
+- The backend provides GET and POST endpoints for channels and preferences.
+- Preferences are stored in modules/frontend/dist/preferences.json.
+- The system queries the PostgreSQL channels table to fetch all channel names.

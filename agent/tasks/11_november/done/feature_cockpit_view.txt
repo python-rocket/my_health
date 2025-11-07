@@ -1,0 +1,9 @@
+feature request:
+- The Cockpit tab serves as the main dashboard displaying only the user's favorite channels and solutions.
+- It provides a filtered, personalized view of the user's preferred content.
+- The view updates automatically when preferences change.
+- The UI uses a two-column grid layout with card-based design and headers.
+- Lists are scrollable for long content.
+- Loading states appear during data fetch and empty state messages show when no favorites are selected.
+- The system fetches user preferences, filters channels and solutions by favorites, and auto-refreshes when switching to the Cockpit tab.
+- Error handling is included for failed API requests.

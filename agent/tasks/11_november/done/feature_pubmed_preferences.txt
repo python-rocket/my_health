@@ -1,0 +1,9 @@
+feature request:
+- Users can choose PubMed settings in the preferences, such as only clinical trials or only studies after 2000.
+- A new category called pubmed is added to the preferences tab where users can configure these settings.
+- These preferences are then used as input into the context when using the ask feature.
+- Users can set start and end dates which refer to the publish_date field in the database.
+- Users can also select one or many publication types from all available options in the publication_types column.
+- The backend provides endpoints that read from the pubmed_studies table to get the information needed for the UI.
+- These preferences are stored in the same way as other user preferences.
+- When doing prompts with ask, those settings are provided as context to filter the results.

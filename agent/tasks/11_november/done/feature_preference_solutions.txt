@@ -1,0 +1,9 @@
+feature request:
+- Users can view all available health solutions in the Preferences tab and select multiple solutions as favorites.
+- Selected favorite solutions are displayed in the Cockpit tab.
+- This allows users to focus on their preferred health interventions and track them in one place.
+- The Preferences tab displays all solutions with clickable lists showing visual favorite indicators.
+- The Cockpit tab shows favorite solutions with empty state messages when no favorites are selected.
+- The backend provides GET and POST endpoints for solutions and preferences.
+- Preferences are stored in the same JSON file as channels.
+- The system queries the PostgreSQL solutions table to fetch all solution names.

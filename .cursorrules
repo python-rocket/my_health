@@ -1,30 +1,54 @@
 # Cursor Rules for My Health Project
 
-## 1. Feature requests
-
-**CRITICAL: Make sure the files llm_features.txt and llm_architecture.txt always contain the current state. llm_features.txt should only contain user features and their status. llm_architecture.txt should only contain the high level architecture information.
-Alwas follow the excecution plan mentioned below before implementing the feature.**
-
-1. **Always read `llm_features.txt` and `llm_architecture.txt` first** - These files contain the complete architecture overview, all user features, their status, and technical requirements. They serve as the single source of truth for the project structure.
-
-2. When i ask you to implement open features check the status of which features are "open" in llm_features.txt.
-
-3. Execution plan:
-0) First rewrite the feature that i created correcting grammar but keeping the logic of the sentences as it is. Just making it more easy to understand and read.
-1) First always tell me which feature you plan to execute. Then i need to confirm.
-2) Then provide me with a high level plan of what you would do. Also ask the most important questions which help you to implement it well.
-3) I either just approve or provide some feedback and approve.
-4) After the features is implemented restart the servers so i can see the results
-
-4. **Update feature status** - After you implemented a feature update the status in llm_features.txt.
-
-5. **Update old feature** - If we change anything related to already implemented features change the information in the llm_features.txt.
-
-6. **Update architecture** - If we change anything related to the technical architecture change the information in the llm_architecture.txt.
+# Introduction
+Directory:
 
 
+Allowed operations:
+If you would like to do something that is not allowed, always mention that you would like to do a specific thing but you are not doing it 
+because its not allowed. This way i can track those things and might adjust them.
 
-## 2. Database
-If I ask you to connect to my database read the .env file and use the value for the key "PSQL_CONNECTION_STRING".
-Use it to connect to the database.
-If i want you to query the database use just the terminal shell and psql commmand.
+python virtual environment:
+- each module has its own environment. e.g youtube_summarizer has .venv
+
+## 0. ALLOWED AND NOT OPERATIONS
+- You are only allowed to use READ operations on all of our databases. You are NOT allowed to create, change, adjust anything in our databases.
+- You are only allowed to use read operations in GCP. You are NOT allowed to update, change, delete, create anything in GCP.
+- You are only allowed to run read operations with git. You are NOT allowed to delete, adjust, update anything git related.
+
+
+## 1. ENV variables
+For backend module "youtube_summarizer" you find those env variables in its .env:
+PSQL_CONNECTION_STRING
+OPENAI_API_KEY
+
+## 2. Remote Services
+
+1) PSQL
+We have a psql database. You can connect to it using the PSQL_CONNECTION_STRING.
+When i ask you to check some data then use the psql command in the terminal to query the database.
+
+2) Google Cloud
+
+## 3. Infrastructure
+In the module "frontend" we have our frontend, including a node backend server.
+We have the youtube_summarizer we have our youtube ETL and API.
+
+If i ask you to start or to start the frontend use the start.sh script.
+
+
+## 4. Feature Request
+If i ask you to implement a feature or fix a bug:
+First provide me a plan, how you would approach it.
+If there are some things unclear ask me first. When asking use numbers for your questions so i can refer to them.
+Only if i ask you to skip the plan you can start executing right away.
+When i ask you to test the logic if possible always try to test it just by using terminal commands.
+E.g when testing an api endpoint, sending a curl command.
+
+# 5. Errors/Issues
+Module import error:
+- If you encounter a module import error dont do workarounds. Use the venv that i mentioned.
+If i didnt mentioned or you cant find it stop the execution and let me know which module is missing. And which venv you are using.
+
+# 6. Workarounds
+Dont try to make not best practice work arounds. If i give you a request which forcecs you to do weird workarounds first ask me if we should continue with this workaround and suggest what kind of restructure/refactoring would be better.
