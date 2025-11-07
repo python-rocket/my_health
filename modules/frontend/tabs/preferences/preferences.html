@@ -1,0 +1,39 @@
+<div class="preferences-grid">
+    <div class="card">
+        <h2>Channels</h2>
+        <p class="info-text">Click to select your favorite channels</p>
+        <ul id="preferences-channels-list" class="channel-list">
+            <li class="loading">Loading channels...</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>Solutions</h2>
+        <p class="info-text">Click to select your favorite solutions</p>
+        <ul id="preferences-solutions-list" class="solution-list">
+            <li class="loading">Loading solutions...</li>
+        </ul>
+    </div>
+    
+    <div class="card" id="preferences-pubmed">
+        <h2>PubMed Settings</h2>
+        <p class="info-text">Configure PubMed filters for Ask queries</p>
+        
+        <div style="margin-bottom: 24px;">
+            <label for="pubmed-start-date" style="display: block; margin-bottom: 8px; color: #1d1d1f; font-weight: 400;">Start Date:</label>
+            <input type="date" id="pubmed-start-date" class="ask-input" style="width: 100%; margin-bottom: 16px;" />
+            
+            <label for="pubmed-end-date" style="display: block; margin-bottom: 8px; color: #1d1d1f; font-weight: 400;">End Date:</label>
+            <input type="date" id="pubmed-end-date" class="ask-input" style="width: 100%;" />
+        </div>
+        
+        <div>
+            <h3 style="font-size: 17px; color: #1d1d1f; font-weight: 600; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);">Publication Types:</h3>
+            <p class="info-text" style="margin-bottom: 12px;">Click to select publication types</p>
+            <ul id="preferences-pubmed-types-list" class="solution-list">
+                <li class="loading">Loading publication types...</li>
+            </ul>
+        </div>
+    </div>
+</div>
+

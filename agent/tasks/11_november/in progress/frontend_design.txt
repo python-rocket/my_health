@@ -1,0 +1,11 @@
+feature request:
+I want to redesign the frontend style and UI.
+- as a basis use the colours and design of apple website (white and grey types and font style and size): https://www.apple.com/ua/
+- each tab (cockpit, preferences..) is at the top like in the apple website example
+- for each tab (cockpit, preferences..) it should show an arrow if its clickable with subtabs. The current tabs all have no subtabs.
+But create a placeholder tab called "solutions" which should have an arrow.
+When clicking on the arrow it opens up subtabs which have to be clicked. Add some example placeholder subtabs.
+- if no arrow means no subtabs and by clicking will directly lead to the page.
+- the subtab should just show the different subpages below each other in the same font size and style.
+As an example the paypal images attached below:
+

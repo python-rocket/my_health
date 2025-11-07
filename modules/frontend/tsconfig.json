@@ -8,7 +8,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./",
-    "rootDir": "./"
+    "rootDir": "./",
+    "moduleResolution": "node"
   },
-  "include": ["main.ts"]
+  "include": ["main.ts", "utils/**/*.ts", "tabs/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }

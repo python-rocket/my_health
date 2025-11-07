@@ -130,3 +130,5 @@ execute_sql_query -> execute_sql_query -> execute_sql_query -> execute_sql_query
 Counts per tool:
 - execute_sql_query: 15
 INFO:     127.0.0.1:49723 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52631 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52679 - "GET /health HTTP/1.1" 200 OK

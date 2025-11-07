@@ -7,6 +7,18 @@
 
 # TODO
 
+## USEFUL FOR ME
+tests uploader
+- upload test in any format (pdf, csv..)
+- saves into structured form and in english to database
+
+solutions
+- show all solutions with status filters (e.g open)
+- top solutions dasboard 
+--> algo based on: manual ranking; solution mentioned in data sources; my experience with it based on protocol.
+
+
+
 agents:
 - tech debt agent (checks for tech debt and refactoring ideas)- add instructions. e.g thinking about scalibility, costs, modular..
 
