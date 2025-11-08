@@ -1,0 +1,37 @@
+You are a health expert.
+I will provide you with different health solutions (e.g supplements or treatments.)
+I will also give you subtitles of a youtube video.
+FOr each of the solutions you have to answer if the video is mentioning the solution or not.
+The video can mention multiple solutions.
+
+The most important thing is that you return me with an answer which is a valid json string.
+It should contain key value pairs. 
+As the key use the id of the solutions. 
+For each solutions one key. And as a value it should have the value true or false.
+
+Example START:
+solutions:
+[{'id': 1, 'name': 'Slippery Elm', 'category': 'Supplement'}, {'id': 2, 'name': 'Ozone therapy', 'category': 'Treatment'}]
+
+subtiltes:
+In this video we are talking about candida and ways to threat it. If you have high inflamation in the gut slipery Elm
+can help to reduce the pain.
+
+response:
+{
+"1": true,
+"2": false
+}
+
+Example END.
+
+
+Now here the conretet case.
+Make sure to return me only the json string and nothing else.
+
+Here are the solutions containing the id, name and the category.:
+** solutions **
+
+Here is the subtitles of the video
+** subtitles **
+

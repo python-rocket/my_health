@@ -1,6 +1,46 @@
 <div class="card">
     <h2>Ask Question</h2>
     <div class="ask-container">
+        <div class="ask-controls">
+            <div class="ask-mode-selector">
+                <label for="ask-mode">Mode:</label>
+                <select id="ask-mode" class="ask-mode-select">
+                    <option value="fast">Fast (3 iterations)</option>
+                    <option value="normal" selected>Normal (5 iterations)</option>
+                    <option value="thinking">Thinking (unlimited)</option>
+                </select>
+            </div>
+            <div class="ask-preferences-toggle">
+                <label class="switch-label">
+                    <input type="checkbox" id="preferences-master-toggle" class="switch-input">
+                    <span class="switch-slider"></span>
+                    <span class="switch-text">Use Preferences</span>
+                </label>
+            </div>
+        </div>
+        <div class="ask-preference-categories" id="preference-categories" style="display: none;">
+            <div class="preference-category">
+                <label class="switch-label">
+                    <input type="checkbox" id="pref-channels" class="switch-input pref-category">
+                    <span class="switch-slider"></span>
+                    <span class="switch-text">YouTube Channels</span>
+                </label>
+            </div>
+            <div class="preference-category">
+                <label class="switch-label">
+                    <input type="checkbox" id="pref-solutions" class="switch-input pref-category">
+                    <span class="switch-slider"></span>
+                    <span class="switch-text">Solutions</span>
+                </label>
+            </div>
+            <div class="preference-category">
+                <label class="switch-label">
+                    <input type="checkbox" id="pref-pubmed" class="switch-input pref-category">
+                    <span class="switch-slider"></span>
+                    <span class="switch-text">PubMed</span>
+                </label>
+            </div>
+        </div>
         <div class="ask-input-container">
             <input type="text" id="ask-input" class="ask-input" placeholder="Enter your question or prompt..." />
             <button id="ask-button" class="ask-button">Ask</button>

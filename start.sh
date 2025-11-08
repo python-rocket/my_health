@@ -5,6 +5,7 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FRONTEND_DIR="$SCRIPT_DIR/modules/frontend"
+AI_DOCTOR_DIR="$SCRIPT_DIR/modules/ai_doctor"
 YOUTUBE_SUMMARIZER_DIR="$SCRIPT_DIR/modules/youtube_summarizer"
 
 # Colors for output
@@ -30,7 +31,13 @@ if [ ! -d "$FRONTEND_DIR" ]; then
     exit 1
 fi
 
-# Check if youtube_summarizer directory exists
+# Check if ai_doctor directory exists
+if [ ! -d "$AI_DOCTOR_DIR" ]; then
+    echo -e "${RED}Error: AI Doctor directory not found at $AI_DOCTOR_DIR${NC}"
+    exit 1
+fi
+
+# Check if youtube_summarizer directory exists (needed for dependencies)
 if [ ! -d "$YOUTUBE_SUMMARIZER_DIR" ]; then
     echo -e "${RED}Error: YouTube summarizer directory not found at $YOUTUBE_SUMMARIZER_DIR${NC}"
     exit 1
@@ -79,22 +86,22 @@ echo -e "${GREEN}Frontend server started (PID: $FRONTEND_PID)${NC}"
 
 # Start FastAPI Backend
 echo -e "${GREEN}Starting FastAPI Backend (port 3002)...${NC}"
-cd "$YOUTUBE_SUMMARIZER_DIR"
+cd "$AI_DOCTOR_DIR"
 
-# Determine Python executable path
+# Determine Python executable path (check youtube_summarizer for venv since dependencies are there)
 PYTHON_CMD="python3"
 if [ -d "$YOUTUBE_SUMMARIZER_DIR/.venv" ]; then
     PYTHON_CMD="$YOUTUBE_SUMMARIZER_DIR/.venv/bin/python3"
-    echo -e "${GREEN}Using .venv virtual environment${NC}"
+    echo -e "${GREEN}Using .venv virtual environment from youtube_summarizer${NC}"
 elif [ -d "$YOUTUBE_SUMMARIZER_DIR/venv" ]; then
     PYTHON_CMD="$YOUTUBE_SUMMARIZER_DIR/venv/bin/python3"
-    echo -e "${GREEN}Using venv virtual environment${NC}"
+    echo -e "${GREEN}Using venv virtual environment from youtube_summarizer${NC}"
 else
     echo -e "${YELLOW}Warning: No virtual environment found. Using system Python.${NC}"
 fi
 
 # Start API with full path to Python
-cd "$YOUTUBE_SUMMARIZER_DIR"
+cd "$AI_DOCTOR_DIR"
 "$PYTHON_CMD" api.py > "$SCRIPT_DIR/api.log" 2>&1 &
 API_PID=$!
 

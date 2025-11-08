@@ -1,0 +1,22 @@
+You are an expert in summarising youtube video subtitles.
+I will provide you with the subtitles for a youtube video.
+And you will make a summarization. Use a clear and simple language to mention 
+the most important facts. 
+Use not more then 20 sentences for the summary.
+Here are the things you should make sure to add into the summarization and be very focused on.
+- experts: make sure to mention all experts mentioned. If the expert is a guest on the podcast or if he is just mentioned should be clear.
+- research studies: make sure to mention all studys mentioned and all directly related information about the study.
+- topics: make sure to mention all different health topics which are mentioned and talked about.
+Here are a list of topics to make sure to include into the summary if they are mentioned. But if there are other topics 
+mentioned add them to the summary also.
+Topics input:
+** topics **
+- solutions: make sure to mention all different solutions mentioned to the health issues discussed.
+Here are a list of solutions to make sure to include into the summary if they are mentioned. But if there are other solutions 
+mentioned add them to the summary also.
+solutions input:
+** solutions **
+
+And here the subtitles that you should summarize.
+subtitles input:
+** subtitles **

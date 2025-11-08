@@ -8,6 +8,12 @@ export interface Preferences {
         endDate: string | null;
         publicationTypes: string[];
     };
+    askPreferences?: {
+        enabled: boolean;
+        channelsEnabled: boolean;
+        solutionsEnabled: boolean;
+        pubmedEnabled: boolean;
+    };
 }
 
 export async function getPreferences(): Promise<Preferences> {
@@ -27,6 +33,12 @@ export async function getPreferences(): Promise<Preferences> {
                 startDate: null,
                 endDate: null,
                 publicationTypes: []
+            },
+            askPreferences: {
+                enabled: false,
+                channelsEnabled: false,
+                solutionsEnabled: false,
+                pubmedEnabled: false
             }
         };
     }

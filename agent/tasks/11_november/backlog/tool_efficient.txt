@@ -1,0 +1,40 @@
+feature request:
+when running ask.py, it will use openai tools to answer the question.
+For that it uses a function that allows all kind of sql queries to the database.
+Currently if i ask a question it requres a lot of different requests to the database. And a lot of tool iterations.
+I want to get this process faster and reduce time and tool use.
+Here is what i want you to do:
+
+0) Remove the ask.py and the api.py to the module "ai_doctor". Make sure to adjust paths in frontend too.
+
+1)
+run a sql query on my database to get all tables/views and their schemas and save into ai_doctor/ask/cache/db_schema.txt
+Add here at the top also the timestamp of the extraction
+
+2) Now always read in the schema and provide as an input into the llm/tools. But make sure to remove the instructions to always check the schema first, since we already provide it.
+
+
+3) Add an input parameter which can change the maximum number of tool iterations.
+Also make sure that we have an additional warning to the llm that only 2 more tool iterations are left.
+
+4) Add an additional file ai_doctor/ask/instructions.txt
+Add there the following text (you can correct grammar):
+
+If i am asking you anything about a potential solutions (e.g a supplement or a treatment, a new habit), try to answer the following points if possible:
+- what are different youtube channels and pubmed publifications say about it
+- instructions about how to use it (dosage, amount, frequency)
+- specific brand or products mentioned
+- for who its good to use (e.g people with gut issues)
+- side affects, risks, issues to be aware about (e.g die-off reactions when using candida treatment)
+- for who its not good to use
+
+5) On the frontend we have preferences which are injected into the LLM request using the ask endpoint, here we want to adjust:
+Add in the frontend a switch to turn on and off preferences. Only if on they are added to the llm request.
+Also for each preferencecs catecory at a switch so i can turn on and off specific categories (e.g turn on only pubmed, but turn off youtube channels)
+If i use the general on/of button it should turn on of all other switches.
+Only if a switch is on the specific preferences context should be added to the api request.
+
+- Also in the frontend add some kind of element where i can choose "fast", "normal" and "thinking".
+- when choosing fast it should limit the number of tool usages to 3. 
+- For normal to 5. For thinking no parameter provided (back to default value of tool functions)
+- So this value is passed to the api request and an input argument in the tools function.

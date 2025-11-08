@@ -56,14 +56,22 @@ export async function fetchChannelRecommendations(): Promise<Array<{name: string
     }
 }
 
-export async function askQuestion(prompt: string): Promise<string> {
+export async function askQuestion(prompt: string, preferences?: any, maxIterations?: number): Promise<string> {
     try {
+        const requestBody: any = { prompt };
+        if (preferences) {
+            requestBody.preferences = preferences;
+        }
+        if (maxIterations !== undefined) {
+            requestBody.max_iterations = maxIterations;
+        }
+        
         const response = await fetch('http://localhost:3002/ask', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ prompt }),
+            body: JSON.stringify(requestBody),
         });
         
         if (!response.ok) {

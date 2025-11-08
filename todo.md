@@ -8,14 +8,51 @@
 # TODO
 
 ## USEFUL FOR ME
+
+connected answer:
+- case: Tell me what you know about glutathione
+- lower "answer time" of llm (guide it more)
+- sources: youtube, pubmed
+- summarises: which types, who should take it, how to take it, which side affects can occur, which brands..
+- preferences: be able to activate/deactivate specific preferenc groups (e.g deactivate pubmed settings.). Or activate/deactivate in general.
+- preferences: add rank how much the llm should be allowed to think (how many tool iterations)
+- remove ask.py to ai doctor module.
+
+- add more data (channels, pubmed)
+
+daily protocol
+- define psql table format for protocol
+- dynamic:
+--> track (field)
+--> track (score)
+--> track_sleep(score), track_stomach_pain(field)
+--> hypothesize_correlation_low_sleep_ill
+- have it adjustable (llm can add new column)
+- we mark columns as "active" or "hide"
+- daily: llm knows which fields need to be filled in. We have conversation it fills the data. Asks me if something still there to be filled.
+- daily: I can say lets start to track the following: water_amount. It asks me to specify if its a bool or a ranking, or a free text field.
+- daily: warnings: It checks the protocol and based on warning-settings will e.g say if i did not train for more then 3 days.
+- hypothesise: wen feeling especially good or bad find out why based on logs. 
+--> update hypothesizes regularely: e.g ranking of 0-5 if bad sleep 3 times in a row = more likely to get ill
+
 tests uploader
 - upload test in any format (pdf, csv..)
 - saves into structured form and in english to database
 
 solutions
 - show all solutions with status filters (e.g open)
-- top solutions dasboard 
+- top solutions to try dashboard 
 --> algo based on: manual ranking; solution mentioned in data sources; my experience with it based on protocol.
+
+metrics/insights:
+- e.g compare number of success 7 wake up compared to last time. Or compared to record per month.
+- e.g give avg ranking of sleep over the last 7 days
+
+glossar
+- illnesses (hashimotos, crohns..)
+- supplements
+- treatments (ozone, IV..)
+- protocols (detox, lowfoodmap, lowcarb, )
 
 
 
@@ -42,11 +79,7 @@ frontend ideas:
 - create youtube channel graph visual (edge=number of mentions)
 
 ai doctor:
-- new table structure
---> track (field)
---> track (score)
---> track_sleep(score), track_stomach_pain(field)
---> hypothesize_correlation_low_sleep_ill
+
 - "ai doctor" add a hypothesise and start to track it.
 - "ai doctor" here are the 10 hypothesize which are "active". Means questions should be asked to validate them. Each day note if hypothesize got stronger or weaker.
 - enable audio communication (e.g with openai realtime wisper)
