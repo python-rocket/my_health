@@ -1,0 +1,9 @@
+dotenv
+pandas
+sqlalchemy
+psycopg2
+requests
+beautifulsoup4
+fastapi
+uvicorn
+openai

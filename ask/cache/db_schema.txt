@@ -1,0 +1,165 @@
+Schema extracted at: 2025-11-08 13:32:55
+
+## public.channels (BASE TABLE)
+  - id: text NOT NULL
+  - name: character varying(255.0) NULL
+  - host: character varying(255.0) NULL
+  - category: character varying(100.0) NULL
+
+## public.experts (BASE TABLE)
+  - id: bigint NOT NULL
+  - name: text NOT NULL
+  - website: text NULL
+  - instagram: text NULL
+  - youtube_channel_id: text NULL
+  - created_at: timestamp with time zone NOT NULL DEFAULT now()
+
+## public.processed_video (BASE TABLE)
+  - video_id: text NOT NULL
+  - process: text NOT NULL
+  - updated_at_date: date NULL DEFAULT CURRENT_DATE
+  - updated_at_timestamp: timestamp without time zone NULL DEFAULT CURRENT_TIMESTAMP
+
+## public.pubmed_studies (BASE TABLE)
+  - pmid: text NULL
+  - title: text NULL
+  - authors: text NULL
+  - publish_date: text NULL
+  - pmcid: text NULL
+  - abstract: text NULL
+  - publication_types: text NULL
+  - keywords: text NULL
+
+## public.pubmed_studies_llm_identified (BASE TABLE)
+  - pmid: text NULL
+  - title: text NULL
+  - authors: text NULL
+  - publish_date: text NULL
+  - pmcid: text NULL
+  - abstract: text NULL
+
+## public.solutions (BASE TABLE)
+  - id: bigint NOT NULL
+  - category: character varying NULL
+  - name: character varying NOT NULL
+  - description: character varying NULL
+
+## public.test (BASE TABLE)
+  - id: integer NULL
+
+## public.topics (BASE TABLE)
+  - id: bigint NOT NULL
+  - name: text NULL
+
+## public.v_channel_relations (VIEW)
+  - channel_id: text NULL
+  - video_id: text NULL
+  - video_title: character varying(500.0) NULL
+  - expert_id: bigint NULL
+  - expert_name: text NULL
+  - expert_relation: text NULL
+  - youtube_channel_id: text NULL
+  - instagram: text NULL
+  - website: text NULL
+
+## public.v_video_combined (VIEW)
+  - channel_id: text NULL
+  - video_id: text NULL
+  - video_title: character varying(500.0) NULL
+  - topic: text NULL
+  - solution: character varying NULL
+  - expert_name: text NULL
+  - expert_relation: text NULL
+  - pubmed_title: text NULL
+
+## public.v_video_experts (VIEW)
+  - channel_id: text NULL
+  - video_id: text NULL
+  - title: character varying(500.0) NULL
+  - expert_id: bigint NULL
+  - expert_name: text NULL
+  - expert_relation: text NULL
+
+## public.v_video_pubmed (VIEW)
+  - channel_id: text NULL
+  - video_id: text NULL
+  - video_title: text NULL
+  - pmid: text NULL
+  - pubmed_title: text NULL
+  - authors: text NULL
+  - publish_date: text NULL
+  - pmcid: text NULL
+  - abstract: text NULL
+
+## public.v_video_solutions (VIEW)
+  - channel_id: text NULL
+  - video_id: text NULL
+  - title: character varying(500.0) NULL
+  - solution: character varying NULL
+  - value: boolean NULL
+
+## public.v_video_topic (VIEW)
+  - channel_id: text NULL
+  - video_id: text NULL
+  - title: character varying(500.0) NULL
+  - topic_name: text NULL
+  - value: boolean NULL
+
+## public.v_video_topics (VIEW)
+  - channel_id: text NULL
+  - video_id: text NULL
+  - title: character varying(500.0) NULL
+  - topic: text NULL
+  - value: boolean NULL
+
+## public.video_description (BASE TABLE)
+  - video_id: text NULL
+  - description: text NULL
+
+## public.video_experts (BASE TABLE)
+  - id: bigint NOT NULL
+  - video_id: text NOT NULL
+  - expert_id: bigint NOT NULL
+  - relation: text NOT NULL
+  - created_at: timestamp with time zone NOT NULL DEFAULT now()
+
+## public.video_insight (BASE TABLE)
+  - video_id: text NOT NULL
+  - question_id: text NOT NULL
+  - question: text NULL
+  - answer: text NOT NULL
+
+## public.video_pubmed (BASE TABLE)
+  - video_id: text NULL
+  - pubmed_id: text NULL
+
+## public.video_research_studies (BASE TABLE)
+  - video_id: text NULL
+  - details: text NULL
+
+## public.video_solutions (BASE TABLE)
+  - video_id: text NULL
+  - solution_id: bigint NULL
+  - value: boolean NULL
+
+## public.video_subtitles (BASE TABLE)
+  - video_id: text NOT NULL
+  - subtitles: text NOT NULL
+
+## public.video_summary (BASE TABLE)
+  - video_id: text NULL
+  - summary: text NULL
+
+## public.video_topics (BASE TABLE)
+  - video_id: text NULL
+  - topic_id: bigint NULL
+  - value: boolean NULL
+
+## public.videos (BASE TABLE)
+  - id: text NOT NULL
+  - title: character varying(500.0) NOT NULL
+  - channel_id: text NOT NULL
+  - published_at: timestamp with time zone NULL
+  - duration: integer NULL
+  - description: character varying NULL
+  - url: character varying NULL

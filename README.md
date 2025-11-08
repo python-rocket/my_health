@@ -33,19 +33,10 @@ npm install
 Navigate to the youtube_summarizer directory and set up Python environment:
 
 ```bash
-cd modules/youtube_summarizer
-
 # Create virtual environment (if not already created)
 python3 -m venv venv
 
-# Activate virtual environment
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-# venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ## Starting the Application

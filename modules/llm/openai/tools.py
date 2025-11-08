@@ -183,7 +183,7 @@ def truncate_input_list_by_chars(input_list, max_chars=600000):
 
 
 
-def generate_completion_with_tools(prompt: str, max_iterations: int = None) -> LLMToolsResult:
+def generate_completion_with_tools(prompt: str, max_iterations: int = 10) -> LLMToolsResult:
     """
     Generate completion with tools support.
     
@@ -191,17 +191,15 @@ def generate_completion_with_tools(prompt: str, max_iterations: int = None) -> L
         prompt: The user prompt/question
         max_iterations: Maximum number of tool iterations (default: 15)
     """
+    if not max_iterations:
+        print("No max_iterations provided, using default of 10")
+        max_iterations = 10
+        
+    print("\n********** Generating completion with tools, with max_iterations: ", max_iterations, "**********")
     # --- Conversation starts here ---
     response_early_exit = None
-    iterations_max = max_iterations if max_iterations is not None else 15
+    iterations_max = max_iterations
     sql_text_limit = 50000
-    
-    # Load schema file
-    # Try to find it relative to src/ask module
-    script_dir = Path(__file__).parent.parent.parent.parent / "ask"
-    schema_path = script_dir / "cache" / "db_schema.txt"
-    
-    schema_content = load_schema_file(str(schema_path))
     
     # Build system message
     system_content_parts = [
@@ -212,9 +210,6 @@ def generate_completion_with_tools(prompt: str, max_iterations: int = None) -> L
         "Start with reading the available views starting with v_*. They provide the best information.",
         f"You will only have this amount of tool iterations: {iterations_max}. So make sure to use your tool requests wisely.",
     ]
-    
-    if schema_content:
-        system_content_parts.append("\n=== DATABASE SCHEMA ===\n" + schema_content)
     
     input_list = [
         {

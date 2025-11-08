@@ -4,10 +4,18 @@ from llm.openai.tools import generate_completion_with_tools
 import os
 
 class OpenAIClient:
-    def __init__(self, api_key: str, use_tools: bool = False, use_response_api: bool = False, max_iterations: int = None):
+
+    def __init__(
+        self,
+        api_key: str,
+        use_tools: bool = False,
+        use_response_api: bool = False,
+        max_iterations: int = None,
+        model="o4-mini-2025-04-16"
+    ):
         """Initialize OpenAI client with API key."""
         self.client = OpenAI(api_key=api_key)
-        self.model = "o4-mini-2025-04-16"
+        self.model = model
         self.use_tools = use_tools
         self.use_response_api = use_response_api
         self.max_iterations = max_iterations
@@ -42,9 +50,8 @@ class OpenAIClient:
         )
 
         return completion.choices[0].message.content
-    
+
     def _response_api(self, prompt: str):
-        
 
         response = self.client.responses.create(
             model="gpt-5",
@@ -52,13 +59,13 @@ class OpenAIClient:
         )
 
         return response.output_text
-    
+
     def _wrapped_generate_completion_with_tools(self, prompt: str, max_iterations: int = None):
         # Use instance max_iterations if not provided
         iterations = max_iterations if max_iterations is not None else self.max_iterations
         response = generate_completion_with_tools(prompt, max_iterations=iterations)
         return response.result if hasattr(response, 'result') else str(response)
-    
+
     def ask(self, prompt: str, max_iterations: int = None) -> str:
         if self.use_tools:
             return self._wrapped_generate_completion_with_tools(prompt, max_iterations=max_iterations)

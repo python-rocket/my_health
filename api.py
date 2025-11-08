@@ -9,8 +9,8 @@ from pathlib import Path
 # Add current directory to path for imports
 current_dir = os.path.dirname(__file__)
 sys.path.insert(0, current_dir)
-from ask.ask import Ask
-from ask.schema_extractor import extract_schema
+from modules.ai_doctor.ask.ask import Ask
+from modules.ai_doctor.ask.schema_extractor import extract_schema
 
 app = FastAPI()
 
@@ -38,19 +38,23 @@ except Exception as e:
 # Initialize Ask instance
 ask_instance = Ask()
 
+class PreferencesRequest(BaseModel):
+    favoriteChannels: Optional[List[str]] = None
+    favoriteSolutions: Optional[List[str]] = None
+    pubmedPreferences: Optional[Dict] = None
 
-class PromptRequest(BaseModel):
+class AskRequest(BaseModel):
     prompt: str
-    preferences: Optional[Dict] = None
+    preferences: Optional[PreferencesRequest] = None
     max_iterations: Optional[int] = None
 
 
 @app.post("/ask")
-async def ask_endpoint(request: PromptRequest):
+async def ask_endpoint(request: AskRequest):
     try:
         response = ask_instance.ask_directly(
             request.prompt, 
-            preferences=request.preferences,
+            preferences=request.preferences.model_dump(),
             max_iterations=request.max_iterations
         )
         return {"response": response}

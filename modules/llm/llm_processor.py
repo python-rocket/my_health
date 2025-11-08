@@ -66,12 +66,13 @@ class LLMProcessor:
         self,
         template_path: str,
         injecting: dict,
-        return_format: str
+        return_format: str,
+        max_iterations: int = None
     ) -> LLMResult:
         self._validate_return_format(return_format)
         prompt = open(template_path, "r").read()
         prompt = self._prepare_prompt(prompt, injecting)
-        response = self.openai_client.ask(prompt)
+        response = self.openai_client.ask(prompt, max_iterations=max_iterations)
         response = self._clean_response(response, return_format)
         llm_result = {
             "template_path": template_path,

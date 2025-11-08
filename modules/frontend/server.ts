@@ -6,10 +6,14 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-dotenv.config();
-
+// Load environment variables from current directory or parent directories
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+// Try loading .env from current directory, then parent directories
+dotenv.config({ path: path.join(__dirname, '.env') });
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
+dotenv.config({ path: path.join(__dirname, '..', '..', '.env') });
+dotenv.config(); // Also load from process.env (for shell-set variables)
 
 const app = express();
 const port = 3001;
@@ -23,7 +27,7 @@ app.use(express.static(path.join(__dirname, '..')));
 
 // Create PostgreSQL connection pool
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
+    connectionString: process.env.PSQL_CONNECTION_STRING || process.env.DATABASE_URL,
 });
 
 // Preferences file path

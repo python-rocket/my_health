@@ -72,16 +72,16 @@ function initAskTab() {
         // Disable button and show loading
         askButton.disabled = true;
         askButton.textContent = 'Asking...';
-        askResponse.innerHTML = '<div class="loading">Processing your question...</div>';
+        askResponse.innerHTML = '<div class="ask-loading"><div class="ask-spinner"></div><span>Processing your question...</span></div>';
         
         try {
             // Get mode and determine max_iterations
             const mode = modeSelect.value;
             let maxIterations: number | undefined;
             if (mode === 'fast') {
-                maxIterations = 3;
+                maxIterations = 1;
             } else if (mode === 'normal') {
-                maxIterations = 5;
+                maxIterations = 3;
             } else {
                 // thinking mode - no limit (undefined)
                 maxIterations = undefined;
