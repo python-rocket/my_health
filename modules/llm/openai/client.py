@@ -11,7 +11,7 @@ class OpenAIClient:
         use_tools: bool = False,
         use_response_api: bool = False,
         max_iterations: int = None,
-        model="o4-mini-2025-04-16"
+        model="gpt-5-mini-2025-08-07" # gpt-5-mini # o4-mini-2025-04-16
     ):
         """Initialize OpenAI client with API key."""
         self.client = OpenAI(api_key=api_key)

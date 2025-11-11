@@ -77,14 +77,14 @@ class LLMProcessor:
         llm_result = {
             "template_path": template_path,
             "injecting": injecting,
-            "answer": response.model_dump(),
+            "answer": response,
         }
         llm_result = LLMResult(**llm_result)
         return llm_result
 
 
 if __name__ == "__main__":
-    template_path = "llm/prompts/tools.txt"
+    template_path = "youtube_summarizer/llm/prompts/tools.txt"
     """
     injecting = {
         "question": "What is the capital city of France?",

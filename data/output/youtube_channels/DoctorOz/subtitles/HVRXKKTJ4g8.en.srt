@@ -1,0 +1,4720 @@
+1
+00:00:00,000 --> 00:00:02,639
+[Music]
+
+2
+00:00:00,240 --> 00:00:05,440
+Today on Oz. That's a big issue, folks.
+
+3
+00:00:02,639 --> 00:00:07,600
+An identity victim shows Dr. Oz how easy
+
+4
+00:00:05,440 --> 00:00:11,120
+it is for thieves to steal his medical
+
+5
+00:00:07,600 --> 00:00:13,280
+info. Is your password the name of a TV
+
+6
+00:00:11,120 --> 00:00:15,679
+show host? Do you actually have that?
+
+7
+00:00:13,280 --> 00:00:17,680
+How to outsmart crooks after your cash
+
+8
+00:00:15,679 --> 00:00:20,000
+and medical data? The tools you need to
+
+9
+00:00:17,680 --> 00:00:22,480
+protect yourself. Plus, sure, it's great
+
+10
+00:00:20,000 --> 00:00:23,840
+for popcorn and heating leftovers, but
+
+11
+00:00:22,480 --> 00:00:26,720
+wait till you see what else your
+
+12
+00:00:23,840 --> 00:00:29,279
+microwave can do. Coming up next on Dr.
+
+13
+00:00:26,720 --> 00:00:31,279
+Oz.
+
+14
+00:00:29,279 --> 00:00:33,840
+Now, you have seen the headlines.
+
+15
+00:00:31,279 --> 00:00:35,760
+Security breaches at banks and major big
+
+16
+00:00:33,840 --> 00:00:38,480
+box stores have left all of us feeling
+
+17
+00:00:35,760 --> 00:00:41,040
+pretty vulnerable to identity theft. And
+
+18
+00:00:38,480 --> 00:00:43,360
+now the FBI is warning your personal
+
+19
+00:00:41,040 --> 00:00:45,040
+health records are the latest target.
+
+20
+00:00:43,360 --> 00:00:46,800
+That's why today I'm giving you the
+
+21
+00:00:45,040 --> 00:00:48,719
+tools you need to protect yourself from
+
+22
+00:00:46,800 --> 00:00:51,000
+the identity thieves after your money
+
+23
+00:00:48,719 --> 00:00:54,199
+and your medical
+
+24
+00:00:51,000 --> 00:00:57,039
+records. It's become a common
+
+25
+00:00:54,199 --> 00:00:58,879
+headline. Identity theft. Crooks
+
+26
+00:00:57,039 --> 00:01:00,039
+stealing personal information for
+
+27
+00:00:58,879 --> 00:01:03,760
+financial
+
+28
+00:01:00,039 --> 00:01:05,760
+gain. And now, medical identity theft is
+
+29
+00:01:03,760 --> 00:01:08,640
+being called an epidemic. Already
+
+30
+00:01:05,760 --> 00:01:11,200
+affecting over 2.3 million Americans and
+
+31
+00:01:08,640 --> 00:01:13,360
+growing. But unlike traditional credit
+
+32
+00:01:11,200 --> 00:01:15,439
+card crime, medical identity theft
+
+33
+00:01:13,360 --> 00:01:18,240
+victims are rarely informed about
+
+34
+00:01:15,439 --> 00:01:20,320
+suspicious or fraudulent activity, which
+
+35
+00:01:18,240 --> 00:01:23,360
+could lead to incorrect treatment and
+
+36
+00:01:20,320 --> 00:01:25,680
+devastating effects on your health. Yet
+
+37
+00:01:23,360 --> 00:01:27,880
+most of us are still unaware of how to
+
+38
+00:01:25,680 --> 00:01:30,479
+protect our medical and financial
+
+39
+00:01:27,880 --> 00:01:33,200
+information or just how easy it is to
+
+40
+00:01:30,479 --> 00:01:35,759
+steal. With 90% of healthcare
+
+41
+00:01:33,200 --> 00:01:37,840
+organizations admitting to breaches and
+
+42
+00:01:35,759 --> 00:01:41,840
+ATMs and cell phones also being
+
+43
+00:01:37,840 --> 00:01:44,479
+targeted, no one is safe. CEO John
+
+44
+00:01:41,840 --> 00:01:47,439
+Silio's identity was stolen and the
+
+45
+00:01:44,479 --> 00:01:49,680
+thief embezzled $300,000 from John's
+
+46
+00:01:47,439 --> 00:01:52,240
+clients. The crime destroyed his
+
+47
+00:01:49,680 --> 00:01:54,000
+company. So John made it his mission to
+
+48
+00:01:52,240 --> 00:01:56,000
+help others protect their personal
+
+49
+00:01:54,000 --> 00:01:58,320
+information. With your medical and
+
+50
+00:01:56,000 --> 00:02:00,799
+financial identity at risk, you may feel
+
+51
+00:01:58,320 --> 00:02:03,040
+like a sitting duck, but John says there
+
+52
+00:02:00,799 --> 00:02:04,750
+are ways to outsmart the thieves and
+
+53
+00:02:03,040 --> 00:02:07,239
+keep your identity
+
+54
+00:02:04,750 --> 00:02:09,599
+[Music]
+
+55
+00:02:07,239 --> 00:02:11,120
+safe. John joining us. What is the
+
+56
+00:02:09,599 --> 00:02:12,720
+biggest misperception you think people
+
+57
+00:02:11,120 --> 00:02:14,400
+have about identity theft? You know,
+
+58
+00:02:12,720 --> 00:02:16,400
+we've all gotten very familiar with
+
+59
+00:02:14,400 --> 00:02:18,400
+regular identity theft, loss of a credit
+
+60
+00:02:16,400 --> 00:02:20,400
+card number, social security number, but
+
+61
+00:02:18,400 --> 00:02:21,760
+increasingly thieves are going after our
+
+62
+00:02:20,400 --> 00:02:23,200
+medical data. They want the health
+
+63
+00:02:21,760 --> 00:02:25,760
+insurance information. They want the
+
+64
+00:02:23,200 --> 00:02:27,520
+doctor's records. Um, it's it's
+
+65
+00:02:25,760 --> 00:02:29,040
+terrible. And that's what I fight back
+
+66
+00:02:27,520 --> 00:02:30,400
+against. This is shocking to me. I
+
+67
+00:02:29,040 --> 00:02:32,000
+thought it was all about just us as
+
+68
+00:02:30,400 --> 00:02:33,440
+doctors being careful. You as the
+
+69
+00:02:32,000 --> 00:02:34,720
+consumers are getting robbed when this
+
+70
+00:02:33,440 --> 00:02:36,000
+happens in a much more important way
+
+71
+00:02:34,720 --> 00:02:37,680
+than with credit cards. So, the first
+
+72
+00:02:36,000 --> 00:02:38,959
+scam we're going to identify today is
+
+73
+00:02:37,680 --> 00:02:41,440
+having to do with health. And I've asked
+
+74
+00:02:38,959 --> 00:02:44,640
+Nikki Burton to join us. Nikki actually
+
+75
+00:02:41,440 --> 00:02:46,400
+went through a crisis of her own and I
+
+76
+00:02:44,640 --> 00:02:48,400
+I' I'd love to hear from you and just
+
+77
+00:02:46,400 --> 00:02:50,560
+tell us the story of how surprised you
+
+78
+00:02:48,400 --> 00:02:52,239
+were and what happened. Okay. Um well,
+
+79
+00:02:50,560 --> 00:02:55,040
+what happened to me is that when I was
+
+80
+00:02:52,239 --> 00:02:57,440
+17 years old, I tried to donate blood at
+
+81
+00:02:55,040 --> 00:02:59,599
+the Red Cross and I was actually unable
+
+82
+00:02:57,440 --> 00:03:02,239
+to do so because their records showed
+
+83
+00:02:59,599 --> 00:03:04,879
+that my person and my information um had
+
+84
+00:03:02,239 --> 00:03:06,800
+HIV and was HIV positive. That's pretty
+
+85
+00:03:04,879 --> 00:03:09,599
+shocking. Yeah, it was. Especially Were
+
+86
+00:03:06,800 --> 00:03:12,319
+you HIV positive? No. No. Nope. and not
+
+87
+00:03:09,599 --> 00:03:14,640
+then. Um, and I was 17, so I was rather
+
+88
+00:03:12,319 --> 00:03:17,360
+overwhelmed. But I later learned that a
+
+89
+00:03:14,640 --> 00:03:19,440
+man had used my identity and my
+
+90
+00:03:17,360 --> 00:03:21,200
+information, my records to obtain
+
+91
+00:03:19,440 --> 00:03:22,800
+treatment for HIV, and that was how that
+
+92
+00:03:21,200 --> 00:03:25,280
+information had gotten into their
+
+93
+00:03:22,800 --> 00:03:27,599
+database. So, I tried to correct it
+
+94
+00:03:25,280 --> 00:03:29,920
+right away. Um, but it was actually 6
+
+95
+00:03:27,599 --> 00:03:32,080
+years before I was successful. It's an
+
+96
+00:03:29,920 --> 00:03:33,680
+unbelievable tale. Six years. You you
+
+97
+00:03:32,080 --> 00:03:36,239
+walked around with a diagnosis of being
+
+98
+00:03:33,680 --> 00:03:37,920
+HIV positive and God knows what else so
+
+99
+00:03:36,239 --> 00:03:40,080
+far. But yeah, we think it's just that
+
+100
+00:03:37,920 --> 00:03:42,159
+it was I was HIV positive. So, how do we
+
+101
+00:03:40,080 --> 00:03:43,599
+outsmart these medical identity thieves?
+
+102
+00:03:42,159 --> 00:03:46,239
+So, first of all, you got to share with
+
+103
+00:03:43,599 --> 00:03:48,720
+care. You've got to um give that
+
+104
+00:03:46,239 --> 00:03:50,720
+information only when it's absolutely
+
+105
+00:03:48,720 --> 00:03:51,920
+necessary and ask your doctor's office,
+
+106
+00:03:50,720 --> 00:03:54,640
+do they need your social security
+
+107
+00:03:51,920 --> 00:03:56,239
+number? If in doubt, give put a dash and
+
+108
+00:03:54,640 --> 00:03:57,840
+put the last four characters. You don't
+
+109
+00:03:56,239 --> 00:03:59,200
+have to give the whole thing. Now,
+
+110
+00:03:57,840 --> 00:04:00,799
+women, let me tell you that for a
+
+111
+00:03:59,200 --> 00:04:02,480
+second. That's a big issue, folks, cuz I
+
+112
+00:04:00,799 --> 00:04:03,599
+must even in my own office, I always ask
+
+113
+00:04:02,480 --> 00:04:05,439
+patients there are social security
+
+114
+00:04:03,599 --> 00:04:06,560
+numbers. We have 15 different places we
+
+115
+00:04:05,439 --> 00:04:08,159
+can get that. I don't even know why we
+
+116
+00:04:06,560 --> 00:04:09,360
+ask it now that you bring it up. I think
+
+117
+00:04:08,159 --> 00:04:10,879
+we ought to start there. Why are people
+
+118
+00:04:09,360 --> 00:04:12,640
+asking for our social security numbers
+
+119
+00:04:10,879 --> 00:04:14,560
+all the time whenever we sign in in a
+
+120
+00:04:12,640 --> 00:04:16,239
+hospital? I'm with you. Right.
+
+121
+00:04:14,560 --> 00:04:17,759
+Absolutely. So, let's But from now on,
+
+122
+00:04:16,239 --> 00:04:19,199
+let's just do what you just said. Put
+
+123
+00:04:17,759 --> 00:04:20,479
+the last four digits in there so we know
+
+124
+00:04:19,199 --> 00:04:21,759
+that it's you if we have to double
+
+125
+00:04:20,479 --> 00:04:23,520
+check. Everything else should just be
+
+126
+00:04:21,759 --> 00:04:24,639
+dashes. Yeah. You know, if it's
+
+127
+00:04:23,520 --> 00:04:26,160
+Medicare, you're going to have to give
+
+128
+00:04:24,639 --> 00:04:28,240
+it right now. But for all other
+
+129
+00:04:26,160 --> 00:04:30,320
+purposes, only give it if you absolutely
+
+130
+00:04:28,240 --> 00:04:31,919
+have to. Another thing you can do is
+
+131
+00:04:30,320 --> 00:04:34,000
+monitor those records, those vital
+
+132
+00:04:31,919 --> 00:04:35,919
+documents that you've got. So looking at
+
+133
+00:04:34,000 --> 00:04:37,759
+the explanation of benefits that you get
+
+134
+00:04:35,919 --> 00:04:39,280
+in the mail after a procedure to see if
+
+135
+00:04:37,759 --> 00:04:41,680
+somebody's, you know, draining your
+
+136
+00:04:39,280 --> 00:04:43,680
+account, looking at your actual doctor's
+
+137
+00:04:41,680 --> 00:04:45,600
+records, ask for a copy and see, has
+
+138
+00:04:43,680 --> 00:04:47,600
+something changed since you were there
+
+139
+00:04:45,600 --> 00:04:49,360
+last. Yeah. Monitor your vital signs in
+
+140
+00:04:47,600 --> 00:04:51,840
+a whole different way. And you know,
+
+141
+00:04:49,360 --> 00:04:54,479
+because medical identity theft, uh, it
+
+142
+00:04:51,840 --> 00:04:56,479
+bleeds, it's contagious. It contains
+
+143
+00:04:54,479 --> 00:04:58,479
+your financial identity, your social
+
+144
+00:04:56,479 --> 00:05:00,080
+security number, as it did here. So you
+
+145
+00:04:58,479 --> 00:05:02,880
+also have to protect that side of it.
+
+146
+00:05:00,080 --> 00:05:05,120
+You can do that by uh monitoring your
+
+147
+00:05:02,880 --> 00:05:08,160
+financial identity for free on a website
+
+148
+00:05:05,120 --> 00:05:09,199
+called annualcreditreport.com.
+
+149
+00:05:08,160 --> 00:05:10,240
+All right, good information. Thanks for
+
+150
+00:05:09,199 --> 00:05:11,440
+sharing your story. Of course, come on
+
+151
+00:05:10,240 --> 00:05:13,280
+over. I want to talk about the next
+
+152
+00:05:11,440 --> 00:05:15,600
+problem we have, which is ATM machine
+
+153
+00:05:13,280 --> 00:05:18,160
+skimming. Uh Carolyn's here and like a
+
+154
+00:05:15,600 --> 00:05:20,400
+lot of folks, how are you, Carolyn?
+
+155
+00:05:18,160 --> 00:05:21,840
+Uh so, we're all worried about getting
+
+156
+00:05:20,400 --> 00:05:24,080
+ripped off when we go to the ATM
+
+157
+00:05:21,840 --> 00:05:25,600
+machine. This is something that's been a
+
+158
+00:05:24,080 --> 00:05:27,520
+long-term concern of yours. Has it ever
+
+159
+00:05:25,600 --> 00:05:30,560
+happened to you? Um, it hasn't happened
+
+160
+00:05:27,520 --> 00:05:33,039
+to me, but you know, I can probably see
+
+161
+00:05:30,560 --> 00:05:34,320
+where it could happen. So, uh, John, if
+
+162
+00:05:33,039 --> 00:05:35,440
+you don't mind, I'd like you to walk us
+
+163
+00:05:34,320 --> 00:05:37,199
+through how this skimming happens. The
+
+164
+00:05:35,440 --> 00:05:39,120
+folks, pay close attention here. This
+
+165
+00:05:37,199 --> 00:05:41,280
+happening all over the country, and it
+
+166
+00:05:39,120 --> 00:05:43,600
+is absolutely stunning. So, this is a
+
+167
+00:05:41,280 --> 00:05:46,240
+typical traditional ATM that you might
+
+168
+00:05:43,600 --> 00:05:48,479
+see in any type of store. Go ahead and
+
+169
+00:05:46,240 --> 00:05:51,039
+put your card in, okay, as if you were
+
+170
+00:05:48,479 --> 00:05:53,360
+banking. And you better pull out all the
+
+171
+00:05:51,039 --> 00:05:55,440
+cash because if you don't, the thieves
+
+172
+00:05:53,360 --> 00:05:57,280
+can. You see, without even knowing it,
+
+173
+00:05:55,440 --> 00:05:58,880
+if you don't know what to look for, this
+
+174
+00:05:57,280 --> 00:06:00,720
+device here, protruding from the
+
+175
+00:05:58,880 --> 00:06:04,240
+machine, if you wiggle it a little bit,
+
+176
+00:06:00,720 --> 00:06:05,840
+it comes off. Oh my gosh. And it's got a
+
+177
+00:06:04,240 --> 00:06:08,479
+digital skimmer, this is called
+
+178
+00:06:05,840 --> 00:06:10,960
+skimming, it skims the data off of your
+
+179
+00:06:08,479 --> 00:06:12,880
+card without even knowing it. It's
+
+180
+00:06:10,960 --> 00:06:15,120
+unbelievable. It looks just like the
+
+181
+00:06:12,880 --> 00:06:16,560
+machine. So, what happens if someone
+
+182
+00:06:15,120 --> 00:06:18,639
+once someone skims your card? Yeah, it
+
+183
+00:06:16,560 --> 00:06:20,560
+looks like the regular old machine. Then
+
+184
+00:06:18,639 --> 00:06:22,400
+what? They take the the data off it.
+
+185
+00:06:20,560 --> 00:06:24,479
+Yeah. So they take the data off of that
+
+186
+00:06:22,400 --> 00:06:27,360
+and then the thief creates an exact
+
+187
+00:06:24,479 --> 00:06:29,199
+duplicate of the card that you have and
+
+188
+00:06:27,360 --> 00:06:31,039
+now they're shopping as you. They're
+
+189
+00:06:29,199 --> 00:06:32,479
+they're literally cashing it out. So
+
+190
+00:06:31,039 --> 00:06:35,120
+they're two cards online. Yeah.
+
+191
+00:06:32,479 --> 00:06:36,720
+Literally. Exactly. Make it a digital
+
+192
+00:06:35,120 --> 00:06:38,080
+copy and then they go on a shopping
+
+193
+00:06:36,720 --> 00:06:39,919
+spree. Go on a shopping spree. They cash
+
+194
+00:06:38,080 --> 00:06:41,520
+it out before you even have time to to
+
+195
+00:06:39,919 --> 00:06:43,520
+react. This all happens very quickly
+
+196
+00:06:41,520 --> 00:06:44,639
+generally online. If someone was taking
+
+197
+00:06:43,520 --> 00:06:46,960
+your cards while you're still at the
+
+198
+00:06:44,639 --> 00:06:48,560
+machine and buying dresses, outfits,
+
+199
+00:06:46,960 --> 00:06:49,759
+swim gear, whatever, how long would it
+
+200
+00:06:48,560 --> 00:06:51,759
+take for you to figure that out?
+
+201
+00:06:49,759 --> 00:06:53,280
+Honestly, I probably wouldn't know for
+
+202
+00:06:51,759 --> 00:06:55,520
+about a month because that's when I
+
+203
+00:06:53,280 --> 00:06:57,280
+checked my credit card statements. So, a
+
+204
+00:06:55,520 --> 00:06:59,440
+whole month would go by. So, how do we
+
+205
+00:06:57,280 --> 00:07:02,000
+outsmart the skimming scam? Yeah. So, I
+
+206
+00:06:59,440 --> 00:07:04,160
+mean, if you see something sticking off,
+
+207
+00:07:02,000 --> 00:07:06,319
+these were made to be flush, right? If
+
+208
+00:07:04,160 --> 00:07:08,479
+it's protruding like this, wiggle it,
+
+209
+00:07:06,319 --> 00:07:10,960
+pull it, see if it comes off. They put
+
+210
+00:07:08,479 --> 00:07:12,880
+these on with two-sided tape. You can
+
+211
+00:07:10,960 --> 00:07:14,880
+foil it really easily just by looking at
+
+212
+00:07:12,880 --> 00:07:16,319
+your ATM machine. Unbelievable, Carolyn.
+
+213
+00:07:14,880 --> 00:07:19,039
+Thank you very much. Here's a little
+
+214
+00:07:16,319 --> 00:07:20,680
+momento of your stay with us with you.
+
+215
+00:07:19,039 --> 00:07:22,800
+All
+
+216
+00:07:20,680 --> 00:07:24,280
+right, the last scam we're going to talk
+
+217
+00:07:22,800 --> 00:07:26,479
+about today is called
+
+218
+00:07:24,280 --> 00:07:28,000
+smishing text scams. It's something that
+
+219
+00:07:26,479 --> 00:07:29,599
+happens on text phones pretty regularly.
+
+220
+00:07:28,000 --> 00:07:30,960
+Now, you say this is done quite
+
+221
+00:07:29,599 --> 00:07:32,560
+frequently and most of us don't even
+
+222
+00:07:30,960 --> 00:07:35,039
+know what's happening, right? Yeah. In
+
+223
+00:07:32,560 --> 00:07:37,520
+fact, uh we've we've done it to you. Did
+
+224
+00:07:35,039 --> 00:07:40,000
+you get any uh strange Yeah. get a
+
+225
+00:07:37,520 --> 00:07:41,919
+strange text last night?
+
+226
+00:07:40,000 --> 00:07:43,440
+I got a text from someone whose email I
+
+227
+00:07:41,919 --> 00:07:45,759
+thought recognized, but it was a weird
+
+228
+00:07:43,440 --> 00:07:47,199
+email. Yes. So, I I I clicked it. It
+
+229
+00:07:45,759 --> 00:07:49,919
+didn't take me anywhere. What did that
+
+230
+00:07:47,199 --> 00:07:51,759
+text say? Well, that text was bizarre,
+
+231
+00:07:49,919 --> 00:07:53,599
+but I did send text. I text my wife. You
+
+232
+00:07:51,759 --> 00:07:54,960
+sent a text after that? Yeah, I sent my
+
+233
+00:07:53,599 --> 00:07:57,039
+my wife's traveling, so I sent her a
+
+234
+00:07:54,960 --> 00:07:59,680
+text. It's uh I I don't remember how
+
+235
+00:07:57,039 --> 00:08:01,680
+intimate it was. It was something uh I
+
+236
+00:07:59,680 --> 00:08:04,240
+hope that's not on television. Well, I
+
+237
+00:08:01,680 --> 00:08:06,960
+think it's about to be. Is this the text
+
+238
+00:08:04,240 --> 00:08:09,520
+you sent? Miss you. Lots of kisses.
+
+239
+00:08:06,960 --> 00:08:13,440
+XOXO.
+
+240
+00:08:09,520 --> 00:08:15,680
+That was the uh that was the first text.
+
+241
+00:08:13,440 --> 00:08:18,160
+She's been gone for a couple days. So,
+
+242
+00:08:15,680 --> 00:08:20,080
+so this software actually recorded that
+
+243
+00:08:18,160 --> 00:08:22,080
+text. You're kidding me. As you wrote it
+
+244
+00:08:20,080 --> 00:08:23,759
+and sent it off to me so that I could
+
+245
+00:08:22,080 --> 00:08:25,120
+see what you were texting. So on your
+
+246
+00:08:23,759 --> 00:08:26,160
+computer, you were monitoring what I was
+
+247
+00:08:25,120 --> 00:08:28,479
+doing on my phone. What else could you
+
+248
+00:08:26,160 --> 00:08:30,560
+able to track? You know, you can uh if
+
+249
+00:08:28,479 --> 00:08:32,880
+this key logging software, which records
+
+250
+00:08:30,560 --> 00:08:35,519
+every keystroke you put is on there. I
+
+251
+00:08:32,880 --> 00:08:37,120
+can see emails, I can see contacts, I
+
+252
+00:08:35,519 --> 00:08:39,120
+can see photos. If you have a banking
+
+253
+00:08:37,120 --> 00:08:40,479
+app, I can see you log in. If you have a
+
+254
+00:08:39,120 --> 00:08:43,440
+health app, I can see your health
+
+255
+00:08:40,479 --> 00:08:45,279
+information. So So if I have Do I have a
+
+256
+00:08:43,440 --> 00:08:46,959
+banking app? This is my phone. So, if I
+
+257
+00:08:45,279 --> 00:08:48,640
+wanted to use this, could you read what
+
+258
+00:08:46,959 --> 00:08:50,160
+I was doing? Yeah. So, keep it keep it
+
+259
+00:08:48,640 --> 00:08:53,200
+close. I'm going to move back here with
+
+260
+00:08:50,160 --> 00:08:55,040
+the iPad. I want you to log in to your
+
+261
+00:08:53,200 --> 00:08:57,440
+bank account right now. Keep it keep it
+
+262
+00:08:55,040 --> 00:08:59,839
+tight. All right. I'm on the account.
+
+263
+00:08:57,440 --> 00:09:01,600
+Here's my password. This is now taking a
+
+264
+00:08:59,839 --> 00:09:04,880
+look. It's sending me what he's writing
+
+265
+00:09:01,600 --> 00:09:08,000
+on there. I just logged in. All right.
+
+266
+00:09:04,880 --> 00:09:11,440
+So, let me ask you a question.
+
+267
+00:09:08,000 --> 00:09:14,720
+Is your password the name of another
+
+268
+00:09:11,440 --> 00:09:18,240
+daytime TV show host?
+
+269
+00:09:14,720 --> 00:09:20,399
+It is. You actually have that. And is it
+
+270
+00:09:18,240 --> 00:09:22,320
+five characters? That's it. That's it.
+
+271
+00:09:20,399 --> 00:09:24,959
+That's unbelievable.
+
+272
+00:09:22,320 --> 00:09:26,560
+I've got your password because of that
+
+273
+00:09:24,959 --> 00:09:27,839
+software that you loaded when you
+
+274
+00:09:26,560 --> 00:09:29,760
+downloaded when you clicked on that
+
+275
+00:09:27,839 --> 00:09:31,120
+malicious link. So, how do I I mean, how
+
+276
+00:09:29,760 --> 00:09:32,800
+do I avoid that? How does the average
+
+277
+00:09:31,120 --> 00:09:34,480
+viewer avoid that happening? Yeah. So,
+
+278
+00:09:32,800 --> 00:09:36,560
+you can either not click on the links in
+
+279
+00:09:34,480 --> 00:09:38,560
+text. That's kind of a radical way. or
+
+280
+00:09:36,560 --> 00:09:40,240
+if you have to click on a link, think of
+
+281
+00:09:38,560 --> 00:09:42,240
+three things. Number one, do you know
+
+282
+00:09:40,240 --> 00:09:43,519
+the sender? Do you trust them? Do you
+
+283
+00:09:42,240 --> 00:09:45,920
+know that they've still got control of
+
+284
+00:09:43,519 --> 00:09:47,279
+their phone? Number two, is the URL
+
+285
+00:09:45,920 --> 00:09:49,120
+something you recognize? Is it a
+
+286
+00:09:47,279 --> 00:09:50,959
+legitimate site that you've checked out?
+
+287
+00:09:49,120 --> 00:09:52,720
+And most importantly, were you expecting
+
+288
+00:09:50,959 --> 00:09:55,200
+the link? If you're not expecting a
+
+289
+00:09:52,720 --> 00:09:57,360
+link, don't do it. It's probably an
+
+290
+00:09:55,200 --> 00:09:59,839
+advertisement. It's the scam trying to
+
+291
+00:09:57,360 --> 00:10:01,839
+get you to download your uh the malware
+
+292
+00:09:59,839 --> 00:10:03,360
+or give away your personal information.
+
+293
+00:10:01,839 --> 00:10:04,320
+This has been fantastic advice, John.
+
+294
+00:10:03,360 --> 00:10:06,240
+Thank you so much. You bet. Thank you.
+
+295
+00:10:04,320 --> 00:10:08,080
+To learn more, you can read John Silio's
+
+296
+00:10:06,240 --> 00:10:09,920
+new book. It's called Privacy Means
+
+297
+00:10:08,080 --> 00:10:11,360
+Profit. You'll learn John Silio's dos
+
+298
+00:10:09,920 --> 00:10:12,800
+and don'ts of creating a safe password
+
+299
+00:10:11,360 --> 00:10:17,720
+as well. Do this. I'm doing this today
+
+300
+00:10:12,800 --> 00:10:17,720
+myself on dr.com. We'll be right back.
+
+301
+00:10:22,240 --> 00:10:26,079
+Next, the study that's rocking the
+
+302
+00:10:24,240 --> 00:10:28,240
+agricultural world. Could the world's
+
+303
+00:10:26,079 --> 00:10:30,320
+top weed killer cause cancer? And it's
+
+304
+00:10:28,240 --> 00:10:32,320
+not just used on farms. It could be in
+
+305
+00:10:30,320 --> 00:10:34,399
+your garden as well. Top food and
+
+306
+00:10:32,320 --> 00:10:37,839
+environmental advocates go head-to-head.
+
+307
+00:10:34,399 --> 00:10:40,240
+Is your family at risk? Next, Juliana
+
+308
+00:10:37,839 --> 00:10:42,079
+Rancic. How you doing now? Sets the
+
+309
+00:10:40,240 --> 00:10:44,160
+record straight on the eating disorder
+
+310
+00:10:42,079 --> 00:10:46,800
+rumors, the stress and scrutiny of her
+
+311
+00:10:44,160 --> 00:10:51,160
+marriage, her job, and her heartbreaking
+
+312
+00:10:46,800 --> 00:10:53,680
+baby news. All new Oz. That's coming up
+
+313
+00:10:51,160 --> 00:10:56,160
+tomorrow. It's the world's most used
+
+314
+00:10:53,680 --> 00:10:58,640
+weed killer found not just on farms, but
+
+315
+00:10:56,160 --> 00:11:01,279
+also in your garden. It's called
+
+316
+00:10:58,640 --> 00:11:02,720
+Roundup. Now, there's breaking news. A
+
+317
+00:11:01,279 --> 00:11:04,720
+new report from the World Health
+
+318
+00:11:02,720 --> 00:11:07,200
+Organization, which has also declared
+
+319
+00:11:04,720 --> 00:11:10,839
+today World Health Day, says Roundup
+
+320
+00:11:07,200 --> 00:11:13,640
+might cause cancer, and that could be a
+
+321
+00:11:10,839 --> 00:11:15,760
+gamecher. The study rocked big
+
+322
+00:11:13,640 --> 00:11:18,880
+agriculture and could have major
+
+323
+00:11:15,760 --> 00:11:20,399
+implications for home gardeners, too.
+
+324
+00:11:18,880 --> 00:11:22,399
+The World Health Organization's
+
+325
+00:11:20,399 --> 00:11:25,120
+International Agency for Research on
+
+326
+00:11:22,399 --> 00:11:27,680
+Cancer recently gathered together 17
+
+327
+00:11:25,120 --> 00:11:30,399
+experts from 11 countries to answer this
+
+328
+00:11:27,680 --> 00:11:32,640
+question. What is the likelihood that
+
+329
+00:11:30,399 --> 00:11:34,800
+glyphosate, the active ingredient in the
+
+330
+00:11:32,640 --> 00:11:38,000
+world's most widely used herbicide,
+
+331
+00:11:34,800 --> 00:11:39,959
+might cause cancer? After analyzing 30
+
+332
+00:11:38,000 --> 00:11:43,160
+years of research, their alarming
+
+333
+00:11:39,959 --> 00:11:45,519
+conclusion, glyphosate is probably
+
+334
+00:11:43,160 --> 00:11:47,760
+carcinogenic. With the use of glyphosate
+
+335
+00:11:45,519 --> 00:11:50,399
+in Roundup soaring over the last 20
+
+336
+00:11:47,760 --> 00:11:52,600
+years, is it time to ask, are the risks
+
+337
+00:11:50,399 --> 00:11:55,440
+worth
+
+338
+00:11:52,600 --> 00:11:57,200
+it? Dr. Alan Green is a pediatrician who
+
+339
+00:11:55,440 --> 00:11:59,600
+has been studying the use of pesticides
+
+340
+00:11:57,200 --> 00:12:01,360
+and foods for over 20 years. Scott Faber
+
+341
+00:11:59,600 --> 00:12:04,240
+is the vice president of the environment
+
+342
+00:12:01,360 --> 00:12:06,399
+working group. Scott, 30 years ago, the
+
+343
+00:12:04,240 --> 00:12:07,920
+EPA, the group that protects us,
+
+344
+00:12:06,399 --> 00:12:10,000
+determined that Roundup might cause
+
+345
+00:12:07,920 --> 00:12:11,360
+cancer. And then six years later, they
+
+346
+00:12:10,000 --> 00:12:14,240
+actually changed their minds and said,
+
+347
+00:12:11,360 --> 00:12:16,000
+"Well, it's not really a problem." So,
+
+348
+00:12:14,240 --> 00:12:18,800
+who can we believe? Well, at the end of
+
+349
+00:12:16,000 --> 00:12:20,320
+the day, the world's cancer experts, the
+
+350
+00:12:18,800 --> 00:12:22,560
+folks at the World Health Organization,
+
+351
+00:12:20,320 --> 00:12:24,800
+have concluded that this weed killer,
+
+352
+00:12:22,560 --> 00:12:27,320
+which has exploded in use as more and
+
+353
+00:12:24,800 --> 00:12:30,240
+more farmers have used GMO corn and GMO
+
+354
+00:12:27,320 --> 00:12:33,200
+soybeans, is a probable carcinogen. And
+
+355
+00:12:30,240 --> 00:12:35,440
+this is the body that every regulator in
+
+356
+00:12:33,200 --> 00:12:38,480
+every government across the globe relies
+
+357
+00:12:35,440 --> 00:12:40,079
+on to determine what does cause cancer.
+
+358
+00:12:38,480 --> 00:12:41,440
+Right? So, my goal is always have an
+
+359
+00:12:40,079 --> 00:12:43,440
+open and honest conversation. You all
+
+360
+00:12:41,440 --> 00:12:45,360
+know that. But I couldn't get anyone to
+
+361
+00:12:43,440 --> 00:12:46,959
+appear on the show who supports
+
+362
+00:12:45,360 --> 00:12:49,200
+glyphosate. Now, we reached out to the
+
+363
+00:12:46,959 --> 00:12:50,720
+Grocery Manufacturers of America, Crop
+
+364
+00:12:49,200 --> 00:12:52,880
+Life America, that's an advocacy group
+
+365
+00:12:50,720 --> 00:12:54,480
+of fertilizer, and Monsanto, that's the
+
+366
+00:12:52,880 --> 00:12:56,000
+maker of Roundup. They all declined to
+
+367
+00:12:54,480 --> 00:12:58,560
+be on the show, but we did get
+
+368
+00:12:56,000 --> 00:13:00,959
+statements from them. Crop Life America
+
+369
+00:12:58,560 --> 00:13:02,720
+said the IRC report contradicts
+
+370
+00:13:00,959 --> 00:13:04,480
+established scientific consensus on
+
+371
+00:13:02,720 --> 00:13:07,279
+these products and reaches inaccurate
+
+372
+00:13:04,480 --> 00:13:09,440
+conclusions based on a flawed process.
+
+373
+00:13:07,279 --> 00:13:11,440
+So, Dr. Green, why does this report have
+
+374
+00:13:09,440 --> 00:13:13,920
+everyone so up in arms? Well, a couple
+
+375
+00:13:11,440 --> 00:13:15,920
+of reasons. One is that glyphosate is so
+
+376
+00:13:13,920 --> 00:13:18,240
+commonly used. It's top weed killer in
+
+377
+00:13:15,920 --> 00:13:20,000
+the world. Uh the US Geological Survey
+
+378
+00:13:18,240 --> 00:13:21,920
+says that in farm parts of our country,
+
+379
+00:13:20,000 --> 00:13:23,920
+it actually shows up in the rainwater,
+
+380
+00:13:21,920 --> 00:13:25,680
+not just on the farms. And it's not just
+
+381
+00:13:23,920 --> 00:13:28,079
+used in agriculture. People use it on
+
+382
+00:13:25,680 --> 00:13:29,680
+parks. People use it in ball fields is
+
+383
+00:13:28,079 --> 00:13:32,720
+people spray it in their own yard. So,
+
+384
+00:13:29,680 --> 00:13:35,360
+one is super common. The second thing is
+
+385
+00:13:32,720 --> 00:13:36,800
+that this isn't just another study. You
+
+386
+00:13:35,360 --> 00:13:39,279
+know, you you hear one study and then
+
+387
+00:13:36,800 --> 00:13:41,360
+another study, but this is IRC. This is
+
+388
+00:13:39,279 --> 00:13:43,600
+the world's leading experts. It's not
+
+389
+00:13:41,360 --> 00:13:44,959
+the policy makers or regulators are
+
+390
+00:13:43,600 --> 00:13:46,639
+saying, "What should we do?" It's not
+
+391
+00:13:44,959 --> 00:13:49,200
+the chemical industry. It's people with
+
+392
+00:13:46,639 --> 00:13:51,680
+one question. Can this chemical cause
+
+393
+00:13:49,200 --> 00:13:54,399
+cancer in people and they gave it one of
+
+394
+00:13:51,680 --> 00:13:56,240
+their highest levels of concern.
+
+395
+00:13:54,399 --> 00:13:57,199
+So, we also got a note from Monsanto. I
+
+396
+00:13:56,240 --> 00:13:58,720
+want to share this with you because I
+
+397
+00:13:57,199 --> 00:14:00,399
+want you to have, you know, be pushed to
+
+398
+00:13:58,720 --> 00:14:02,560
+answer their questions. They said in
+
+399
+00:14:00,399 --> 00:14:04,560
+part, "All labeled uses of glyphosate
+
+400
+00:14:02,560 --> 00:14:05,839
+are safe for human health. Many of the
+
+401
+00:14:04,560 --> 00:14:07,519
+regulatory bodies and science
+
+402
+00:14:05,839 --> 00:14:09,519
+organizations have reviewed three
+
+403
+00:14:07,519 --> 00:14:11,199
+decades of data on glyphosate. Their
+
+404
+00:14:09,519 --> 00:14:13,600
+overwhelming consensus has been that
+
+405
+00:14:11,199 --> 00:14:16,160
+glyphosate does not pose a risk to
+
+406
+00:14:13,600 --> 00:14:19,519
+humans, wildlife, or the environment.
+
+407
+00:14:16,160 --> 00:14:22,160
+So, defenders of these pesticides argue
+
+408
+00:14:19,519 --> 00:14:24,480
+that this data is coming from mice, not
+
+409
+00:14:22,160 --> 00:14:26,800
+humans, and they're making an accusation
+
+410
+00:14:24,480 --> 00:14:29,360
+that we're raising an alarm too soon.
+
+411
+00:14:26,800 --> 00:14:31,839
+Yeah, I I think that's just not right.
+
+412
+00:14:29,360 --> 00:14:33,680
+Now, when people have uh have cancer,
+
+413
+00:14:31,839 --> 00:14:35,440
+it's really hard to go back and trace
+
+414
+00:14:33,680 --> 00:14:37,040
+what exposure might have caused that,
+
+415
+00:14:35,440 --> 00:14:38,959
+when, where, how. It's really hard to
+
+416
+00:14:37,040 --> 00:14:41,279
+tease out. There's so many factors. But
+
+417
+00:14:38,959 --> 00:14:42,800
+I released their findings in the one of
+
+418
+00:14:41,279 --> 00:14:44,800
+the world's leading medical journals,
+
+419
+00:14:42,800 --> 00:14:46,240
+and they had three strands of evidence.
+
+420
+00:14:44,800 --> 00:14:47,760
+First, they did have animal studies
+
+421
+00:14:46,240 --> 00:14:49,199
+where you can control everything, and
+
+422
+00:14:47,760 --> 00:14:50,959
+the only difference is they got exposed
+
+423
+00:14:49,199 --> 00:14:53,120
+to this weed killer, and they found
+
+424
+00:14:50,959 --> 00:14:55,920
+strong evidence that in mammals it can
+
+425
+00:14:53,120 --> 00:14:57,760
+cause cancer. Um, secondly though, you
+
+426
+00:14:55,920 --> 00:14:59,600
+can't do that in people.
+
+427
+00:14:57,760 --> 00:15:02,480
+Thankfully, but what you can do is
+
+428
+00:14:59,600 --> 00:15:04,720
+expose human cells to the weed killer.
+
+429
+00:15:02,480 --> 00:15:07,360
+And when that was done, they found DNA
+
+430
+00:15:04,720 --> 00:15:08,480
+damage and chromosomeal damage. And then
+
+431
+00:15:07,360 --> 00:15:09,600
+the third strand of evidence which could
+
+432
+00:15:08,480 --> 00:15:11,519
+lead to cancer. Which could lead to
+
+433
+00:15:09,600 --> 00:15:13,760
+cancer. Exactly. And then the third
+
+434
+00:15:11,519 --> 00:15:15,839
+strand of evidence is they looked at the
+
+435
+00:15:13,760 --> 00:15:18,079
+people who are routinely exposed to
+
+436
+00:15:15,839 --> 00:15:20,240
+glyphosate just in the course of their
+
+437
+00:15:18,079 --> 00:15:22,079
+work and they found and this was done in
+
+438
+00:15:20,240 --> 00:15:23,920
+three countries including the US and
+
+439
+00:15:22,079 --> 00:15:25,600
+they found higher rates of a certain
+
+440
+00:15:23,920 --> 00:15:27,680
+type of cancer in the people who are
+
+441
+00:15:25,600 --> 00:15:29,680
+exposed. So, taking all of that
+
+442
+00:15:27,680 --> 00:15:31,920
+together, all of the evidence together,
+
+443
+00:15:29,680 --> 00:15:33,920
+they said this is probably a human
+
+444
+00:15:31,920 --> 00:15:35,839
+carcinogen. Yeah, this is a big debate,
+
+445
+00:15:33,920 --> 00:15:37,360
+everyone. Folks who make these products
+
+446
+00:15:35,839 --> 00:15:38,880
+say, "Well, we need more data before you
+
+447
+00:15:37,360 --> 00:15:40,399
+can make that statement." I think it's
+
+448
+00:15:38,880 --> 00:15:41,760
+the opposite. Not enough research
+
+449
+00:15:40,399 --> 00:15:43,600
+doesn't mean it's safe. It means we
+
+450
+00:15:41,760 --> 00:15:45,519
+actually don't know, and it's sort of
+
+451
+00:15:43,600 --> 00:15:46,720
+upon us, our obligation to figure it out
+
+452
+00:15:45,519 --> 00:15:48,000
+before we start releasing it and
+
+453
+00:15:46,720 --> 00:15:49,920
+exposing kids and the other. So, I'd
+
+454
+00:15:48,000 --> 00:15:52,560
+like to bring Robin O'Brien in. She's a
+
+455
+00:15:49,920 --> 00:15:54,480
+mom and a food advocate. You've heard
+
+456
+00:15:52,560 --> 00:15:56,079
+all these comments. Is it frustrating to
+
+457
+00:15:54,480 --> 00:15:57,920
+you to hear these responses from the
+
+458
+00:15:56,079 --> 00:15:59,600
+folks who make these products? You know,
+
+459
+00:15:57,920 --> 00:16:01,199
+it's really not at all surprising. I was
+
+460
+00:15:59,600 --> 00:16:02,560
+a financial analyst to cover the food
+
+461
+00:16:01,199 --> 00:16:04,079
+industry and if you step back for a
+
+462
+00:16:02,560 --> 00:16:05,920
+minute and think about this big chemical
+
+463
+00:16:04,079 --> 00:16:07,279
+company, this is one of their most
+
+464
+00:16:05,920 --> 00:16:08,639
+profitable products. So, of course,
+
+465
+00:16:07,279 --> 00:16:10,959
+they're going to try to dismiss any
+
+466
+00:16:08,639 --> 00:16:12,720
+concern around it or refute the science.
+
+467
+00:16:10,959 --> 00:16:15,680
+But like these two have said, these are
+
+468
+00:16:12,720 --> 00:16:17,519
+our leading cancer researchers from the
+
+469
+00:16:15,680 --> 00:16:20,880
+World Health Organization and the
+
+470
+00:16:17,519 --> 00:16:22,160
+National Cancer Institute. And countries
+
+471
+00:16:20,880 --> 00:16:23,519
+like the Netherlands have already taken
+
+472
+00:16:22,160 --> 00:16:25,759
+this precautionary measure. They've
+
+473
+00:16:23,519 --> 00:16:27,440
+already banned this product. And here we
+
+474
+00:16:25,759 --> 00:16:28,800
+are in the United States. And you look
+
+475
+00:16:27,440 --> 00:16:31,360
+at the rates of cancer here in this
+
+476
+00:16:28,800 --> 00:16:32,800
+country. One in two men and one in three
+
+477
+00:16:31,360 --> 00:16:35,120
+women are expected to get cancer in
+
+478
+00:16:32,800 --> 00:16:37,120
+their lifetime. The CDC now says that
+
+479
+00:16:35,120 --> 00:16:39,920
+cancer is the leading cause of death by
+
+480
+00:16:37,120 --> 00:16:42,079
+disease in children under the age of 15.
+
+481
+00:16:39,920 --> 00:16:44,000
+It's time to take some proactive
+
+482
+00:16:42,079 --> 00:16:46,079
+measures to exercise precaution. I mean,
+
+483
+00:16:44,000 --> 00:16:47,759
+I know as a mom when we're pregnant, we
+
+484
+00:16:46,079 --> 00:16:49,759
+do everything we can. we take all these
+
+485
+00:16:47,759 --> 00:16:51,759
+little precautionary measures to give
+
+486
+00:16:49,759 --> 00:16:53,440
+that information to citizens today here
+
+487
+00:16:51,759 --> 00:16:55,199
+in the United States so that they can
+
+488
+00:16:53,440 --> 00:16:57,040
+take personal responsibility for their
+
+489
+00:16:55,199 --> 00:16:59,120
+health. I think it's absolutely critical
+
+490
+00:16:57,040 --> 00:17:00,639
+at this point. So the good news for me
+
+491
+00:16:59,120 --> 00:17:02,079
+is that we reached out to the
+
+492
+00:17:00,639 --> 00:17:04,079
+Environmental Protection Agency and
+
+493
+00:17:02,079 --> 00:17:07,280
+here's what they said in part. The EPA
+
+494
+00:17:04,079 --> 00:17:08,959
+is currently reassessing glyphosate and
+
+495
+00:17:07,280 --> 00:17:10,480
+if at any time the EPA discovers that
+
+496
+00:17:08,959 --> 00:17:12,400
+the use of a registered pesticide may
+
+497
+00:17:10,480 --> 00:17:14,240
+result in unreasonable adverse effects
+
+498
+00:17:12,400 --> 00:17:15,919
+on people or the environment, we will
+
+499
+00:17:14,240 --> 00:17:17,679
+take action to remove it from the
+
+500
+00:17:15,919 --> 00:17:19,679
+marketplace or limit its use. I mean,
+
+501
+00:17:17,679 --> 00:17:22,799
+Scott, this sounds huge. The EPA is
+
+502
+00:17:19,679 --> 00:17:24,880
+actually re-evaluating again this widely
+
+503
+00:17:22,799 --> 00:17:26,319
+used product and and of course EPA
+
+504
+00:17:24,880 --> 00:17:30,000
+should take another look at it, but
+
+505
+00:17:26,319 --> 00:17:32,200
+let's not forget EPA got this wrong. For
+
+506
+00:17:30,000 --> 00:17:34,880
+20 years, we've been told that this
+
+507
+00:17:32,200 --> 00:17:37,120
+herbicide is a better alternative than
+
+508
+00:17:34,880 --> 00:17:39,440
+other herbicides. We've sprayed more
+
+509
+00:17:37,120 --> 00:17:41,440
+than 200 million pounds of it every year
+
+510
+00:17:39,440 --> 00:17:43,919
+on hundreds of millions of acres of crop
+
+511
+00:17:41,440 --> 00:17:46,480
+land and around our homes and schools.
+
+512
+00:17:43,919 --> 00:17:48,320
+And it turns out that the experts, the
+
+513
+00:17:46,480 --> 00:17:50,160
+world's leading cancer cancer experts
+
+514
+00:17:48,320 --> 00:17:52,240
+now have found that this is probably a
+
+515
+00:17:50,160 --> 00:17:54,400
+human carcinogen. So that doesn't mean
+
+516
+00:17:52,240 --> 00:17:55,679
+EPA won't get it right next time. But
+
+517
+00:17:54,400 --> 00:17:57,600
+what it does mean is that we ought to
+
+518
+00:17:55,679 --> 00:18:00,000
+show a little humility, use a little
+
+519
+00:17:57,600 --> 00:18:02,400
+precaution, and at least let people know
+
+520
+00:18:00,000 --> 00:18:04,640
+whether their food is being grown with
+
+521
+00:18:02,400 --> 00:18:06,000
+these incredibly dangerous herbicides.
+
+522
+00:18:04,640 --> 00:18:07,679
+Robin, what do you want to see done as a
+
+523
+00:18:06,000 --> 00:18:09,360
+mom?
+
+524
+00:18:07,679 --> 00:18:10,960
+No one wants to be told what to eat.
+
+525
+00:18:09,360 --> 00:18:12,320
+Nobody wants to be told how to feed
+
+526
+00:18:10,960 --> 00:18:14,080
+their kids. It's hard enough as a mom
+
+527
+00:18:12,320 --> 00:18:16,400
+just trying to get your kids fed, but
+
+528
+00:18:14,080 --> 00:18:18,480
+nobody wants cancer either. And I think
+
+529
+00:18:16,400 --> 00:18:19,600
+about how our grandmothers when they
+
+530
+00:18:18,480 --> 00:18:21,200
+were confronted with the tobacco
+
+531
+00:18:19,600 --> 00:18:23,600
+industry claiming that their products
+
+532
+00:18:21,200 --> 00:18:25,840
+were safe, they asked for a label. They
+
+533
+00:18:23,600 --> 00:18:27,520
+asked for a warning label and today the
+
+534
+00:18:25,840 --> 00:18:29,280
+majority of our food supply is now
+
+535
+00:18:27,520 --> 00:18:31,679
+genetically engineered to be Roundup
+
+536
+00:18:29,280 --> 00:18:33,200
+ready to be tolerant of this very weed
+
+537
+00:18:31,679 --> 00:18:35,440
+killer that the World Health
+
+538
+00:18:33,200 --> 00:18:37,919
+Organization is saying it might cause
+
+539
+00:18:35,440 --> 00:18:40,240
+cancer. And I think if you can give that
+
+540
+00:18:37,919 --> 00:18:42,880
+information to parents, if you can give
+
+541
+00:18:40,240 --> 00:18:45,200
+that information to our country to try
+
+542
+00:18:42,880 --> 00:18:47,840
+to head off the escalating rates of of
+
+543
+00:18:45,200 --> 00:18:50,240
+this disease, that's just a smart
+
+544
+00:18:47,840 --> 00:18:52,799
+precautionary measure. Thank you,
+
+545
+00:18:50,240 --> 00:18:55,360
+Robert. We we all know what the health's
+
+546
+00:18:52,799 --> 00:18:57,280
+risks are and we need Washington DC to
+
+547
+00:18:55,360 --> 00:18:58,880
+listen. That's why in September, if you
+
+548
+00:18:57,280 --> 00:19:01,039
+remember, I asked you to sign the take
+
+549
+00:18:58,880 --> 00:19:02,559
+action petition to urge the president to
+
+550
+00:19:01,039 --> 00:19:04,640
+stop the approval of a more powerful
+
+551
+00:19:02,559 --> 00:19:06,400
+pesticide made with glyphosate. And you
+
+552
+00:19:04,640 --> 00:19:08,240
+answered the call. We received over a
+
+553
+00:19:06,400 --> 00:19:10,400
+100,000 signatures. That's what the
+
+554
+00:19:08,240 --> 00:19:12,240
+White House got. It is time for change
+
+555
+00:19:10,400 --> 00:19:13,840
+and it's your right to demand safer food
+
+556
+00:19:12,240 --> 00:19:15,120
+and environmental safety. You can find
+
+557
+00:19:13,840 --> 00:19:18,320
+all the statements mentioned here on the
+
+558
+00:19:15,120 --> 00:19:21,559
+Dr. Raj show on our website.com. We'll
+
+559
+00:19:18,320 --> 00:19:21,559
+be right back.
+
+560
+00:19:23,360 --> 00:19:27,360
+Next, the housewives of New York are
+
+561
+00:19:25,520 --> 00:19:29,520
+getting real. From their fights to their
+
+562
+00:19:27,360 --> 00:19:32,400
+figures, they're all about to face the
+
+563
+00:19:29,520 --> 00:19:33,919
+truth. Good regular sex is one of the
+
+564
+00:19:32,400 --> 00:19:36,320
+best beauty products you can have for
+
+565
+00:19:33,919 --> 00:19:38,000
+your skin. Is it true? Answering your
+
+566
+00:19:36,320 --> 00:19:40,320
+questions about what you want to know
+
+567
+00:19:38,000 --> 00:19:42,400
+most. Whoever said a doctor's visit
+
+568
+00:19:40,320 --> 00:19:45,600
+isn't fun has obviously never been to
+
+569
+00:19:42,400 --> 00:19:47,640
+the Dr. Oz show. Is that right? Make
+
+570
+00:19:45,600 --> 00:19:50,610
+your appointment today. You can go to
+
+571
+00:19:47,640 --> 00:19:54,080
+dr.com/tick and sign up for free
+
+572
+00:19:50,610 --> 00:19:57,799
+[Applause]
+
+573
+00:19:54,080 --> 00:20:01,039
+[Music]
+
+574
+00:19:57,799 --> 00:20:03,360
+tickets. Betrayal, crumbling marriages,
+
+575
+00:20:01,039 --> 00:20:04,960
+new loves, and plenty of wild nights.
+
+576
+00:20:03,360 --> 00:20:07,280
+That's a typical week for the Real
+
+577
+00:20:04,960 --> 00:20:09,840
+Housewives of New York. But no matter
+
+578
+00:20:07,280 --> 00:20:12,160
+what the ladies face, their faces will
+
+579
+00:20:09,840 --> 00:20:14,720
+always look good. So today, Bravo's
+
+580
+00:20:12,160 --> 00:20:16,720
+season 7 cast of the Real Housewives of
+
+581
+00:20:14,720 --> 00:20:21,440
+New York are answering all of your
+
+582
+00:20:16,720 --> 00:20:21,440
+questions. So, welcome out Carol
+
+583
+00:20:23,160 --> 00:20:30,080
+Newan. Sonia's behind her. There's
+
+584
+00:20:26,919 --> 00:20:32,799
+Kristen and Dinda, the newest member.
+
+585
+00:20:30,080 --> 00:20:35,440
+You guys look great. How are you? Nice
+
+586
+00:20:32,799 --> 00:20:37,600
+to meet you. Oh my goodness. They all
+
+587
+00:20:35,440 --> 00:20:41,200
+look fantastic. I'll get I'm going to
+
+588
+00:20:37,600 --> 00:20:43,360
+get in trouble. So many kisses.
+
+589
+00:20:41,200 --> 00:20:44,640
+I'm so happy you're here. Thank you for
+
+590
+00:20:43,360 --> 00:20:45,919
+being here. So, we're going to try do
+
+591
+00:20:44,640 --> 00:20:48,480
+something completely different. Just to
+
+592
+00:20:45,919 --> 00:20:51,120
+start us off, you've all agreed to face
+
+593
+00:20:48,480 --> 00:20:53,120
+the truth. So, they've agreed to
+
+594
+00:20:51,120 --> 00:20:54,799
+honestly answer all of the viewers
+
+595
+00:20:53,120 --> 00:20:57,520
+questions. I have the ones that are most
+
+596
+00:20:54,799 --> 00:20:59,520
+commonly asked from at least my team, my
+
+597
+00:20:57,520 --> 00:21:01,919
+viewers. You ready? Ready. Honestly, you
+
+598
+00:20:59,520 --> 00:21:04,080
+all pledged to be honest. Why not? Why
+
+599
+00:21:01,919 --> 00:21:06,960
+not? Exactly. So, you lead the way. All
+
+600
+00:21:04,080 --> 00:21:10,080
+right. Here goes. Who cares most about
+
+601
+00:21:06,960 --> 00:21:11,840
+how they look? Which of the housewives
+
+602
+00:21:10,080 --> 00:21:14,320
+cares most about how they look? We have
+
+603
+00:21:11,840 --> 00:21:15,919
+a Kristen there. Kristen. Oh my
+
+604
+00:21:14,320 --> 00:21:18,159
+goodness.
+
+605
+00:21:15,919 --> 00:21:20,240
+Kristen, is that true? I think I think
+
+606
+00:21:18,159 --> 00:21:21,520
+it might be. Why would they all accuse
+
+607
+00:21:20,240 --> 00:21:22,960
+you of caring so much about how you
+
+608
+00:21:21,520 --> 00:21:25,200
+look? I don't know. I think you should
+
+609
+00:21:22,960 --> 00:21:27,600
+ask somebody else. She She's a model.
+
+610
+00:21:25,200 --> 00:21:29,600
+So, she grew she grew up with the
+
+611
+00:21:27,600 --> 00:21:30,960
+territory everywhere we go. I do like I
+
+612
+00:21:29,600 --> 00:21:33,200
+like my hair and makeup and I like my
+
+613
+00:21:30,960 --> 00:21:34,320
+clothes and she's so pretty. So, oh,
+
+614
+00:21:33,200 --> 00:21:36,320
+they're being kind now. We'll see how
+
+615
+00:21:34,320 --> 00:21:37,919
+this might get a little cattier as we go
+
+616
+00:21:36,320 --> 00:21:40,320
+along. How about this question? Who's
+
+617
+00:21:37,919 --> 00:21:42,640
+most obsessed with their weight? Oh,
+
+618
+00:21:40,320 --> 00:21:45,600
+this is goodness. We have an obvious
+
+619
+00:21:42,640 --> 00:21:48,400
+choice here.
+
+620
+00:21:45,600 --> 00:21:50,000
+Oh, we have splits. A split here.
+
+621
+00:21:48,400 --> 00:21:52,799
+Maybe Dinda, you have to pick somebody.
+
+622
+00:21:50,000 --> 00:21:55,280
+Dinda choosing because we just had this.
+
+623
+00:21:52,799 --> 00:21:57,440
+Dinda. Darinda. Dinda. I should be
+
+624
+00:21:55,280 --> 00:21:59,440
+obsessed with my weight. Okay, let me
+
+625
+00:21:57,440 --> 00:22:00,880
+So, Dinda, why is it that they think
+
+626
+00:21:59,440 --> 00:22:02,240
+you're most obsessed about your weight?
+
+627
+00:22:00,880 --> 00:22:04,000
+Oh, they think I'm obsessed about my
+
+628
+00:22:02,240 --> 00:22:05,280
+weight. I change it cuz Carol's always
+
+629
+00:22:04,000 --> 00:22:08,360
+because she just brought it up to me in
+
+630
+00:22:05,280 --> 00:22:10,559
+the dressing. I'm obsessed with
+
+631
+00:22:08,360 --> 00:22:12,480
+Carol's weight right now. I think that's
+
+632
+00:22:10,559 --> 00:22:15,360
+all I talk about. I changed it. I I'm
+
+633
+00:22:12,480 --> 00:22:17,200
+obsessed with Carol with that actually
+
+634
+00:22:15,360 --> 00:22:19,039
+projecting because it doesn't love her
+
+635
+00:22:17,200 --> 00:22:20,640
+body. She's so She has such a great ass
+
+636
+00:22:19,039 --> 00:22:23,039
+and she's thin and beautiful and I love
+
+637
+00:22:20,640 --> 00:22:24,400
+her. That was She's natural. I'm I'm
+
+638
+00:22:23,039 --> 00:22:26,080
+obsessed with my weight. I'm obsessed
+
+639
+00:22:24,400 --> 00:22:27,360
+with your weight, too. Okay. So, you're
+
+640
+00:22:26,080 --> 00:22:28,799
+off the hook. You're being very honest.
+
+641
+00:22:27,360 --> 00:22:30,320
+I appreciate it. Now, ask away. I
+
+642
+00:22:28,799 --> 00:22:31,919
+promised I'd answer your questions. Take
+
+643
+00:22:30,320 --> 00:22:33,520
+it away. You go in any order you want.
+
+644
+00:22:31,919 --> 00:22:35,679
+You want to start, Carol? Okay. These
+
+645
+00:22:33,520 --> 00:22:37,159
+are our health questions. Okay. I'm a
+
+646
+00:22:35,679 --> 00:22:40,720
+believer that
+
+647
+00:22:37,159 --> 00:22:42,240
+um good regular sex is one of the best
+
+648
+00:22:40,720 --> 00:22:45,360
+beauty products you can have for your
+
+649
+00:22:42,240 --> 00:22:48,480
+skin. Now, is that a wives tale or is it
+
+650
+00:22:45,360 --> 00:22:50,799
+true? Does it affects your is it a good
+
+651
+00:22:48,480 --> 00:22:52,159
+anti-aging? I think it's very good for
+
+652
+00:22:50,799 --> 00:22:53,600
+and I'm not I'm not advocating
+
+653
+00:22:52,159 --> 00:22:56,760
+promiscuity. That's why she looks so
+
+654
+00:22:53,600 --> 00:22:58,880
+great. No, consensual consensual
+
+655
+00:22:56,760 --> 00:23:00,240
+monogous sex the right thing to do. I
+
+656
+00:22:58,880 --> 00:23:03,120
+tell a couple things to do. First of
+
+657
+00:23:00,240 --> 00:23:05,280
+all, on average, on average, the
+
+658
+00:23:03,120 --> 00:23:07,440
+interaction is about 6 minutes long. We
+
+659
+00:23:05,280 --> 00:23:09,520
+burn about 21 calories. That's all.
+
+660
+00:23:07,440 --> 00:23:12,400
+That's all. So there's not much action.
+
+661
+00:23:09,520 --> 00:23:13,840
+What are you having sex with?
+
+662
+00:23:12,400 --> 00:23:15,120
+I'm not asking about me. I'm just saying
+
+663
+00:23:13,840 --> 00:23:17,039
+that's what the numbers are across the
+
+664
+00:23:15,120 --> 00:23:18,559
+country. Is that very dissimilar from
+
+665
+00:23:17,039 --> 00:23:21,559
+what your experiences generally? Very
+
+666
+00:23:18,559 --> 00:23:21,559
+dissimilar.
+
+667
+00:23:24,080 --> 00:23:27,600
+But it releases hormones,
+
+668
+00:23:26,400 --> 00:23:29,200
+right? It's not because it burns
+
+669
+00:23:27,600 --> 00:23:30,559
+calories. It distresses you. the
+
+670
+00:23:29,200 --> 00:23:32,159
+hormones you release actually are the
+
+671
+00:23:30,559 --> 00:23:34,159
+ones that rejuvenate you, makes you feel
+
+672
+00:23:32,159 --> 00:23:35,919
+better. But in addition, if you look at
+
+673
+00:23:34,159 --> 00:23:38,559
+makeup, what makeup primarily does is
+
+674
+00:23:35,919 --> 00:23:40,080
+make you look attractive in a sexual
+
+675
+00:23:38,559 --> 00:23:41,280
+way, right? The the red rouge, the
+
+676
+00:23:40,080 --> 00:23:42,640
+blushing of the cheeks, which happens
+
+677
+00:23:41,280 --> 00:23:44,240
+when you get excited. The the lipstick
+
+678
+00:23:42,640 --> 00:23:45,760
+makes your lips more red. Much of
+
+679
+00:23:44,240 --> 00:23:47,600
+cosmetics is about making us look
+
+680
+00:23:45,760 --> 00:23:49,919
+sexually excited, not just attractive,
+
+681
+00:23:47,600 --> 00:23:51,840
+excited, right? So, it mimics youth.
+
+682
+00:23:49,919 --> 00:23:53,440
+That's what the makeup does. So, it's
+
+683
+00:23:51,840 --> 00:23:55,760
+good to spend more time in that space in
+
+684
+00:23:53,440 --> 00:23:57,520
+your life. Okay. Thinda, the newest
+
+685
+00:23:55,760 --> 00:23:59,919
+member of the group. Yes. I have a
+
+686
+00:23:57,520 --> 00:24:03,039
+question talking about weight. How do
+
+687
+00:23:59,919 --> 00:24:05,280
+you stay thin or get thin without diet
+
+688
+00:24:03,039 --> 00:24:09,559
+and exercising all the time? What's the
+
+689
+00:24:05,280 --> 00:24:11,919
+magic the magic thing? I am not the
+
+690
+00:24:09,559 --> 00:24:13,840
+sex diet and exercise. Isn't all these
+
+691
+00:24:11,919 --> 00:24:15,600
+magic diets? Tell me one of them works.
+
+692
+00:24:13,840 --> 00:24:17,440
+Some magic diet. No, there is no magic
+
+693
+00:24:15,600 --> 00:24:18,880
+diet. And you don't want a magic diet
+
+694
+00:24:17,440 --> 00:24:20,880
+because what you want is a lifestyle
+
+695
+00:24:18,880 --> 00:24:22,400
+that let you be what you want to be. The
+
+696
+00:24:20,880 --> 00:24:24,080
+best way to do that is to focus on the
+
+697
+00:24:22,400 --> 00:24:25,679
+calories you take in, which is by eating
+
+698
+00:24:24,080 --> 00:24:26,880
+foods that have rich nutrients. Because
+
+699
+00:24:25,679 --> 00:24:28,320
+your brain's not measuring calories,
+
+700
+00:24:26,880 --> 00:24:29,679
+it's measuring nutrients. You give it
+
+701
+00:24:28,320 --> 00:24:31,679
+food with nutrients in it, it'll stop
+
+702
+00:24:29,679 --> 00:24:32,799
+you in time. Don't think exercise will
+
+703
+00:24:31,679 --> 00:24:34,320
+get you there. That's a big mistake
+
+704
+00:24:32,799 --> 00:24:35,520
+women make all the time. But the way you
+
+705
+00:24:34,320 --> 00:24:37,760
+lose weight is by eating rich
+
+706
+00:24:35,520 --> 00:24:39,279
+nutrientdense foods, then actually your
+
+707
+00:24:37,760 --> 00:24:40,880
+body will naturally stop you when it's
+
+708
+00:24:39,279 --> 00:24:42,640
+happy. And so, we talk about that in the
+
+709
+00:24:40,880 --> 00:24:44,400
+show all the time. And we find many
+
+710
+00:24:42,640 --> 00:24:46,159
+things work, but for different people at
+
+711
+00:24:44,400 --> 00:24:47,840
+different times. So, the seventh
+
+712
+00:24:46,159 --> 00:24:48,880
+season's coming up. I have no idea why
+
+713
+00:24:47,840 --> 00:24:50,799
+you guys sign up for this stuff because
+
+714
+00:24:48,880 --> 00:24:52,320
+it's brutal in there. Right? So, I want
+
+715
+00:24:50,799 --> 00:24:55,120
+you all to watch The Real Housewives of
+
+716
+00:24:52,320 --> 00:24:58,000
+New York in action. This promises to be
+
+717
+00:24:55,120 --> 00:25:01,679
+very dramatic.
+
+718
+00:24:58,000 --> 00:25:03,279
+Why? Why? Why do you sign up for this? I
+
+719
+00:25:01,679 --> 00:25:05,760
+mean, it looks incredibly stressful to
+
+720
+00:25:03,279 --> 00:25:07,360
+me. Oh my gosh. You know, we really do.
+
+721
+00:25:05,760 --> 00:25:08,559
+For the money, for the money, we love
+
+722
+00:25:07,360 --> 00:25:09,600
+each other. I have everything. No, we
+
+723
+00:25:08,559 --> 00:25:11,840
+had a lot of fun. I mean, you know,
+
+724
+00:25:09,600 --> 00:25:13,600
+there's a lot of stress, sure, added to
+
+725
+00:25:11,840 --> 00:25:15,120
+the situation, but we had really a lot
+
+726
+00:25:13,600 --> 00:25:17,360
+of fun shooting this season. I I
+
+727
+00:25:15,120 --> 00:25:19,520
+personally had the best We argue our way
+
+728
+00:25:17,360 --> 00:25:21,440
+to solution every time. Yeah, we really
+
+729
+00:25:19,520 --> 00:25:22,320
+do. Family. Okay, a little surprise for
+
+730
+00:25:21,440 --> 00:25:23,760
+you. I've been thinking about this
+
+731
+00:25:22,320 --> 00:25:25,520
+segment for a while. And each season,
+
+732
+00:25:23,760 --> 00:25:27,760
+you guys have those new taglines. So
+
+733
+00:25:25,520 --> 00:25:29,440
+coolly done, nice, beautifully, elegant.
+
+734
+00:25:27,760 --> 00:25:31,360
+It's the iconic opening of every show.
+
+735
+00:25:29,440 --> 00:25:33,679
+So, I wanted in on the fun. So, I took
+
+736
+00:25:31,360 --> 00:25:36,080
+the liberty yesterday of crafting a few
+
+737
+00:25:33,679 --> 00:25:37,279
+of my own possible taglines, but we
+
+738
+00:25:36,080 --> 00:25:38,480
+couldn't decide which one was the best
+
+739
+00:25:37,279 --> 00:25:40,559
+one. So, I'm going to let you and our
+
+740
+00:25:38,480 --> 00:25:42,799
+audience decide which ones you like the
+
+741
+00:25:40,559 --> 00:25:44,240
+most. Are you willing to help? Okay.
+
+742
+00:25:42,799 --> 00:25:46,080
+Don't be too catty about these. Take a
+
+743
+00:25:44,240 --> 00:25:48,279
+look.
+
+744
+00:25:46,080 --> 00:25:51,720
+The big apple in keeping this doctor
+
+745
+00:25:48,279 --> 00:25:54,640
+away. The doctor will see you
+
+746
+00:25:51,720 --> 00:25:57,840
+now. When I bring healthy back, I do it
+
+747
+00:25:54,640 --> 00:26:01,039
+in style. I can handle drama, but I
+
+748
+00:25:57,840 --> 00:26:04,320
+can't deal with drama.
+
+749
+00:26:01,039 --> 00:26:06,799
+So, what's your favorite?
+
+750
+00:26:04,320 --> 00:26:09,039
+I like the third one. The third one. You
+
+751
+00:26:06,799 --> 00:26:10,960
+do it in style. Do it live. You do it in
+
+752
+00:26:09,039 --> 00:26:12,559
+style. We'll all do our tags. You want
+
+753
+00:26:10,960 --> 00:26:14,480
+to do it together? Yeah. Do yours again.
+
+754
+00:26:12,559 --> 00:26:15,600
+Oh, tag lines from the show. Yeah. You
+
+755
+00:26:14,480 --> 00:26:17,360
+guys get up right now. Everyone get up
+
+756
+00:26:15,600 --> 00:26:18,799
+right now. Your tag lines for this
+
+757
+00:26:17,360 --> 00:26:21,600
+season. Oh my god. All right. And I'll
+
+758
+00:26:18,799 --> 00:26:23,440
+do mine at the end. Okay. Are you ready?
+
+759
+00:26:21,600 --> 00:26:25,200
+Okay.
+
+760
+00:26:23,440 --> 00:26:28,240
+You're going to go first. Really? Yes.
+
+761
+00:26:25,200 --> 00:26:30,480
+All right. Okay. Turn.
+
+762
+00:26:28,240 --> 00:26:33,480
+Yes. I give up town a whole new
+
+763
+00:26:30,480 --> 00:26:33,480
+attitude.
+
+764
+00:26:34,320 --> 00:26:39,440
+Pretty is smarter than you may
+
+765
+00:26:36,600 --> 00:26:43,840
+think. Everyone tells me to do just one
+
+766
+00:26:39,440 --> 00:26:45,440
+thing. I am. I'm doing Sonia.
+
+767
+00:26:43,840 --> 00:26:47,760
+Okay, I'm going to do mine from last
+
+768
+00:26:45,440 --> 00:26:50,760
+year. The Big Apple has never tasted so
+
+769
+00:26:47,760 --> 00:26:50,760
+sweet.
+
+770
+00:26:50,840 --> 00:26:55,039
+Um, if you're going to gossip about me
+
+771
+00:26:53,200 --> 00:26:57,360
+behind my back, at least check out my
+
+772
+00:26:55,039 --> 00:26:59,840
+great ass.
+
+773
+00:26:57,360 --> 00:27:01,520
+How do I That was ranked number one of
+
+774
+00:26:59,840 --> 00:27:05,159
+all the T. That's a good one. I noticed
+
+775
+00:27:01,520 --> 00:27:05,159
+you all turn your backs.
+
+776
+00:27:05,600 --> 00:27:09,039
+That's how you get that turn going. You
+
+777
+00:27:07,120 --> 00:27:12,000
+know, when I bring healthy back, I do it
+
+778
+00:27:09,039 --> 00:27:13,919
+in style.
+
+779
+00:27:12,000 --> 00:27:16,080
+Sweet guest real housewives of New York
+
+780
+00:27:13,919 --> 00:27:16,940
+City Tuesday nights at 9 on Bravo. Check
+
+781
+00:27:16,080 --> 00:27:20,270
+them out. We'll be right
+
+782
+00:27:16,940 --> 00:27:24,440
+[Applause]
+
+783
+00:27:20,270 --> 00:27:24,440
+[Music]
+
+784
+00:27:27,159 --> 00:27:32,159
+back. Next, it's your go-to appliance to
+
+785
+00:27:30,080 --> 00:27:33,760
+heat up leftovers and pop your corn. But
+
+786
+00:27:32,159 --> 00:27:35,840
+did you know your microwave is good for
+
+787
+00:27:33,760 --> 00:27:37,679
+a whole lot more than just TV dinners?
+
+788
+00:27:35,840 --> 00:27:40,000
+Unleash its true potential with these
+
+789
+00:27:37,679 --> 00:27:43,080
+time-saving, unconventional uses. Things
+
+790
+00:27:40,000 --> 00:27:46,400
+you didn't know your microwave could do.
+
+791
+00:27:43,080 --> 00:27:49,600
+Next, all new Emmy nominated Dr. Oz
+
+792
+00:27:46,400 --> 00:27:51,760
+show. Juliana Rancic. How you doing now?
+
+793
+00:27:49,600 --> 00:27:54,000
+Sets the record straight on the eating
+
+794
+00:27:51,760 --> 00:27:56,799
+disorder rumors, the stress and scrutiny
+
+795
+00:27:54,000 --> 00:27:59,840
+of her health, her marriage, her job,
+
+796
+00:27:56,799 --> 00:28:02,720
+and her heartbreaking baby news. Plus,
+
+797
+00:27:59,840 --> 00:28:04,640
+what's for dinner? Healthy one pot
+
+798
+00:28:02,720 --> 00:28:06,640
+wonders that are cheap. That's my kind
+
+799
+00:28:04,640 --> 00:28:08,799
+of meal. And we'll feed the whole
+
+800
+00:28:06,640 --> 00:28:12,080
+family. I'm putting my bib on now. All
+
+801
+00:28:08,799 --> 00:28:13,570
+new Oz. That's coming up
+
+802
+00:28:12,080 --> 00:28:16,660
+[Music]
+
+803
+00:28:13,570 --> 00:28:16,660
+[Applause]
+
+804
+00:28:19,480 --> 00:28:23,840
+tomorrow. Your microwave. You know it's
+
+805
+00:28:22,000 --> 00:28:26,240
+great for making popcorn. Fantastic for
+
+806
+00:28:23,840 --> 00:28:28,000
+heating over leftovers. But today, Dr.
+
+807
+00:28:26,240 --> 00:28:30,320
+Oz viewers are stepping inside our
+
+808
+00:28:28,000 --> 00:28:32,240
+microwave laboratory right here to show
+
+809
+00:28:30,320 --> 00:28:34,559
+us the things you didn't know you could
+
+810
+00:28:32,240 --> 00:28:36,080
+do with a microwave. First up is Nikia.
+
+811
+00:28:34,559 --> 00:28:38,559
+What do you do with Nikia? How are you?
+
+812
+00:28:36,080 --> 00:28:39,760
+Hi, Dr. Eyes. How are you? What do you
+
+813
+00:28:38,559 --> 00:28:41,120
+like? What do you want to show us in our
+
+814
+00:28:39,760 --> 00:28:42,480
+microwave lab? Okay. Well, you know
+
+815
+00:28:41,120 --> 00:28:44,320
+what? This is a trick I learned from my
+
+816
+00:28:42,480 --> 00:28:46,559
+husband. Um your husband? From my
+
+817
+00:28:44,320 --> 00:28:49,039
+husband. Uh what I use it for is to
+
+818
+00:28:46,559 --> 00:28:50,960
+clean certain things in the kitchen. One
+
+819
+00:28:49,039 --> 00:28:52,399
+being the cutting board. He taught me on
+
+820
+00:28:50,960 --> 00:28:54,000
+the rag that he would like clean the
+
+821
+00:28:52,399 --> 00:28:55,279
+dishes with. And I was like, "You know
+
+822
+00:28:54,000 --> 00:28:56,720
+what? If you could do it with a rag and
+
+823
+00:28:55,279 --> 00:28:58,960
+a sponge, I'm going to use a cutting
+
+824
+00:28:56,720 --> 00:29:00,320
+board." And it absolutely works. Show us
+
+825
+00:28:58,960 --> 00:29:01,600
+how you do it. I can't I'm going to show
+
+826
+00:29:00,320 --> 00:29:03,200
+you. You actually trained him to wash
+
+827
+00:29:01,600 --> 00:29:04,799
+the dishes. Is that right? Not only did
+
+828
+00:29:03,200 --> 00:29:07,360
+I train him to wash the dishes, I
+
+829
+00:29:04,799 --> 00:29:10,240
+trained him to cook, pick up the kids.
+
+830
+00:29:07,360 --> 00:29:12,559
+Yes. Where is he here? No, he's busy
+
+831
+00:29:10,240 --> 00:29:14,399
+with the kids. I bet he's actually um
+
+832
+00:29:12,559 --> 00:29:15,840
+he's on the shoot. So Oh, wow. I'm very
+
+833
+00:29:14,399 --> 00:29:17,039
+proud of him. Okay, so let me show you
+
+834
+00:29:15,840 --> 00:29:19,360
+how to do this. You see it's a little
+
+835
+00:29:17,039 --> 00:29:21,360
+dirty. You put the Oh, wait. Hold up. We
+
+836
+00:29:19,360 --> 00:29:24,480
+got to open this. I use the dish soap
+
+837
+00:29:21,360 --> 00:29:25,760
+like this. I wet the sponge. You don't
+
+838
+00:29:24,480 --> 00:29:26,640
+put the soap in the water. You put the
+
+839
+00:29:25,760 --> 00:29:29,279
+soap right on. You don't want to do
+
+840
+00:29:26,640 --> 00:29:32,159
+that. I just put the soap right on. Kind
+
+841
+00:29:29,279 --> 00:29:33,760
+of want to go like this. Right. Just dab
+
+842
+00:29:32,159 --> 00:29:35,679
+it a little bit. And then what I'm going
+
+843
+00:29:33,760 --> 00:29:37,600
+to do is pop it in the microwave. Oh,
+
+844
+00:29:35,679 --> 00:29:39,120
+you don't have to actually scrub it. No,
+
+845
+00:29:37,600 --> 00:29:41,399
+no. This kills the germs, too. You put
+
+846
+00:29:39,120 --> 00:29:43,760
+it in the microwave
+
+847
+00:29:41,399 --> 00:29:45,919
+60 seconds. You know, I am a mother of
+
+848
+00:29:43,760 --> 00:29:47,360
+four, so I need things that are quick
+
+849
+00:29:45,919 --> 00:29:48,720
+and convenient. But, you know, if you
+
+850
+00:29:47,360 --> 00:29:51,039
+consider my husband, I'm a mother of
+
+851
+00:29:48,720 --> 00:29:53,120
+five. So, you just And then you hit
+
+852
+00:29:51,039 --> 00:29:54,080
+start. That's it. That's it. And when it
+
+853
+00:29:53,120 --> 00:29:55,360
+when you get it out, you have to scrub
+
+854
+00:29:54,080 --> 00:29:56,640
+it down a little bit. You don't. You
+
+855
+00:29:55,360 --> 00:29:58,559
+don't. It's actually clean. It
+
+856
+00:29:56,640 --> 00:30:00,240
+disinfected. You use it for a sponge.
+
+857
+00:29:58,559 --> 00:30:02,640
+You use it for a rag. Please don't use
+
+858
+00:30:00,240 --> 00:30:04,080
+any metal materials because I can't be
+
+859
+00:30:02,640 --> 00:30:05,200
+responsible if you blow something up. Of
+
+860
+00:30:04,080 --> 00:30:07,039
+course not. Your husband would tell me
+
+861
+00:30:05,200 --> 00:30:08,399
+that. Thank you very much. I appreciate
+
+862
+00:30:07,039 --> 00:30:11,840
+it. All right, let's see what else is in
+
+863
+00:30:08,399 --> 00:30:13,520
+the microwave. So, we've got our
+
+864
+00:30:11,840 --> 00:30:16,159
+something here that's pretty cool. It's
+
+865
+00:30:13,520 --> 00:30:17,760
+a cake in a mug. Looks pretty cool like
+
+866
+00:30:16,159 --> 00:30:19,840
+that. So, I want you to understand how
+
+867
+00:30:17,760 --> 00:30:23,200
+to make this. Gemma, she actually made
+
+868
+00:30:19,840 --> 00:30:25,279
+this in less than a minute. Take a look.
+
+869
+00:30:23,200 --> 00:30:26,880
+Hi, Dr. Oz. I know you can do a lot of
+
+870
+00:30:25,279 --> 00:30:28,080
+amazing things in a microwave, but did
+
+871
+00:30:26,880 --> 00:30:30,159
+you know you can make a cake in a
+
+872
+00:30:28,080 --> 00:30:31,520
+microwave? Let me show you how. In a
+
+873
+00:30:30,159 --> 00:30:33,120
+microwavable mug, you're going to mash
+
+874
+00:30:31,520 --> 00:30:34,640
+up your ripe banana. Next, we're going
+
+875
+00:30:33,120 --> 00:30:36,399
+to add in our peanut butter and mix it
+
+876
+00:30:34,640 --> 00:30:38,399
+well. Next, mix in your little bit of
+
+877
+00:30:36,399 --> 00:30:40,320
+sugar. Then, crack in your egg and mix
+
+878
+00:30:38,399 --> 00:30:42,080
+well. Keep on mixing until you see the
+
+879
+00:30:40,320 --> 00:30:44,000
+egg combined with the peanut butter. And
+
+880
+00:30:42,080 --> 00:30:45,520
+then, lastly, add in your cocoa powder.
+
+881
+00:30:44,000 --> 00:30:47,200
+Our chocolate mug cake is ready for the
+
+882
+00:30:45,520 --> 00:30:49,120
+microwave. Our chocolate mug cake is
+
+883
+00:30:47,200 --> 00:30:50,640
+done and it smells gorgeous. This
+
+884
+00:30:49,120 --> 00:30:52,720
+chocolate cake is full of protein,
+
+885
+00:30:50,640 --> 00:30:53,919
+gluten-free, and it tastes great. So,
+
+886
+00:30:52,720 --> 00:30:55,520
+one of the great things about these mug
+
+887
+00:30:53,919 --> 00:30:57,440
+cakes is that they're portion controlled
+
+888
+00:30:55,520 --> 00:30:58,880
+for those times where you just need some
+
+889
+00:30:57,440 --> 00:31:01,039
+cake.
+
+890
+00:30:58,880 --> 00:31:03,399
+All right, Constus is here. He says,
+
+891
+00:31:01,039 --> 00:31:05,840
+"Our microwave can make up for all your
+
+892
+00:31:03,399 --> 00:31:07,840
+mistakes." How is that, Constus? How
+
+893
+00:31:05,840 --> 00:31:10,080
+does it protect us from our errors? All
+
+894
+00:31:07,840 --> 00:31:12,399
+right, so the microwave is my best
+
+895
+00:31:10,080 --> 00:31:14,080
+friend. I am a very busy person. I'm out
+
+896
+00:31:12,399 --> 00:31:16,880
+the house by 4:00 in the morning and not
+
+897
+00:31:14,080 --> 00:31:19,440
+home until probably like 8 or 9. I need
+
+898
+00:31:16,880 --> 00:31:21,200
+my beans. I'm a vegetarian, so I eat a
+
+899
+00:31:19,440 --> 00:31:23,600
+lot of beans and rice. I don't have time
+
+900
+00:31:21,200 --> 00:31:25,039
+to soak beans for 24 hours. And if I
+
+901
+00:31:23,600 --> 00:31:28,799
+did, I probably forgot about them. I
+
+902
+00:31:25,039 --> 00:31:31,200
+would, too. So, here is a life hack.
+
+903
+00:31:28,799 --> 00:31:32,880
+You're going to take three cups of water
+
+904
+00:31:31,200 --> 00:31:34,320
+per one cup of beans. All right. So,
+
+905
+00:31:32,880 --> 00:31:36,600
+roughly this much. Yeah, roughly that
+
+906
+00:31:34,320 --> 00:31:39,279
+much. You're going to pour it in
+
+907
+00:31:36,600 --> 00:31:40,480
+here. All right. So, we have it poured
+
+908
+00:31:39,279 --> 00:31:42,240
+in. And what you're going to do, you're
+
+909
+00:31:40,480 --> 00:31:43,840
+going to take it take this and we're
+
+910
+00:31:42,240 --> 00:31:46,559
+going to put it in the microwave for 15
+
+911
+00:31:43,840 --> 00:31:48,559
+minutes. After the 15 minutes, you're
+
+912
+00:31:46,559 --> 00:31:50,320
+going to let it soak for an hour so that
+
+913
+00:31:48,559 --> 00:31:52,960
+the water will absorb into the beans and
+
+914
+00:31:50,320 --> 00:31:55,200
+make it really soft. All right. So, 15
+
+915
+00:31:52,960 --> 00:31:58,399
+minutes. 15 minutes. And then 1 hour of
+
+916
+00:31:55,200 --> 00:31:59,919
+just letting it cool off and everything.
+
+917
+00:31:58,399 --> 00:32:00,880
+That's the same. And then you can make
+
+918
+00:31:59,919 --> 00:32:02,480
+whatever you want to make out of it. You
+
+919
+00:32:00,880 --> 00:32:03,840
+make whatever it really really soft.
+
+920
+00:32:02,480 --> 00:32:05,279
+Yeah. I got It seems too good to be
+
+921
+00:32:03,840 --> 00:32:06,880
+true, but you're absolutely right. I'm
+
+922
+00:32:05,279 --> 00:32:08,640
+telling it works. I do it all the time.
+
+923
+00:32:06,880 --> 00:32:10,240
+So why would anybody soak their beans
+
+924
+00:32:08,640 --> 00:32:12,240
+from now on? I don't understand. Like
+
+925
+00:32:10,240 --> 00:32:14,240
+this is 2015. It's time to move on.
+
+926
+00:32:12,240 --> 00:32:16,480
+We're done with soaking beans. All
+
+927
+00:32:14,240 --> 00:32:18,000
+right. Very nicely done. Thank you so
+
+928
+00:32:16,480 --> 00:32:19,120
+much to all my guests. I appreciate the
+
+929
+00:32:18,000 --> 00:32:21,440
+tips. You can find out more things you
+
+930
+00:32:19,120 --> 00:32:23,970
+can do. We can microwave on dr.com. I'll
+
+931
+00:32:21,440 --> 00:32:25,600
+be right back.
+
+932
+00:32:23,970 --> 00:32:27,919
+[Music]
+
+933
+00:32:25,600 --> 00:32:29,519
+What's your favorite microwave hack?
+
+934
+00:32:27,919 --> 00:32:31,840
+With a young child, we're always looking
+
+935
+00:32:29,519 --> 00:32:33,679
+for ways to save money. When our sponges
+
+936
+00:32:31,840 --> 00:32:35,519
+get a little old, I moisten them and put
+
+937
+00:32:33,679 --> 00:32:39,720
+it in the microwave for a minute. Perks
+
+938
+00:32:35,519 --> 00:32:41,919
+it right up. Good as new. Share yours on
+
+939
+00:32:39,720 --> 00:32:44,000
+facebook.com/drz. Next. Do you get
+
+940
+00:32:41,919 --> 00:32:46,159
+confused when you shop the dairy aisle?
+
+941
+00:32:44,000 --> 00:32:48,080
+From whole to skim to the new designer
+
+942
+00:32:46,159 --> 00:32:49,679
+milks on the market, what do these dairy
+
+943
+00:32:48,080 --> 00:32:51,600
+labels really mean? Are these new
+
+944
+00:32:49,679 --> 00:32:53,760
+enhanced milks really worth your milk
+
+945
+00:32:51,600 --> 00:32:56,760
+money? Find out which carton is best for
+
+946
+00:32:53,760 --> 00:33:00,240
+you coming up next.
+
+947
+00:32:56,760 --> 00:33:02,399
+[Music]
+
+948
+00:33:00,240 --> 00:33:04,240
+This video might have appeared on your
+
+949
+00:33:02,399 --> 00:33:07,200
+Facebook page. It showed up on mine and
+
+950
+00:33:04,240 --> 00:33:10,640
+it's gotten over 13 million hits. Take a
+
+951
+00:33:07,200 --> 00:33:12,559
+look. I got to get the bread of milk. I
+
+952
+00:33:10,640 --> 00:33:16,559
+got to get the bread of milk. I got to
+
+953
+00:33:12,559 --> 00:33:18,519
+get the bread of milk. They said snow. I
+
+954
+00:33:16,559 --> 00:33:21,120
+got to get the bread of
+
+955
+00:33:18,519 --> 00:33:23,960
+milk. Oh my god.
+
+956
+00:33:21,120 --> 00:33:27,039
+I got to get I got to get the bread of
+
+957
+00:33:23,960 --> 00:33:29,279
+milk. I got to get the bread of milk. Oh
+
+958
+00:33:27,039 --> 00:33:29,279
+my
+
+959
+00:33:30,039 --> 00:33:34,480
+god. The truth is, no matter what the
+
+960
+00:33:32,720 --> 00:33:36,159
+weather, milk's at the top of everyone's
+
+961
+00:33:34,480 --> 00:33:38,000
+grocery list. But let's face it, the
+
+962
+00:33:36,159 --> 00:33:40,080
+milk aisle is getting confusing. From
+
+963
+00:33:38,000 --> 00:33:41,760
+whole to skim to new designer milks.
+
+964
+00:33:40,080 --> 00:33:43,760
+Today, I'm going to tell you what milk
+
+965
+00:33:41,760 --> 00:33:45,600
+labels really mean to help you become a
+
+966
+00:33:43,760 --> 00:33:47,760
+savier shopper. And there's someone here
+
+967
+00:33:45,600 --> 00:33:49,360
+today who, well, as you just saw, is
+
+968
+00:33:47,760 --> 00:33:51,200
+really concerned about milk. Please
+
+969
+00:33:49,360 --> 00:33:53,880
+welcome the bread and milk guy, comedian
+
+970
+00:33:51,200 --> 00:33:57,039
+Vic Dado.
+
+971
+00:33:53,880 --> 00:33:59,120
+Hey, I gota get the bread and milk. Got
+
+972
+00:33:57,039 --> 00:34:00,399
+to get the bread and milk. I got to get
+
+973
+00:33:59,120 --> 00:34:02,960
+the bread and milk, doc. I got to eat
+
+974
+00:34:00,399 --> 00:34:05,440
+the bread and milk. They said snow.
+
+975
+00:34:02,960 --> 00:34:07,519
+What's What What is the emergency here?
+
+976
+00:34:05,440 --> 00:34:08,960
+I love it. It's ridiculous. We have lots
+
+977
+00:34:07,519 --> 00:34:10,800
+of friends. Come on over here. Come on.
+
+978
+00:34:08,960 --> 00:34:12,480
+Let's have fun. Nutrition divine, author
+
+979
+00:34:10,800 --> 00:34:15,159
+of Secrets for a Healthy Diet. Monica
+
+980
+00:34:12,480 --> 00:34:17,520
+Fried Nagels here. How are we, Monica?
+
+981
+00:34:15,159 --> 00:34:19,119
+Hey, Monica. So, she's going to simplify
+
+982
+00:34:17,520 --> 00:34:20,639
+it for us. make it easy for people like
+
+983
+00:34:19,119 --> 00:34:22,240
+me and you who don't get this stuff
+
+984
+00:34:20,639 --> 00:34:23,679
+sometimes. So, look over to the side
+
+985
+00:34:22,240 --> 00:34:24,720
+there. You see the skim milk? This is
+
+986
+00:34:23,679 --> 00:34:26,320
+We're going to talk about the skinny on
+
+987
+00:34:24,720 --> 00:34:28,079
+skim milk here. Which of these do you
+
+988
+00:34:26,320 --> 00:34:29,599
+normally buy from that top shelf? I
+
+989
+00:34:28,079 --> 00:34:31,280
+actually go for the skim milk. This one
+
+990
+00:34:29,599 --> 00:34:32,240
+right here. Well, that's enhanced skim
+
+991
+00:34:31,280 --> 00:34:33,679
+milk. Is that what you drink or you
+
+992
+00:34:32,240 --> 00:34:35,200
+drink the regular? I drink the regular
+
+993
+00:34:33,679 --> 00:34:37,200
+skim milk. There's nothing better than
+
+994
+00:34:35,200 --> 00:34:40,159
+an ice cold glass of skim milk with a
+
+995
+00:34:37,200 --> 00:34:43,359
+box of chocolate chip cookies.
+
+996
+00:34:40,159 --> 00:34:45,040
+You had me. I can cook. Am I right? All
+
+997
+00:34:43,359 --> 00:34:46,560
+right. Help us. What does the label
+
+998
+00:34:45,040 --> 00:34:49,040
+mean? First, what does enhanced mean
+
+999
+00:34:46,560 --> 00:34:50,480
+versus regular skim milk? Okay, so I'm
+
+1000
+00:34:49,040 --> 00:34:51,919
+sure Is this the first one that's gone
+
+1001
+00:34:50,480 --> 00:34:53,200
+on the shelf during a snowstorm? This is
+
+1002
+00:34:51,919 --> 00:34:54,800
+the last one. This is the I I got
+
+1003
+00:34:53,200 --> 00:34:58,160
+knocked over lady with a walker for this
+
+1004
+00:34:54,800 --> 00:35:00,800
+one. So, they enhance this is skim milk.
+
+1005
+00:34:58,160 --> 00:35:02,480
+I'll model it. So, non-fat milk, but
+
+1006
+00:35:00,800 --> 00:35:05,200
+it's got extra protein and extra
+
+1007
+00:35:02,480 --> 00:35:07,440
+calcium. And they do that by adding
+
+1008
+00:35:05,200 --> 00:35:09,119
+dried milk powder to it, just like the
+
+1009
+00:35:07,440 --> 00:35:11,680
+instant milk that you might have in your
+
+1010
+00:35:09,119 --> 00:35:13,920
+cupboard at home. So, this is regular
+
+1011
+00:35:11,680 --> 00:35:17,359
+cupboard. Is this the enhanced stuff?
+
+1012
+00:35:13,920 --> 00:35:19,280
+This is the enhanced over here.
+
+1013
+00:35:17,359 --> 00:35:21,119
+Does it taste different? It's much
+
+1014
+00:35:19,280 --> 00:35:23,040
+fuller. Yes, that's right. It tastes a
+
+1015
+00:35:21,119 --> 00:35:24,560
+little bit less watery than skim milk.
+
+1016
+00:35:23,040 --> 00:35:26,160
+Are these becoming pretty popular? The
+
+1017
+00:35:24,560 --> 00:35:27,760
+enhanced ones, they've been around for a
+
+1018
+00:35:26,160 --> 00:35:29,200
+long time and people do because it
+
+1019
+00:35:27,760 --> 00:35:31,520
+tastes a little bit less watery than the
+
+1020
+00:35:29,200 --> 00:35:33,200
+skim milk, but it's still non-fat and
+
+1021
+00:35:31,520 --> 00:35:34,640
+people like the extra protein. So, this
+
+1022
+00:35:33,200 --> 00:35:36,240
+is I agree with her. She's a
+
+1023
+00:35:34,640 --> 00:35:38,079
+nutritionist. I think she knows. Stick
+
+1024
+00:35:36,240 --> 00:35:40,320
+with me. Drag him over here while you
+
+1025
+00:35:38,079 --> 00:35:41,920
+come. All right, next drinking area. No,
+
+1026
+00:35:40,320 --> 00:35:44,240
+leave that. Leave that. We got more
+
+1027
+00:35:41,920 --> 00:35:45,680
+shopping to do. So, about whole milk.
+
+1028
+00:35:44,240 --> 00:35:47,680
+One of the biggest misconceptions is
+
+1029
+00:35:45,680 --> 00:35:49,359
+whole milk. You say it's misunderstood
+
+1030
+00:35:47,680 --> 00:35:50,880
+for a bunch of reasons. Well, actually,
+
+1031
+00:35:49,359 --> 00:35:52,160
+yeah, I'd love to clear this up. You
+
+1032
+00:35:50,880 --> 00:35:54,079
+know, people are afraid of whole milk
+
+1033
+00:35:52,160 --> 00:35:56,560
+because they think it's high in fat,
+
+1034
+00:35:54,079 --> 00:35:58,320
+right? All right. So, compare whole 2%
+
+1035
+00:35:56,560 --> 00:36:00,160
+and skim, right? So, whole milk doesn't
+
+1036
+00:35:58,320 --> 00:36:03,200
+have any of the fat taken out of it, but
+
+1037
+00:36:00,160 --> 00:36:04,720
+it's still almost 97% fat-ree. And
+
+1038
+00:36:03,200 --> 00:36:06,000
+that's what people don't understand. So,
+
+1039
+00:36:04,720 --> 00:36:07,520
+here's here's what we have to kind of
+
+1040
+00:36:06,000 --> 00:36:08,800
+explain this. And this this is right out
+
+1041
+00:36:07,520 --> 00:36:10,240
+of my book. I tried to break this down
+
+1042
+00:36:08,800 --> 00:36:12,560
+because people are really confused about
+
+1043
+00:36:10,240 --> 00:36:14,160
+this. So in one whole container, one
+
+1044
+00:36:12,560 --> 00:36:16,240
+whole quart of whole milk, you have just
+
+1045
+00:36:14,160 --> 00:36:18,320
+six teaspoons of butter fat. That's what
+
+1046
+00:36:16,240 --> 00:36:20,720
+that represents. But in 2% milk, the
+
+1047
+00:36:18,320 --> 00:36:22,480
+reduced fat, four teaspoons. So it's,
+
+1048
+00:36:20,720 --> 00:36:24,320
+you know, it's a little bit more than
+
+1049
+00:36:22,480 --> 00:36:26,320
+half. Different, right? It's about 2/3.
+
+1050
+00:36:24,320 --> 00:36:28,400
+And then down here in skim milk, just a
+
+1051
+00:36:26,320 --> 00:36:30,560
+smidge. Yeah. But as Dr. Oz said
+
+1052
+00:36:28,400 --> 00:36:32,720
+earlier, the more fat you take out, the
+
+1053
+00:36:30,560 --> 00:36:34,400
+more milk sugar you're left with. So
+
+1054
+00:36:32,720 --> 00:36:35,920
+everyone, my announcement today, I think
+
+1055
+00:36:34,400 --> 00:36:37,440
+we should go to whole milk. I think
+
+1056
+00:36:35,920 --> 00:36:38,800
+we're paying a price in taste and not
+
+1057
+00:36:37,440 --> 00:36:40,400
+getting a benefit. And studies have
+
+1058
+00:36:38,800 --> 00:36:42,320
+shown you're actually better off with
+
+1059
+00:36:40,400 --> 00:36:43,440
+the whole milk. So that's not adultery.
+
+1060
+00:36:42,320 --> 00:36:44,880
+Yeah, it's not a big difference in
+
+1061
+00:36:43,440 --> 00:36:47,359
+calories. This is New York City. We got
+
+1062
+00:36:44,880 --> 00:36:50,240
+a big three card monty. How about now?
+
+1063
+00:36:47,359 --> 00:36:52,560
+Talking about it. Yeah. Go ahead. Now we
+
+1064
+00:36:50,240 --> 00:36:54,400
+got All right, let's finish up with a
+
+1065
+00:36:52,560 --> 00:36:55,440
+whole new milk. New kid in the block.
+
+1066
+00:36:54,400 --> 00:36:57,520
+What do we got here? It's called
+
+1067
+00:36:55,440 --> 00:36:59,359
+designer milk. Designer milk. What the
+
+1068
+00:36:57,520 --> 00:37:01,520
+hell is designer milk? What is Gucci
+
+1069
+00:36:59,359 --> 00:37:03,359
+going to make milk next? Yeah. You want
+
+1070
+00:37:01,520 --> 00:37:05,680
+to lose weight? Take a few sips and
+
+1071
+00:37:03,359 --> 00:37:07,200
+forget about the weight. You'll lose so
+
+1072
+00:37:05,680 --> 00:37:08,640
+much weight, you'll disappear to put
+
+1073
+00:37:07,200 --> 00:37:11,000
+your picture on the back of the milk
+
+1074
+00:37:08,640 --> 00:37:14,079
+carton with a perfectly manicured milk
+
+1075
+00:37:11,000 --> 00:37:15,839
+mustache. Milk from Gucci.
+
+1076
+00:37:14,079 --> 00:37:17,839
+Well, you know, it's not far off. What
+
+1077
+00:37:15,839 --> 00:37:20,079
+you just picked up there, that is called
+
+1078
+00:37:17,839 --> 00:37:22,240
+Fair Life. Coca-Cola makes that. That's
+
+1079
+00:37:20,079 --> 00:37:23,680
+right. Please explain to me to Why are
+
+1080
+00:37:22,240 --> 00:37:25,200
+people making designer milks? Why would
+
+1081
+00:37:23,680 --> 00:37:26,480
+the consumers want to try it? Well, this
+
+1082
+00:37:25,200 --> 00:37:28,720
+is brand new and I'm getting a lot of
+
+1083
+00:37:26,480 --> 00:37:30,560
+questions about this. So they start with
+
+1084
+00:37:28,720 --> 00:37:33,119
+fresh milk and then they use a special
+
+1085
+00:37:30,560 --> 00:37:34,480
+filtration process and they dial down
+
+1086
+00:37:33,119 --> 00:37:36,160
+some of the nutrients that we might want
+
+1087
+00:37:34,480 --> 00:37:37,599
+to limit like the milk sugars and then
+
+1088
+00:37:36,160 --> 00:37:39,920
+they dial up some of the things that we
+
+1089
+00:37:37,599 --> 00:37:42,079
+might want more of like protein and
+
+1090
+00:37:39,920 --> 00:37:46,400
+calcium. So that's the deal with the
+
+1091
+00:37:42,079 --> 00:37:49,560
+with the design. That's that's not these
+
+1092
+00:37:46,400 --> 00:37:49,560
+are both.
+
+1093
+00:37:49,680 --> 00:37:53,680
+You sure you can afford that? I tell you
+
+1094
+00:37:51,920 --> 00:37:54,960
+I think this is really good. Oh, how
+
+1095
+00:37:53,680 --> 00:37:56,480
+long has this been in here? This isn't
+
+1096
+00:37:54,960 --> 00:37:57,560
+milk. This is cottage cheese. This is
+
+1097
+00:37:56,480 --> 00:38:00,400
+this is
+
+1098
+00:37:57,560 --> 00:38:03,119
+f are you concerned that a soft drink
+
+1099
+00:38:00,400 --> 00:38:05,040
+company is making milk? Yeah, this is
+
+1100
+00:38:03,119 --> 00:38:06,560
+raising a lot of eyebrows. I think you
+
+1101
+00:38:05,040 --> 00:38:07,920
+know it's probably a lot better for us
+
+1102
+00:38:06,560 --> 00:38:09,520
+than a lot of what they've been selling
+
+1103
+00:38:07,920 --> 00:38:11,119
+us for the last years. On the other
+
+1104
+00:38:09,520 --> 00:38:12,960
+hand, you know, all that processing
+
+1105
+00:38:11,119 --> 00:38:14,800
+costs something. So, you are going to be
+
+1106
+00:38:12,960 --> 00:38:16,800
+paying more. It's designer milk in more
+
+1107
+00:38:14,800 --> 00:38:18,320
+ways than one. And some might argue
+
+1108
+00:38:16,800 --> 00:38:20,240
+maybe milk is a food that doesn't really
+
+1109
+00:38:18,320 --> 00:38:22,640
+need to be improved. Yeah. I got to say
+
+1110
+00:38:20,240 --> 00:38:24,079
+I'd rather companies make products that
+
+1111
+00:38:22,640 --> 00:38:25,359
+are good for us. And I want to applaud
+
+1112
+00:38:24,079 --> 00:38:27,280
+people for trying to do that. All right.
+
+1113
+00:38:25,359 --> 00:38:29,280
+You can catch Vic. I got a one question.
+
+1114
+00:38:27,280 --> 00:38:31,200
+Is this chocolate milk? Oh my goodness.
+
+1115
+00:38:29,280 --> 00:38:32,320
+Give me that. You can't afford that. You
+
+1116
+00:38:31,200 --> 00:38:33,680
+know why I can't afford it? He's
+
+1117
+00:38:32,320 --> 00:38:35,040
+starting with That's true. My wife told
+
+1118
+00:38:33,680 --> 00:38:37,920
+me chocolate milk doesn't come from
+
+1119
+00:38:35,040 --> 00:38:39,599
+brown cows. Is that true?
+
+1120
+00:38:37,920 --> 00:38:41,680
+You know, he's starring with Kevin James
+
+1121
+00:38:39,599 --> 00:38:44,320
+now when he says that kind of mall cop.
+
+1122
+00:38:41,680 --> 00:38:46,160
+A mall cop part two. Fixing the movie,
+
+1123
+00:38:44,320 --> 00:38:47,680
+right? April 17th it comes out. Do you
+
+1124
+00:38:46,160 --> 00:38:49,440
+survive? Yes. I'm in a whole movie. I
+
+1125
+00:38:47,680 --> 00:38:52,880
+play Gino Chisetti, a mall cop from
+
+1126
+00:38:49,440 --> 00:38:55,200
+Staten Island who drinks his milk. Yeah.
+
+1127
+00:38:52,880 --> 00:38:57,760
+All right. You can also catch him on an
+
+1128
+00:38:55,200 --> 00:39:01,280
+exclusive oz video.com. We'll be right
+
+1129
+00:38:57,760 --> 00:39:03,920
+back. Thank you. Thank you. I got to get
+
+1130
+00:39:01,280 --> 00:39:06,560
+the bread and milk. I got to get the
+
+1131
+00:39:03,920 --> 00:39:09,599
+bread of milk. I got to get the bread.
+
+1132
+00:39:06,560 --> 00:39:12,480
+All new Emmy nominated Dr. Oz show.
+
+1133
+00:39:09,599 --> 00:39:14,240
+Juliana Rancic. How you doing now? Sets
+
+1134
+00:39:12,480 --> 00:39:16,480
+the record straight on the eating
+
+1135
+00:39:14,240 --> 00:39:19,280
+disorder rumors, the stress and scrutiny
+
+1136
+00:39:16,480 --> 00:39:22,320
+of her health, her marriage, her job,
+
+1137
+00:39:19,280 --> 00:39:25,200
+and her heartbreaking baby news. Plus,
+
+1138
+00:39:22,320 --> 00:39:27,119
+watch for dinner. Healthy one pot
+
+1139
+00:39:25,200 --> 00:39:29,119
+wonders that are cheap. That's my kind
+
+1140
+00:39:27,119 --> 00:39:31,280
+of meal. And we'll feed the whole
+
+1141
+00:39:29,119 --> 00:39:34,570
+family. I'm putting my bib on now. All
+
+1142
+00:39:31,280 --> 00:39:39,560
+new Oz. That's coming up
+
+1143
+00:39:34,570 --> 00:39:41,599
+[Music]
+
+1144
+00:39:39,560 --> 00:39:42,880
+tomorrow. Now, it's time for, in case
+
+1145
+00:39:41,599 --> 00:39:45,119
+you missed it. First, we had some real
+
+1146
+00:39:42,880 --> 00:39:46,880
+fun today with the Real Housewives of
+
+1147
+00:39:45,119 --> 00:39:48,240
+New York. They dropped by. And I'm not
+
+1148
+00:39:46,880 --> 00:39:50,000
+sure what Lisa will think of this, but
+
+1149
+00:39:48,240 --> 00:39:53,400
+my staff came up with a few possible
+
+1150
+00:39:50,000 --> 00:39:55,760
+taglines if I were a housewife. Take a
+
+1151
+00:39:53,400 --> 00:39:56,680
+look. The big apple wasn't keeping this
+
+1152
+00:39:55,760 --> 00:40:00,040
+doctor
+
+1153
+00:39:56,680 --> 00:40:02,960
+away. The doctor will see you
+
+1154
+00:40:00,040 --> 00:40:06,160
+now. When I bring healthy back, I do it
+
+1155
+00:40:02,960 --> 00:40:08,040
+in style. I can handle trauma, but I
+
+1156
+00:40:06,160 --> 00:40:11,040
+can't deal with
+
+1157
+00:40:08,040 --> 00:40:13,520
+drama. So, do you all have a favorite?
+
+1158
+00:40:11,040 --> 00:40:14,640
+You can let me know by voting on dr.com.
+
+1159
+00:40:13,520 --> 00:40:16,960
+Let me know which one you think I should
+
+1160
+00:40:14,640 --> 00:40:19,040
+be using next year. And before we go,
+
+1161
+00:40:16,960 --> 00:40:20,800
+today is World Health Day, a day for all
+
+1162
+00:40:19,040 --> 00:40:22,400
+of us to bring important health issues
+
+1163
+00:40:20,800 --> 00:40:24,720
+into the spotlight. And I want to take
+
+1164
+00:40:22,400 --> 00:40:26,720
+an opportunity to highlight three topics
+
+1165
+00:40:24,720 --> 00:40:28,800
+that were not being discussed six years
+
+1166
+00:40:26,720 --> 00:40:30,560
+ago when we started this show. So, I'm
+
+1167
+00:40:28,800 --> 00:40:32,160
+going to share a special video on my
+
+1168
+00:40:30,560 --> 00:40:33,520
+Facebook page that highlights these
+
+1169
+00:40:32,160 --> 00:40:35,760
+issues. I feel strongly they ought to be
+
+1170
+00:40:33,520 --> 00:40:37,680
+on your radar. So, take a look and share
+
+1171
+00:40:35,760 --> 00:40:41,240
+it on your own Facebook wall to keep the
+
+1172
+00:40:37,680 --> 00:40:41,240
+conversation going.
+
+1173
+00:40:54,430 --> 00:40:57,590
+[Music]
+
+1174
+00:41:01,820 --> 00:41:36,619
+[Music]
+
+1175
+00:41:37,000 --> 00:41:41,000
+Hey, hey, hey.
+
+1176
+00:41:42,290 --> 00:41:55,619
+[Music]
+
+1177
+00:42:04,760 --> 00:42:08,760
+Hey. Hey.
+
+1178
+00:42:16,690 --> 00:42:20,010
+[Music]
+
+1179
+00:42:22,020 --> 00:42:26,030
+[Music]
+
+1180
+00:42:23,360 --> 00:42:26,030
+[Applause]
+

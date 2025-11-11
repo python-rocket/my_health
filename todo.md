@@ -9,16 +9,10 @@
 
 ## USEFUL FOR ME
 
-connected answer:
-- case: Tell me what you know about glutathione
-- lower "answer time" of llm (guide it more)
-- sources: youtube, pubmed
-- summarises: which types, who should take it, how to take it, which side affects can occur, which brands..
-- preferences: be able to activate/deactivate specific preferenc groups (e.g deactivate pubmed settings.). Or activate/deactivate in general.
-- preferences: add rank how much the llm should be allowed to think (how many tool iterations)
-- remove ask.py to ai doctor module.
 
-- add more data (channels, pubmed)
+ETL
+- channels: "crawler", checking the most popular and then again...
+- justinhealth: beyond wellness radio podcasts
 
 daily protocol
 - define psql table format for protocol
