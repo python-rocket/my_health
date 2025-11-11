@@ -1,4 +1,4 @@
-Schema extracted at: 2025-11-08 13:32:55
+Schema extracted at: 2025-11-11 19:04:03
 
 ## public.channels (BASE TABLE)
   - id: text NOT NULL
@@ -14,6 +14,11 @@ Schema extracted at: 2025-11-08 13:32:55
   - youtube_channel_id: text NULL
   - created_at: timestamp with time zone NOT NULL DEFAULT now()
 
+## public.processed_channels (BASE TABLE)
+  - channel_id: text NOT NULL
+  - process: text NOT NULL
+  - created_at: timestamp with time zone NOT NULL DEFAULT now()
+
 ## public.processed_video (BASE TABLE)
   - video_id: text NOT NULL
   - process: text NOT NULL
@@ -21,7 +26,7 @@ Schema extracted at: 2025-11-08 13:32:55
   - updated_at_timestamp: timestamp without time zone NULL DEFAULT CURRENT_TIMESTAMP
 
 ## public.pubmed_studies (BASE TABLE)
-  - pmid: text NULL
+  - pmid: text NOT NULL
   - title: text NULL
   - authors: text NULL
   - publish_date: text NULL
@@ -29,9 +34,12 @@ Schema extracted at: 2025-11-08 13:32:55
   - abstract: text NULL
   - publication_types: text NULL
   - keywords: text NULL
+  - search_query: text NULL
+  - updated_at_timestamp: timestamp with time zone NULL DEFAULT now()
+  - updated_at_date: date NULL DEFAULT CURRENT_DATE
 
 ## public.pubmed_studies_llm_identified (BASE TABLE)
-  - pmid: text NULL
+  - pmid: text NOT NULL
   - title: text NULL
   - authors: text NULL
   - publish_date: text NULL
@@ -49,7 +57,7 @@ Schema extracted at: 2025-11-08 13:32:55
 
 ## public.topics (BASE TABLE)
   - id: bigint NOT NULL
-  - name: text NULL
+  - name: text NOT NULL
 
 ## public.v_channel_relations (VIEW)
   - channel_id: text NULL
@@ -62,10 +70,18 @@ Schema extracted at: 2025-11-08 13:32:55
   - instagram: text NULL
   - website: text NULL
 
+## public.v_coverage_solution_pubmed (VIEW)
+  - search_query: text NULL
+  - is_solution: boolean NULL
+  - num_pmid: bigint NULL
+
 ## public.v_video_combined (VIEW)
   - channel_id: text NULL
   - video_id: text NULL
   - video_title: character varying(500.0) NULL
+  - video_description: text NULL
+  - video_subtitles: text NULL
+  - video_summary: text NULL
   - topic: text NULL
   - solution: character varying NULL
   - expert_name: text NULL
@@ -79,6 +95,7 @@ Schema extracted at: 2025-11-08 13:32:55
   - expert_id: bigint NULL
   - expert_name: text NULL
   - expert_relation: text NULL
+  - expert_youtube_channel_id: text NULL
 
 ## public.v_video_pubmed (VIEW)
   - channel_id: text NULL
@@ -113,7 +130,7 @@ Schema extracted at: 2025-11-08 13:32:55
   - value: boolean NULL
 
 ## public.video_description (BASE TABLE)
-  - video_id: text NULL
+  - video_id: text NOT NULL
   - description: text NULL
 
 ## public.video_experts (BASE TABLE)
@@ -130,16 +147,16 @@ Schema extracted at: 2025-11-08 13:32:55
   - answer: text NOT NULL
 
 ## public.video_pubmed (BASE TABLE)
-  - video_id: text NULL
-  - pubmed_id: text NULL
+  - video_id: text NOT NULL
+  - pubmed_id: text NOT NULL
 
 ## public.video_research_studies (BASE TABLE)
-  - video_id: text NULL
+  - video_id: text NOT NULL
   - details: text NULL
 
 ## public.video_solutions (BASE TABLE)
-  - video_id: text NULL
-  - solution_id: bigint NULL
+  - video_id: text NOT NULL
+  - solution_id: bigint NOT NULL
   - value: boolean NULL
 
 ## public.video_subtitles (BASE TABLE)
@@ -147,12 +164,12 @@ Schema extracted at: 2025-11-08 13:32:55
   - subtitles: text NOT NULL
 
 ## public.video_summary (BASE TABLE)
-  - video_id: text NULL
+  - video_id: text NOT NULL
   - summary: text NULL
 
 ## public.video_topics (BASE TABLE)
-  - video_id: text NULL
-  - topic_id: bigint NULL
+  - video_id: text NOT NULL
+  - topic_id: bigint NOT NULL
   - value: boolean NULL
 
 ## public.videos (BASE TABLE)

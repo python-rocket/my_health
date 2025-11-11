@@ -52,10 +52,13 @@ class AskRequest(BaseModel):
 @app.post("/ask")
 async def ask_endpoint(request: AskRequest):
     try:
+        prompt = request.prompt
+        preferences = request.preferences.model_dump() if request.preferences else None
+        max_iterations = request.max_iterations
         response = ask_instance.ask_directly(
-            request.prompt, 
-            preferences=request.preferences.model_dump(),
-            max_iterations=request.max_iterations
+            prompt=prompt, 
+            preferences=preferences,
+            max_iterations=max_iterations
         )
         return {"response": response}
     except Exception as e:
