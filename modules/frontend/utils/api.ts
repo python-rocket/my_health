@@ -97,3 +97,75 @@ export async function askQuestion(prompt: string, preferences?: any, maxIteratio
     }
 }
 
+export async function uploadTestingResults(file: File): Promise<{success: boolean, file_id?: string, file_path?: string, filename?: string}> {
+    try {
+        const formData = new FormData();
+        formData.append('file', file);
+        
+        const response = await fetch('http://localhost:3002/upload-testing-results', {
+            method: 'POST',
+            body: formData,
+        });
+        
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.detail || errorData.error || `HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error uploading testing results:', error);
+        throw error;
+    }
+}
+
+export async function processTestingResults(fileId: string): Promise<{success: boolean, message: string, rows_inserted?: number}> {
+    try {
+        const response = await fetch('http://localhost:3002/process-testing-results', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ file_id: fileId }),
+        });
+        
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.detail || errorData.error || `HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error processing testing results:', error);
+        throw error;
+    }
+}
+
+export interface TestingResult {
+    id: number;
+    test_object: string | null;
+    result_value: number | null;
+    result_unit: string | null;
+    reference_value: number | null;
+    comments: string | null;
+    flag: string | null;
+    updated_at: string | null;
+    updated_at_date: string | null;
+}
+
+export async function fetchTestingResults(): Promise<TestingResult[]> {
+    try {
+        const response = await fetch('http://localhost:3001/api/testing-results');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const results = await response.json();
+        return results;
+    } catch (error) {
+        console.error('Error fetching testing results:', error);
+        throw error;
+    }
+}
+

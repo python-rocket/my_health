@@ -7,13 +7,17 @@
 
 # TODO
 
+tests uploader
+- We need to aslo write the date of the test into the database. Usually the test document has a date.
+It should be be the value in the database. For that in the database we need one extra column "testing_date".
+It should also be shown in the frontend.
+- some tests are just "positive" or "negative" (e.g test for mutation.) without having an explicit value.
+Add to the agent instructions that for such tests for positive the value 1 and for negative the value -1.
+And same for reference. 
+- Add to the table the option to sort by test_object column or by the new testing_date column
+
+
 ## USEFUL FOR ME
-
-
-ETL
-- channels: "crawler", checking the most popular and then again...
-- justinhealth: beyond wellness radio podcasts
-
 daily protocol
 - define psql table format for protocol
 - dynamic:
@@ -29,9 +33,6 @@ daily protocol
 - hypothesise: wen feeling especially good or bad find out why based on logs. 
 --> update hypothesizes regularely: e.g ranking of 0-5 if bad sleep 3 times in a row = more likely to get ill
 
-tests uploader
-- upload test in any format (pdf, csv..)
-- saves into structured form and in english to database
 
 solutions
 - show all solutions with status filters (e.g open)

@@ -26,6 +26,9 @@
 - feature: get pubmed of researc
 - feature: processed table tracks what has already beed processed
 - feature: pubmed: download by search term and filters (e.g glutathione clynical trials)
+- feature: channel crawler
+- feature: search pubmed for solutions
+- feature: youtube download also podcast videos
 
 ## DONE - frontend features
 - feature: add UI

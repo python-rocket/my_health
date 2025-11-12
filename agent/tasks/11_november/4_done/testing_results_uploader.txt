@@ -1,0 +1,23 @@
+feature request:
+In the frontend i want to have an interface where i can upload a document of testing results.
+The teting results can come in various not structured formats.
+They can be pdfs, csvs, pictures.
+The content can be in english or in any other language.
+The structure can be different.
+But in general most of the time specific values can be extracted.
+I already have an agent in agent/sdk which can be used and extended.
+
+Create those features:
+1) Integrate the agent into my fastapi. Add an endpoint "agent" like with the "ask" endpoint where i can use a text prompt.
+2) In the frontend add a new tab "testing_results". There add a file upload mask with drag and drop or click.
+3) When a file is uploaded it should be stored, next to other user data like preferences.
+4) After upload the agent endpoint should be called to start the agent. It should give it the correct instructions in order to:
+We want to read the testing results and save them in a specific fixed format in english language.
+This is the format that you find in sql/tables/testing_results.sql
+SO the agent should return a valid csv contain extactly this structure.
+5) The result should be verified with pydantic.
+6) The result then should be inserted into the table defined in testing_results.sql
+
+Testing:
+TEst the full end 2 end, by uploading this csv in the folder testing_results/synevo.pdf
+Verify by checking the sql table if the data is there and if its valid

@@ -65,6 +65,21 @@ const tabs: TabConfig[] = [
         }
     },
     {
+        id: 'testing_results',
+        name: 'Testing Results',
+        enabled: true,
+        init: async () => {
+            const module = await import('./tabs/testing_results/testing_results.js');
+            await module.init();
+        },
+        onActivate: async () => {
+            const module = await import('./tabs/testing_results/testing_results.js');
+            if (module.onActivate) {
+                await module.onActivate();
+            }
+        }
+    },
+    {
         id: 'solutions',
         name: 'Solutions',
         enabled: true,

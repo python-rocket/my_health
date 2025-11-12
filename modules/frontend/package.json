@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon --exec ts-node server.ts",
-    "build": "tsc --project tsconfig.server.json"
+    "build": "tsc --project tsconfig.server.json && tsc --project tsconfig.json",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:frontend": "tsc --project tsconfig.json"
   },
   "type": "module",
   "keywords": [],

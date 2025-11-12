@@ -1,0 +1,34 @@
+<div class="card">
+    <h2>Testing Results Upload</h2>
+    <p class="info-text">Upload your testing results document (PDF, CSV, or image) to extract and store structured data.</p>
+    
+    <div class="upload-container">
+        <div id="upload-area" class="upload-area">
+            <div class="upload-content">
+                <div class="upload-icon">📄</div>
+                <p class="upload-text">Drag and drop your file here</p>
+                <p class="upload-subtext">or click to browse</p>
+                <input type="file" id="file-input" accept=".pdf,.csv,.png,.jpg,.jpeg,.gif,.webp" style="display: none;">
+            </div>
+        </div>
+        
+        <div id="upload-status" class="upload-status" style="display: none;">
+            <div class="status-content">
+                <span id="status-text"></span>
+                <div id="status-spinner" class="status-spinner" style="display: none;"></div>
+            </div>
+        </div>
+        
+        <div id="upload-result" class="upload-result" style="display: none;">
+            <div id="result-message"></div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Testing Results</h2>
+    <div id="testing-results-table-container">
+        <div class="loading">Loading testing results...</div>
+    </div>
+</div>
+

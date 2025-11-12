@@ -1,4 +1,4 @@
-Schema extracted at: 2025-11-11 19:04:03
+Schema extracted at: 2025-11-12 19:53:02
 
 ## public.channels (BASE TABLE)
   - id: text NOT NULL
@@ -55,9 +55,25 @@ Schema extracted at: 2025-11-11 19:04:03
 ## public.test (BASE TABLE)
   - id: integer NULL
 
+## public.testing_results (BASE TABLE)
+  - id: integer NOT NULL DEFAULT nextval('testing_results_id_seq'::regclass)
+  - test_object: text NULL
+  - result_value: double precision NULL
+  - result_unit: text NULL
+  - reference_value: double precision NULL
+  - comments: text NULL
+  - flag: text NULL
+  - updated_at: timestamp without time zone NULL DEFAULT CURRENT_TIMESTAMP
+  - updated_at_date: date NULL DEFAULT CURRENT_DATE
+
 ## public.topics (BASE TABLE)
   - id: bigint NOT NULL
   - name: text NOT NULL
+
+## public.v_channel_crawl (VIEW)
+  - channel_id: text NULL
+  - channel_id_guest: text NULL
+  - count: bigint NULL
 
 ## public.v_channel_relations (VIEW)
   - channel_id: text NULL
@@ -75,6 +91,17 @@ Schema extracted at: 2025-11-11 19:04:03
   - is_solution: boolean NULL
   - num_pmid: bigint NULL
 
+## public.v_coverage_videos (VIEW)
+  - channel_id: text NULL
+  - videos: bigint NULL
+  - topic: bigint NULL
+  - solution: bigint NULL
+  - experts: bigint NULL
+  - pubmeds: bigint NULL
+  - descriptions: bigint NULL
+  - subtitles: bigint NULL
+  - summaries: bigint NULL
+
 ## public.v_video_combined (VIEW)
   - channel_id: text NULL
   - video_id: text NULL
@@ -87,6 +114,9 @@ Schema extracted at: 2025-11-11 19:04:03
   - expert_name: text NULL
   - expert_relation: text NULL
   - pubmed_title: text NULL
+  - video_description_video_id: text NULL
+  - video_summary_video_id: text NULL
+  - video_subtitles_video_id: text NULL
 
 ## public.v_video_experts (VIEW)
   - channel_id: text NULL

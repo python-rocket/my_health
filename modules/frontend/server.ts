@@ -255,6 +255,31 @@ app.get('/api/recommendations/channels', async (req, res) => {
     }
 });
 
+// Endpoint to fetch testing results
+app.get('/api/testing-results', async (req, res) => {
+    try {
+        const query = `
+            SELECT 
+                id,
+                test_object,
+                result_value,
+                result_unit,
+                reference_value,
+                comments,
+                flag,
+                updated_at,
+                updated_at_date
+            FROM testing_results
+            ORDER BY updated_at DESC
+        `;
+        const result = await pool.query(query);
+        res.json(result.rows);
+    } catch (error) {
+        console.error('Error fetching testing results:', error);
+        res.status(500).json({ error: 'Failed to fetch testing results' });
+    }
+});
+
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });

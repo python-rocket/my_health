@@ -1,0 +1,3 @@
+feature requests:
+now in the tab testing results below the uploader add a table which shows the data from 
+the table: testing_results.
