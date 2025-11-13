@@ -138,16 +138,53 @@ app.get('/api/preferences', (req, res) => {
         if (fs.existsSync(preferencesPath)) {
             const data = fs.readFileSync(preferencesPath, 'utf8');
             const preferences = JSON.parse(data);
-            res.json(preferences);
+            // Merge with defaults to ensure backward compatibility
+            const defaultPreferences = {
+                favoriteChannels: [],
+                favoriteSolutions: [],
+                selectedTestingObjects: [],
+                pubmedPreferences: {
+                    startDate: null,
+                    endDate: null,
+                    publicationTypes: []
+                },
+                askPreferences: {
+                    enabled: false,
+                    channelsEnabled: false,
+                    solutionsEnabled: false,
+                    pubmedEnabled: false
+                }
+            };
+            // Merge existing preferences with defaults
+            const mergedPreferences = {
+                ...defaultPreferences,
+                ...preferences,
+                pubmedPreferences: {
+                    ...defaultPreferences.pubmedPreferences,
+                    ...(preferences.pubmedPreferences || {})
+                },
+                askPreferences: {
+                    ...defaultPreferences.askPreferences,
+                    ...(preferences.askPreferences || {})
+                }
+            };
+            res.json(mergedPreferences);
         } else {
             // Return default preferences if file doesn't exist
             const defaultPreferences = {
                 favoriteChannels: [],
                 favoriteSolutions: [],
+                selectedTestingObjects: [],
                 pubmedPreferences: {
                     startDate: null,
                     endDate: null,
                     publicationTypes: []
+                },
+                askPreferences: {
+                    enabled: false,
+                    channelsEnabled: false,
+                    solutionsEnabled: false,
+                    pubmedEnabled: false
                 }
             };
             res.json(defaultPreferences);

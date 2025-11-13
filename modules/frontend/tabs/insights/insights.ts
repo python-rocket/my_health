@@ -1,4 +1,5 @@
 import { fetchAvailableTestingObjects, fetchInsightsData } from '../../utils/api.js';
+import { getPreferences } from '../../utils/preferences.js';
 
 // Chart.js will be loaded dynamically from CDN
 let Chart: any = null;
@@ -28,12 +29,21 @@ export async function init() {
     setupDropdownListener();
     // Load testing objects - this function has retry logic built in
     await loadTestingObjects();
+    // Listen for preferences updates
+    window.addEventListener('preferencesUpdated', () => {
+        loadTestingObjects();
+    });
 }
 
 export async function onActivate() {
     console.log('Insights tab onActivate() called');
     // Refresh available testing objects when tab becomes active
     await loadTestingObjects();
+    // Clear chart when switching tabs if no selection
+    const select = document.getElementById('testing-object-select') as HTMLSelectElement;
+    if (select && !select.value) {
+        clearChart();
+    }
 }
 
 async function loadTestingObjects() {
@@ -72,13 +82,23 @@ async function loadTestingObjects() {
         console.log('Fetched testing objects:', testObjects);
         console.log('Type:', typeof testObjects, 'Is Array:', Array.isArray(testObjects), 'Length:', testObjects?.length);
         
+        // Filter by preferences if any are selected
+        const prefs = await getPreferences();
+        const selectedObjects = prefs.selectedTestingObjects || [];
+        let filteredObjects = testObjects;
+        
+        if (selectedObjects.length > 0) {
+            filteredObjects = testObjects.filter(obj => selectedObjects.includes(obj));
+            console.log(`Filtered to ${filteredObjects.length} testing objects based on preferences`);
+        }
+        
         // Clear existing options except the first placeholder
         select.innerHTML = '<option value="">-- Select a testing object --</option>';
         
-        // Add available testing objects
-        if (Array.isArray(testObjects) && testObjects.length > 0) {
-            console.log(`Adding ${testObjects.length} options to dropdown`);
-            testObjects.forEach((obj, index) => {
+        // Add filtered testing objects
+        if (Array.isArray(filteredObjects) && filteredObjects.length > 0) {
+            console.log(`Adding ${filteredObjects.length} options to dropdown`);
+            filteredObjects.forEach((obj, index) => {
                 const option = document.createElement('option');
                 option.value = obj;
                 option.textContent = obj;
@@ -87,12 +107,20 @@ async function loadTestingObjects() {
                     console.log(`Added option: ${obj}`);
                 }
             });
-            console.log(`Successfully added ${testObjects.length} options to dropdown`);
+            console.log(`Successfully added ${filteredObjects.length} options to dropdown`);
         } else {
-            console.warn('No testing objects returned or invalid format:', testObjects);
-            const chartContainer = document.getElementById('chart-container');
-            if (chartContainer) {
-                chartContainer.innerHTML = `<div class="error">No testing objects available. Response: ${JSON.stringify(testObjects).substring(0, 200)}</div>`;
+            if (selectedObjects.length > 0) {
+                console.warn('No testing objects match selected preferences');
+                const chartContainer = document.getElementById('chart-container');
+                if (chartContainer) {
+                    chartContainer.innerHTML = `<div class="error">No testing objects available for selected preferences. Adjust your preferences to see testing objects.</div>`;
+                }
+            } else {
+                console.warn('No testing objects returned or invalid format:', testObjects);
+                const chartContainer = document.getElementById('chart-container');
+                if (chartContainer) {
+                    chartContainer.innerHTML = `<div class="error">No testing objects available. Response: ${JSON.stringify(testObjects).substring(0, 200)}</div>`;
+                }
             }
         }
         

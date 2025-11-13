@@ -146,6 +146,7 @@ export async function processTestingResults(fileId: string): Promise<{success: b
 export interface TestingResult {
     id: number;
     test_object: string | null;
+    normalized_test_object?: string | null;
     result_value: number | null;
     result_unit: string | null;
     reference_value: number | null;
@@ -160,20 +161,35 @@ export interface TestingResult {
 
 export async function fetchTestingResults(sortColumn?: string, sortDirection?: 'ASC' | 'DESC'): Promise<TestingResult[]> {
     try {
-        const params = new URLSearchParams();
-        if (sortColumn) {
-            params.append('sort', sortColumn);
-        }
-        if (sortDirection) {
-            params.append('direction', sortDirection);
-        }
-        
-        const url = `http://localhost:3001/api/testing-results${params.toString() ? '?' + params.toString() : ''}`;
+        // Use FastAPI backend endpoint which normalizes test objects
+        const url = `http://localhost:3002/testing-results`;
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const results = await response.json();
+        const data = await response.json();
+        // FastAPI returns { success: true, results: [...] }
+        let results = data.results || data;
+        
+        // Apply client-side sorting if needed (FastAPI endpoint doesn't support sorting yet)
+        if (sortColumn && results.length > 0) {
+            const sortKey = sortColumn as keyof TestingResult;
+            results = [...results].sort((a, b) => {
+                const aVal = a[sortKey];
+                const bVal = b[sortKey];
+                
+                // Handle null/undefined values
+                if (aVal == null && bVal == null) return 0;
+                if (aVal == null) return 1;
+                if (bVal == null) return -1;
+                
+                // Compare values
+                if (aVal < bVal) return sortDirection === 'ASC' ? -1 : 1;
+                if (aVal > bVal) return sortDirection === 'ASC' ? 1 : -1;
+                return 0;
+            });
+        }
+        
         return results;
     } catch (error) {
         console.error('Error fetching testing results:', error);

@@ -3,6 +3,7 @@
 export interface Preferences {
     favoriteChannels: string[];
     favoriteSolutions: string[];
+    selectedTestingObjects?: string[];
     pubmedPreferences?: {
         startDate: string | null;
         endDate: string | null;
@@ -29,6 +30,7 @@ export async function getPreferences(): Promise<Preferences> {
         return {
             favoriteChannels: [],
             favoriteSolutions: [],
+            selectedTestingObjects: [],
             pubmedPreferences: {
                 startDate: null,
                 endDate: null,

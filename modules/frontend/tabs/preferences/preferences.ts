@@ -1,9 +1,10 @@
-import { fetchAllChannels, fetchAllSolutions, fetchPublicationTypes } from '../../utils/api.js';
+import { fetchAllChannels, fetchAllSolutions, fetchPublicationTypes, fetchAvailableTestingObjects } from '../../utils/api.js';
 import { getPreferences, savePreferences, Preferences } from '../../utils/preferences.js';
 
 export async function init() {
     await displayPreferencesChannels();
     await displayPreferencesSolutions();
+    await displayPreferencesTestingObjects();
     await displayPubMedPreferences();
     initPubMedPreferences();
 }
@@ -12,6 +13,7 @@ export async function onActivate() {
     // Refresh when tab becomes active
     await displayPreferencesChannels();
     await displayPreferencesSolutions();
+    await displayPreferencesTestingObjects();
     await displayPubMedPreferences();
 }
 
@@ -37,6 +39,25 @@ async function toggleFavoriteSolution(solution: string): Promise<void> {
     }
     await savePreferences(prefs);
     await updatePreferencesUI();
+}
+
+async function toggleTestingObject(testingObject: string): Promise<void> {
+    const prefs = await getPreferences();
+    const selectedObjects = prefs.selectedTestingObjects || [];
+    const index = selectedObjects.indexOf(testingObject);
+    if (index > -1) {
+        selectedObjects.splice(index, 1);
+    } else {
+        selectedObjects.push(testingObject);
+    }
+    const updatedPrefs: Preferences = {
+        ...prefs,
+        selectedTestingObjects: selectedObjects
+    };
+    await savePreferences(updatedPrefs);
+    await updateTestingObjectsPreferencesUI();
+    // Dispatch event to notify other tabs to refresh
+    window.dispatchEvent(new CustomEvent('preferencesUpdated'));
 }
 
 async function displayPreferencesChannels() {
@@ -94,6 +115,38 @@ async function displayPreferencesSolutions() {
         });
     } catch (error) {
         solutionsList.innerHTML = `<li class="error">Error loading solutions: ${error}</li>`;
+    }
+}
+
+async function displayPreferencesTestingObjects() {
+    const testingObjectsList = document.getElementById('preferences-testing-objects-list');
+    if (!testingObjectsList) return;
+    
+    try {
+        const allTestingObjects = await fetchAvailableTestingObjects();
+        const prefs = await getPreferences();
+        const selectedObjects = prefs.selectedTestingObjects || [];
+        
+        testingObjectsList.innerHTML = allTestingObjects
+            .map(testingObject => {
+                const isSelected = selectedObjects.includes(testingObject);
+                // Escape HTML and quotes in the testing object name for data attribute
+                const escapedObject = testingObject.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                return `<li class="solution-item ${isSelected ? 'favorite' : ''}" data-testing-object="${escapedObject}">${testingObject}</li>`;
+            })
+            .join('');
+        
+        // Add click handlers
+        testingObjectsList.querySelectorAll('.solution-item').forEach(item => {
+            item.addEventListener('click', async () => {
+                const testingObject = item.getAttribute('data-testing-object');
+                if (testingObject) {
+                    await toggleTestingObject(testingObject);
+                }
+            });
+        });
+    } catch (error) {
+        testingObjectsList.innerHTML = `<li class="error">Error loading testing objects: ${error}</li>`;
     }
 }
 
@@ -253,6 +306,25 @@ async function updatePreferencesUI() {
     
     // Dispatch event to notify other tabs (like cockpit) to refresh
     window.dispatchEvent(new CustomEvent('preferencesUpdated'));
+}
+
+async function updateTestingObjectsPreferencesUI() {
+    const testingObjectsList = document.getElementById('preferences-testing-objects-list');
+    if (!testingObjectsList) return;
+    
+    const prefs = await getPreferences();
+    const selectedObjects = prefs.selectedTestingObjects || [];
+    
+    testingObjectsList.querySelectorAll('.solution-item').forEach(item => {
+        const testingObject = item.getAttribute('data-testing-object');
+        if (testingObject) {
+            if (selectedObjects.includes(testingObject)) {
+                item.classList.add('favorite');
+            } else {
+                item.classList.remove('favorite');
+            }
+        }
+    });
 }
 
 function initPubMedPreferences() {

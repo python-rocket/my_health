@@ -1,4 +1,5 @@
 import { uploadTestingResults, processTestingResults, fetchTestingResults } from '../../utils/api.js';
+import { getPreferences } from '../../utils/preferences.js';
 
 let currentFileId: string | null = null;
 let currentSortColumn: string = 'testing_date';
@@ -7,6 +8,10 @@ let currentSortDirection: 'ASC' | 'DESC' = 'DESC';
 export async function init() {
     setupUploadArea();
     await displayTestingResults();
+    // Listen for preferences updates
+    window.addEventListener('preferencesUpdated', () => {
+        displayTestingResults();
+    });
 }
 
 export async function onActivate() {
@@ -179,8 +184,25 @@ async function displayTestingResults() {
         
         const results = await fetchTestingResults(currentSortColumn, currentSortDirection);
         
-        if (results.length === 0) {
-            container.innerHTML = '<p class="info-text">No testing results found. Upload a file to get started.</p>';
+        // Filter by preferences if any are selected
+        const prefs = await getPreferences();
+        const selectedObjects = prefs.selectedTestingObjects || [];
+        let filteredResults = results;
+        
+        if (selectedObjects.length > 0) {
+            filteredResults = results.filter(result => {
+                // Check normalized_test_object if available, otherwise fall back to test_object
+                const normalizedObject = result.normalized_test_object || result.test_object;
+                return normalizedObject && selectedObjects.includes(normalizedObject);
+            });
+        }
+        
+        if (filteredResults.length === 0) {
+            if (selectedObjects.length > 0) {
+                container.innerHTML = '<p class="info-text">No testing results found for selected testing objects. Adjust your preferences or upload a file to get started.</p>';
+            } else {
+                container.innerHTML = '<p class="info-text">No testing results found. Upload a file to get started.</p>';
+            }
             return;
         }
         
@@ -230,7 +252,7 @@ async function displayTestingResults() {
         
         // Create body
         const tbody = document.createElement('tbody');
-        results.forEach(result => {
+        filteredResults.forEach(result => {
             const row = document.createElement('tr');
             
             // Add CSS class for high/low flags
