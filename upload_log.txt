@@ -1,0 +1,1595 @@
+✅ Connected to database
+================================================================================
+🚀 Batch Testing Results Upload Script
+================================================================================
+
+📋 Running migrations...
+
+   Running: add_testing_date_column.sql
+      ✅ Completed
+
+   Running: add_testing_institution_location_columns.sql
+      ✅ Completed
+
+   ✅ Verified columns: testing_date, testing_institution, testing_location
+
+📁 Found 29 files to process
+
+[1/29] Processing nikolab_2025_5.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_5.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_5236bb18c3be46b9b694c2f8d90418ff
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_5.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_5.pdf
+   📄 PDF has 2 page(s)
+   📄 Processing page 1/2...
+   📷 Page 1 image size: 317.61 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1416 characters
+   📄 Processing page 2/2...
+   📷 Page 2 image size: 238.72 KB
+   🤖 Calling OpenAI Vision API for page 2...
+   ✅ Page 2: Extracted 1622 characters
+   ✅ Successfully extracted 3070 characters from 2 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_5236bb18c3be46b9b694c2f8d90418ff
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (1877 chars)
+📋 Parsing CSV...
+📊 Found 21 rows in CSV
+✅ Validated 20 rows
+⚠️  Skipped 1 invalid rows
+💾 Inserting into database...
+✅ Successfully inserted 20 rows
+
+[2/29] Processing nikolab_2025_4.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_4.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_bc4f1e5e609b43e69d9749842d879360
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_4.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_4.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 207.82 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1088 characters
+   ✅ Successfully extracted 1103 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_bc4f1e5e609b43e69d9749842d879360
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (258 chars)
+📋 Parsing CSV...
+📊 Found 1 rows in CSV
+✅ Validated 1 rows
+💾 Inserting into database...
+✅ Successfully inserted 1 rows
+
+[3/29] Processing nikolab_2025_6.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_6.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_0703b8059bd04ba0842237c981a3ad78
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_6.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_6.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 243.75 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1702 characters
+   ✅ Successfully extracted 1717 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_0703b8059bd04ba0842237c981a3ad78
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (1304 chars)
+📋 Parsing CSV...
+📊 Found 10 rows in CSV
+
+[4/29] Processing nikolab_2025_7.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_7.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_d1cf4b32842a4635a6b9d230140d70f2
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_7.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_7.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 233.67 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1117 characters
+   ✅ Successfully extracted 1132 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_d1cf4b32842a4635a6b9d230140d70f2
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (364 chars)
+📋 Parsing CSV...
+📊 Found 2 rows in CSV
+✅ Validated 2 rows
+💾 Inserting into database...
+✅ Successfully inserted 2 rows
+
+[5/29] Processing nikolab_2025_3.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_3.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_13992527b4f64f16b05ecf831829e338
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_3.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_3.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 203.82 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1250 characters
+   ✅ Successfully extracted 1265 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_13992527b4f64f16b05ecf831829e338
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (203 chars)
+📋 Parsing CSV...
+📊 Found 1 rows in CSV
+
+[6/29] Processing nikolab_2025_2.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_2.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_18a2f1c8d4a546c5b0653d2f06591a2d
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_2.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_2.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 197.97 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1400 characters
+   ✅ Successfully extracted 1415 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_18a2f1c8d4a546c5b0653d2f06591a2d
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (282 chars)
+📋 Parsing CSV...
+📊 Found 2 rows in CSV
+✅ Validated 2 rows
+💾 Inserting into database...
+✅ Successfully inserted 2 rows
+
+[7/29] Processing gi_2025_june.pdf...
+
+================================================================================
+📄 Processing: gi_2025_june.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_1f8d5d161e8f4af698378c1114956798
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/gi_2025_june.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/gi_2025_june.pdf
+   📄 PDF has 28 page(s)
+   📄 Processing page 1/28...
+   📷 Page 1 image size: 334.59 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 2150 characters
+   📄 Processing page 2/28...
+   📷 Page 2 image size: 268.65 KB
+   🤖 Calling OpenAI Vision API for page 2...
+   ✅ Page 2: Extracted 2402 characters
+   📄 Processing page 3/28...
+   📷 Page 3 image size: 284.53 KB
+   🤖 Calling OpenAI Vision API for page 3...
+   ✅ Page 3: Extracted 4950 characters
+   📄 Processing page 4/28...
+   📷 Page 4 image size: 315.29 KB
+   🤖 Calling OpenAI Vision API for page 4...
+   ✅ Page 4: Extracted 5361 characters
+   📄 Processing page 5/28...
+   📷 Page 5 image size: 307.13 KB
+   🤖 Calling OpenAI Vision API for page 5...
+   ✅ Page 5: Extracted 4427 characters
+   📄 Processing page 6/28...
+   📷 Page 6 image size: 289.40 KB
+   🤖 Calling OpenAI Vision API for page 6...
+   ✅ Page 6: Extracted 6293 characters
+   📄 Processing page 7/28...
+   📷 Page 7 image size: 42.27 KB
+   🤖 Calling OpenAI Vision API for page 7...
+   ✅ Page 7: Extracted 636 characters
+   📄 Processing page 8/28...
+   📷 Page 8 image size: 245.72 KB
+   🤖 Calling OpenAI Vision API for page 8...
+   ✅ Page 8: Extracted 4291 characters
+   📄 Processing page 9/28...
+   📷 Page 9 image size: 282.94 KB
+   🤖 Calling OpenAI Vision API for page 9...
+   ✅ Page 9: Extracted 1632 characters
+   📄 Processing page 10/28...
+   📷 Page 10 image size: 272.58 KB
+   🤖 Calling OpenAI Vision API for page 10...
+   ✅ Page 10: Extracted 2169 characters
+   📄 Processing page 11/28...
+   📷 Page 11 image size: 283.76 KB
+   🤖 Calling OpenAI Vision API for page 11...
+   ✅ Page 11: Extracted 2024 characters
+   📄 Processing page 12/28...
+   📷 Page 12 image size: 275.11 KB
+   🤖 Calling OpenAI Vision API for page 12...
+   ✅ Page 12: Extracted 2918 characters
+   📄 Processing page 13/28...
+   📷 Page 13 image size: 270.23 KB
+   🤖 Calling OpenAI Vision API for page 13...
+   ✅ Page 13: Extracted 2075 characters
+   📄 Processing page 14/28...
+   📷 Page 14 image size: 259.26 KB
+   🤖 Calling OpenAI Vision API for page 14...
+   ✅ Page 14: Extracted 2551 characters
+   📄 Processing page 15/28...
+   📷 Page 15 image size: 230.36 KB
+   🤖 Calling OpenAI Vision API for page 15...
+   ✅ Page 15: Extracted 2216 characters
+   📄 Processing page 16/28...
+   📷 Page 16 image size: 228.07 KB
+   🤖 Calling OpenAI Vision API for page 16...
+   ✅ Page 16: Extracted 5897 characters
+   📄 Processing page 17/28...
+   📷 Page 17 image size: 214.70 KB
+   🤖 Calling OpenAI Vision API for page 17...
+   ✅ Page 17: Extracted 4405 characters
+   📄 Processing page 18/28...
+   📷 Page 18 image size: 224.48 KB
+   🤖 Calling OpenAI Vision API for page 18...
+   ✅ Page 18: Extracted 6123 characters
+   📄 Processing page 19/28...
+   📷 Page 19 image size: 225.23 KB
+   🤖 Calling OpenAI Vision API for page 19...
+   ✅ Page 19: Extracted 2285 characters
+   📄 Processing page 20/28...
+   📷 Page 20 image size: 229.06 KB
+   🤖 Calling OpenAI Vision API for page 20...
+   ✅ Page 20: Extracted 5149 characters
+   📄 Processing page 21/28...
+   📷 Page 21 image size: 225.76 KB
+   🤖 Calling OpenAI Vision API for page 21...
+   ✅ Page 21: Extracted 5881 characters
+   📄 Processing page 22/28...
+   📷 Page 22 image size: 241.81 KB
+   🤖 Calling OpenAI Vision API for page 22...
+   ✅ Page 22: Extracted 3657 characters
+   📄 Processing page 23/28...
+   📷 Page 23 image size: 291.15 KB
+   🤖 Calling OpenAI Vision API for page 23...
+   ✅ Page 23: Extracted 6593 characters
+   📄 Processing page 24/28...
+   📷 Page 24 image size: 288.69 KB
+   🤖 Calling OpenAI Vision API for page 24...
+   ✅ Page 24: Extracted 5571 characters
+   📄 Processing page 25/28...
+   📷 Page 25 image size: 318.09 KB
+   🤖 Calling OpenAI Vision API for page 25...
+   ✅ Page 25: Extracted 2905 characters
+   📄 Processing page 26/28...
+   📷 Page 26 image size: 420.55 KB
+   🤖 Calling OpenAI Vision API for page 26...
+   ✅ Page 26: Extracted 4948 characters
+   📄 Processing page 27/28...
+   📷 Page 27 image size: 466.87 KB
+   🤖 Calling OpenAI Vision API for page 27...
+   ✅ Page 27: Extracted 191 characters
+   📄 Processing page 28/28...
+   📷 Page 28 image size: 555.70 KB
+   🤖 Calling OpenAI Vision API for page 28...
+   ✅ Page 28: Extracted 808 characters
+   ✅ Successfully extracted 101001 characters from 28 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_1f8d5d161e8f4af698378c1114956798
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (5138 chars)
+📋 Parsing CSV...
+📊 Found 35 rows in CSV
+✅ Validated 35 rows
+💾 Inserting into database...
+✅ Successfully inserted 35 rows
+
+[8/29] Processing nikolab_2025_1.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_1.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_1704f8e7e4164d3e887d3f16463d4d87
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_1.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_1.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 205.80 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1485 characters
+   ✅ Successfully extracted 1500 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_1704f8e7e4164d3e887d3f16463d4d87
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (235 chars)
+📋 Parsing CSV...
+📊 Found 1 rows in CSV
+
+[9/29] Processing oxford_2021_1.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_1.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_c17cf4757679404ea9519d06b6b96d1e
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_1.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_1.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 312.62 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1897 characters
+   ✅ Successfully extracted 1912 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_c17cf4757679404ea9519d06b6b96d1e
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (752 chars)
+📋 Parsing CSV...
+📊 Found 8 rows in CSV
+✅ Validated 8 rows
+💾 Inserting into database...
+✅ Successfully inserted 8 rows
+
+[10/29] Processing oxford_2021_2.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_2.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_fe90d1d7203142678dc6673c857dd1d1
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_2.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_2.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 195.25 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1560 characters
+   ✅ Successfully extracted 1575 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_fe90d1d7203142678dc6673c857dd1d1
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (221 chars)
+📋 Parsing CSV...
+📊 Found 1 rows in CSV
+✅ Validated 1 rows
+💾 Inserting into database...
+✅ Successfully inserted 1 rows
+
+[11/29] Processing oxford_2021_3.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_3.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_d9edb09f750e4a54b3ceb941dc6eabde
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_3.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_3.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 263.61 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1410 characters
+   ✅ Successfully extracted 1425 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_d9edb09f750e4a54b3ceb941dc6eabde
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (1971 chars)
+📋 Parsing CSV...
+📊 Found 19 rows in CSV
+✅ Validated 19 rows
+💾 Inserting into database...
+✅ Successfully inserted 19 rows
+
+[12/29] Processing oxford_2021_7.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_7.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_8109ce7715774c17aac839008aa88ccd
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_7.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_7.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 197.78 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1162 characters
+   ✅ Successfully extracted 1177 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_8109ce7715774c17aac839008aa88ccd
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (482 chars)
+📋 Parsing CSV...
+📊 Found 3 rows in CSV
+✅ Validated 3 rows
+💾 Inserting into database...
+✅ Successfully inserted 3 rows
+
+[13/29] Processing oxford_2021_6.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_6.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_6864043fad1d47af9c7a246f65946726
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_6.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_6.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 178.87 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 839 characters
+   ✅ Successfully extracted 854 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_6864043fad1d47af9c7a246f65946726
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (220 chars)
+📋 Parsing CSV...
+📊 Found 1 rows in CSV
+✅ Validated 1 rows
+💾 Inserting into database...
+✅ Successfully inserted 1 rows
+
+[14/29] Processing oxford_2021_4.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_4.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_5dbb4a27f13f42e4afa6a7009fd1649b
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_4.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_4.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 218.83 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1362 characters
+   ✅ Successfully extracted 1377 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_5dbb4a27f13f42e4afa6a7009fd1649b
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (505 chars)
+📋 Parsing CSV...
+📊 Found 3 rows in CSV
+✅ Validated 3 rows
+💾 Inserting into database...
+✅ Successfully inserted 3 rows
+
+[15/29] Processing oxford_2021_5.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_5.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_ce7d05911db749a59f4bbeffe1417964
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_5.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_5.pdf
+   📄 PDF has 2 page(s)
+   📄 Processing page 1/2...
+   📷 Page 1 image size: 332.80 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1816 characters
+   📄 Processing page 2/2...
+   📷 Page 2 image size: 29.57 KB
+   🤖 Calling OpenAI Vision API for page 2...
+   ✅ Page 2: Extracted 483 characters
+   ✅ Successfully extracted 2331 characters from 2 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_ce7d05911db749a59f4bbeffe1417964
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (3043 chars)
+📋 Parsing CSV...
+📊 Found 27 rows in CSV
+✅ Validated 27 rows
+💾 Inserting into database...
+✅ Successfully inserted 27 rows
+
+[16/29] Processing oxford_2021_8.pdf...
+
+================================================================================
+📄 Processing: oxford_2021_8.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_a11333691fd74c2fbe30a8cd5e4f31e1
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_8.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2021_8.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 224.65 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1428 characters
+   ✅ Successfully extracted 1443 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_a11333691fd74c2fbe30a8cd5e4f31e1
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (968 chars)
+📋 Parsing CSV...
+📊 Found 9 rows in CSV
+✅ Validated 9 rows
+💾 Inserting into database...
+✅ Successfully inserted 9 rows
+
+[17/29] Processing synevo_2025_2.pdf...
+
+================================================================================
+📄 Processing: synevo_2025_2.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_c6a9bad1ef014e5189285890e9abbcf9
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/synevo_2025_2.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/synevo_2025_2.pdf
+   📄 PDF has 7 page(s)
+   📄 Processing page 1/7...
+   📷 Page 1 image size: 1605.41 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1620 characters
+   📄 Processing page 2/7...
+   📷 Page 2 image size: 1601.58 KB
+   🤖 Calling OpenAI Vision API for page 2...
+   ✅ Page 2: Extracted 2588 characters
+   📄 Processing page 3/7...
+   📷 Page 3 image size: 1612.16 KB
+   🤖 Calling OpenAI Vision API for page 3...
+   ✅ Page 3: Extracted 1907 characters
+   📄 Processing page 4/7...
+   📷 Page 4 image size: 1642.19 KB
+   🤖 Calling OpenAI Vision API for page 4...
+   ✅ Page 4: Extracted 1798 characters
+   📄 Processing page 5/7...
+   📷 Page 5 image size: 1592.69 KB
+   🤖 Calling OpenAI Vision API for page 5...
+   ✅ Page 5: Extracted 3127 characters
+   📄 Processing page 6/7...
+   📷 Page 6 image size: 1578.63 KB
+   🤖 Calling OpenAI Vision API for page 6...
+   ✅ Page 6: Extracted 1431 characters
+   📄 Processing page 7/7...
+   📷 Page 7 image size: 1438.15 KB
+   🤖 Calling OpenAI Vision API for page 7...
+   ✅ Page 7: Extracted 1013 characters
+   ✅ Successfully extracted 13601 characters from 7 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_c6a9bad1ef014e5189285890e9abbcf9
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (4794 chars)
+📋 Parsing CSV...
+📊 Found 48 rows in CSV
+✅ Validated 48 rows
+💾 Inserting into database...
+✅ Successfully inserted 48 rows
+
+[18/29] Processing oxford_2025_june_1.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_june_1.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_62cef80090824621ad22baa8c2b0b894
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_1.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_1.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 130.14 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 984 characters
+   ✅ Successfully extracted 999 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_62cef80090824621ad22baa8c2b0b894
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (771 chars)
+📋 Parsing CSV...
+📊 Found 4 rows in CSV
+✅ Validated 4 rows
+💾 Inserting into database...
+✅ Successfully inserted 4 rows
+
+[19/29] Processing synevo_2025_3.pdf...
+
+================================================================================
+📄 Processing: synevo_2025_3.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_3960ff5ff5e94fd1b185dc2426190f2f
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/synevo_2025_3.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/synevo_2025_3.pdf
+   📄 PDF has 2 page(s)
+   📄 Processing page 1/2...
+   📷 Page 1 image size: 1571.99 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 2161 characters
+   📄 Processing page 2/2...
+   📷 Page 2 image size: 1462.33 KB
+   🤖 Calling OpenAI Vision API for page 2...
+   ✅ Page 2: Extracted 931 characters
+   ✅ Successfully extracted 3124 characters from 2 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_3960ff5ff5e94fd1b185dc2426190f2f
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (1241 chars)
+📋 Parsing CSV...
+📊 Found 11 rows in CSV
+✅ Validated 11 rows
+💾 Inserting into database...
+✅ Successfully inserted 11 rows
+
+[20/29] Processing synevo_2025_1.pdf...
+
+================================================================================
+📄 Processing: synevo_2025_1.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_7d6a8a511fe04b2f8611d361e506a443
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/synevo_2025_1.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/synevo_2025_1.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 1575.81 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1745 characters
+   ✅ Successfully extracted 1760 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_7d6a8a511fe04b2f8611d361e506a443
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (845 chars)
+📋 Parsing CSV...
+📊 Found 6 rows in CSV
+✅ Validated 2 rows
+⚠️  Skipped 4 invalid rows
+💾 Inserting into database...
+✅ Successfully inserted 2 rows
+
+[21/29] Processing oxford_2025_june_2.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_june_2.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_8979eca158824fb5a6a5d911e31ff2c3
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_2.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_2.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 709.65 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 3004 characters
+   ✅ Successfully extracted 3019 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_8979eca158824fb5a6a5d911e31ff2c3
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (4448 chars)
+📋 Parsing CSV...
+📊 Found 30 rows in CSV
+✅ Validated 30 rows
+💾 Inserting into database...
+✅ Successfully inserted 30 rows
+
+[22/29] Processing oxford_2025_june_3.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_june_3.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_cb7fe5f2ee084b6bae0bee5dd1008413
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_3.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_3.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 231.26 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1833 characters
+   ✅ Successfully extracted 1848 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_cb7fe5f2ee084b6bae0bee5dd1008413
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (1666 chars)
+📋 Parsing CSV...
+📊 Found 4 rows in CSV
+✅ Validated 4 rows
+💾 Inserting into database...
+✅ Successfully inserted 4 rows
+
+[23/29] Processing oxford_2025_jan_2.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_jan_2.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_1c376e073334482bbd299a6812c833ce
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_jan_2.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_jan_2.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 775.56 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 2159 characters
+   ✅ Successfully extracted 2174 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_1c376e073334482bbd299a6812c833ce
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (790 chars)
+📋 Parsing CSV...
+📊 Found 4 rows in CSV
+✅ Validated 4 rows
+💾 Inserting into database...
+✅ Successfully inserted 4 rows
+
+[24/29] Processing oxford_2025_jan_3.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_jan_3.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_1ee971e9f18e4ea3b6cba761e143b64a
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_jan_3.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_jan_3.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 578.18 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1502 characters
+   ✅ Successfully extracted 1517 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_1ee971e9f18e4ea3b6cba761e143b64a
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (797 chars)
+📋 Parsing CSV...
+📊 Found 5 rows in CSV
+✅ Validated 5 rows
+💾 Inserting into database...
+✅ Successfully inserted 5 rows
+
+[25/29] Processing oxford_2025_june_4.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_june_4.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_488457c554184c3bb995695117e77581
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_4.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_4.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 398.30 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1257 characters
+   ✅ Successfully extracted 1272 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_488457c554184c3bb995695117e77581
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (795 chars)
+📋 Parsing CSV...
+📊 Found 5 rows in CSV
+✅ Validated 5 rows
+💾 Inserting into database...
+✅ Successfully inserted 5 rows
+
+[26/29] Processing oxford_2025_jan_1.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_jan_1.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_aef980fb2c944924a122e809b198188a
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_jan_1.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_jan_1.pdf
+   📄 PDF has 2 page(s)
+   📄 Processing page 1/2...
+   📷 Page 1 image size: 1154.76 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 3821 characters
+   📄 Processing page 2/2...
+   📷 Page 2 image size: 457.60 KB
+   🤖 Calling OpenAI Vision API for page 2...
+   ✅ Page 2: Extracted 1247 characters
+   ✅ Successfully extracted 5100 characters from 2 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_aef980fb2c944924a122e809b198188a
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (5350 chars)
+📋 Parsing CSV...
+📊 Found 35 rows in CSV
+✅ Validated 34 rows
+⚠️  Skipped 1 invalid rows
+💾 Inserting into database...
+✅ Successfully inserted 34 rows
+
+[27/29] Processing oxford_2025_june_5.pdf...
+
+================================================================================
+📄 Processing: oxford_2025_june_5.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_d7d46e8b5e024147a258a53140a715e5
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_5.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/oxford_2025_june_5.pdf
+   📄 PDF has 2 page(s)
+   📄 Processing page 1/2...
+   📷 Page 1 image size: 514.98 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1715 characters
+   📄 Processing page 2/2...
+   📷 Page 2 image size: 514.82 KB
+   🤖 Calling OpenAI Vision API for page 2...
+   ✅ Page 2: Extracted 1879 characters
+   ✅ Successfully extracted 3626 characters from 2 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_d7d46e8b5e024147a258a53140a715e5
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (677 chars)
+📋 Parsing CSV...
+📊 Found 4 rows in CSV
+✅ Validated 4 rows
+💾 Inserting into database...
+✅ Successfully inserted 4 rows
+
+[28/29] Processing nikolab_2025_9.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_9.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_83fcbb0218b9445cbbff5c8e04843895
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_9.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_9.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 228.58 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1549 characters
+   ✅ Successfully extracted 1564 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_83fcbb0218b9445cbbff5c8e04843895
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (1086 chars)
+📋 Parsing CSV...
+📊 Found 8 rows in CSV
+
+[29/29] Processing nikolab_2025_8.pdf...
+
+================================================================================
+📄 Processing: nikolab_2025_8.pdf
+================================================================================
+🤖 Running agent...
+
+================================================================================
+🔍 AGENT RUN WITH TRACE STARTED
+================================================================================
+📊 Trace ID: trace_b98cb987402a4e99b4f1521f8c821437
+📝 Input: You are a medical testing results extraction agent. Your task is to read testing results documents (PDFs, images, or CSV files) and extract structured data.
+
+## Task
+Extract testing results from the p...
+
+
+🔧 [TOOL CALL] read_pdf_with_vision(file_path='/Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_8.pdf')
+   📍 Stage: Reading PDF with Vision API (converting pages to images)
+   📂 Reading PDF: /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/data/testing_results/nikolab_2025_8.pdf
+   📄 PDF has 1 page(s)
+   📄 Processing page 1/1...
+   📷 Page 1 image size: 208.51 KB
+   🤖 Calling OpenAI Vision API for page 1...
+   ✅ Page 1: Extracted 1537 characters
+   ✅ Successfully extracted 1552 characters from 1 page(s)
+📨 Processing 4 messages from conversation...
+
+
+================================================================================
+📊 FINAL STATISTICS
+================================================================================
+📨 Total Messages: 4
+🔧 Total Tool Calls: 0
+
+📊 Trace ID: trace_b98cb987402a4e99b4f1521f8c821437
+   View full trace at: https://platform.openai.com/traces
+================================================================================
+✅ AGENT RUN WITH TRACE COMPLETED
+================================================================================
+
+📤 Agent response received (421 chars)
+📋 Parsing CSV...
+📊 Found 2 rows in CSV
+
+================================================================================
+📊 UPLOAD SUMMARY
+================================================================================
+
+✅ Successful uploads: 24
+   Total rows inserted: 282
+
+   Files:
+   - nikolab_2025_5.pdf: 20 rows inserted
+     (⚠️  1 invalid rows skipped)
+   - nikolab_2025_4.pdf: 1 rows inserted
+   - nikolab_2025_7.pdf: 2 rows inserted
+   - nikolab_2025_2.pdf: 2 rows inserted
+   - gi_2025_june.pdf: 35 rows inserted
+   - oxford_2021_1.pdf: 8 rows inserted
+   - oxford_2021_2.pdf: 1 rows inserted
+   - oxford_2021_3.pdf: 19 rows inserted
+   - oxford_2021_7.pdf: 3 rows inserted
+   - oxford_2021_6.pdf: 1 rows inserted
+   - oxford_2021_4.pdf: 3 rows inserted
+   - oxford_2021_5.pdf: 27 rows inserted
+   - oxford_2021_8.pdf: 9 rows inserted
+   - synevo_2025_2.pdf: 48 rows inserted
+   - oxford_2025_june_1.pdf: 4 rows inserted
+   - synevo_2025_3.pdf: 11 rows inserted
+   - synevo_2025_1.pdf: 2 rows inserted
+     (⚠️  4 invalid rows skipped)
+   - oxford_2025_june_2.pdf: 30 rows inserted
+   - oxford_2025_june_3.pdf: 4 rows inserted
+   - oxford_2025_jan_2.pdf: 4 rows inserted
+   - oxford_2025_jan_3.pdf: 5 rows inserted
+   - oxford_2025_june_4.pdf: 5 rows inserted
+   - oxford_2025_jan_1.pdf: 34 rows inserted
+     (⚠️  1 invalid rows skipped)
+   - oxford_2025_june_5.pdf: 4 rows inserted
+
+❌ Failed uploads: 5
+
+   Files:
+   - nikolab_2025_6.pdf: No valid rows found in CSV after validation (10 rows were invalid)
+   - nikolab_2025_3.pdf: No valid rows found in CSV after validation (1 rows were invalid)
+   - nikolab_2025_1.pdf: No valid rows found in CSV after validation (1 rows were invalid)
+   - nikolab_2025_9.pdf: No valid rows found in CSV after validation (8 rows were invalid)
+   - nikolab_2025_8.pdf: No valid rows found in CSV after validation (2 rows were invalid)
+
+================================================================================

@@ -1,0 +1,12 @@
+feature request:
+Make sure to add those 2 columns to the testing_results table first (can be NULL)
+- testing_institution (TEXT)
+- testing_location (TEXT)
+
+Now take all files from the folder data_testing_results and replicate the same process like if i would drag and drop them into the frontend csv uploader.
+In the end it shuold have the smae results as if i would drag and drop them into the frontend csv uploader.
+e.g data in the database.
+
+At the end give me a summary of which files where uploaded sucessfully and which failed.
+
+If there are issues with the uploading you can adjust code to make it work. But no crazy workarounds, use to already existing logic which should work for the most part.

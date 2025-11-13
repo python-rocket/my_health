@@ -7,17 +7,18 @@
 
 # TODO
 
-tests uploader
-- We need to aslo write the date of the test into the database. Usually the test document has a date.
-It should be be the value in the database. For that in the database we need one extra column "testing_date".
-It should also be shown in the frontend.
-- some tests are just "positive" or "negative" (e.g test for mutation.) without having an explicit value.
-Add to the agent instructions that for such tests for positive the value 1 and for negative the value -1.
-And same for reference. 
-- Add to the table the option to sort by test_object column or by the new testing_date column
-
-
 ## USEFUL FOR ME
+
+test results
+- have unified unit if possible for comparison
+- test object matcher (c-reactive protein, CRP, crp...)
+--> as first solution just have e.g first word
+
+
+metrics/insights:
+- e.g compare number of success 7 wake up compared to last time. Or compared to record per month.
+- e.g give avg ranking of sleep over the last 7 days
+
 daily protocol
 - define psql table format for protocol
 - dynamic:
@@ -32,6 +33,7 @@ daily protocol
 - daily: warnings: It checks the protocol and based on warning-settings will e.g say if i did not train for more then 3 days.
 - hypothesise: wen feeling especially good or bad find out why based on logs. 
 --> update hypothesizes regularely: e.g ranking of 0-5 if bad sleep 3 times in a row = more likely to get ill
+- audio: add openai audio so i can interact by speaking
 
 
 solutions
@@ -39,9 +41,6 @@ solutions
 - top solutions to try dashboard 
 --> algo based on: manual ranking; solution mentioned in data sources; my experience with it based on protocol.
 
-metrics/insights:
-- e.g compare number of success 7 wake up compared to last time. Or compared to record per month.
-- e.g give avg ranking of sleep over the last 7 days
 
 glossar
 - illnesses (hashimotos, crohns..)
@@ -54,18 +53,12 @@ glossar
 agents:
 - tech debt agent (checks for tech debt and refactoring ideas)- add instructions. e.g thinking about scalibility, costs, modular..
 
-frontend:
-- decide for design (find examples to copy)
-- decide for structure (e.g different tabs on the right side and some main at the top.)
-- frontend code instructions: e.g have eyh code for one page seperate (maybe already the case)=
-
 data sources:
 - books/audiobooks
 - reddit
 - twitter/instagram..
 
 research mentions in video:
-- fix: rerun andrehuberman with correct youtube channel id parsing
 - todo: find youtube health channels focused on studies (also adding them to description..)
 - rerun "study finder" based on those channels
 

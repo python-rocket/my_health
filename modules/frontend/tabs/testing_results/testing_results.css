@@ -128,6 +128,14 @@
     letter-spacing: 0.01em;
 }
 
+.testing-results-table th.sortable-header {
+    transition: background-color 0.2s;
+}
+
+.testing-results-table th.sortable-header:hover {
+    background-color: #e5e5e7;
+}
+
 .testing-results-table tbody tr {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: background-color 0.2s;

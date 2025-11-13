@@ -45,6 +45,11 @@ Only if i ask you to skip the plan you can start executing right away.
 When i ask you to test the logic if possible always try to test it just by using terminal commands.
 E.g when testing an api endpoint, sending a curl command.
 
+Frontend vs backend:
+On the Frontend we want to keep UI/OX logic and user preferences and states.
+We want to start having all backend logic in the fastapi in the backend. Not in the node js server.
+So the frontend can directly send requests to the fastapi backend.
+
 # 5. Errors/Issues
 Module import error:
 - If you encounter a module import error dont do workarounds. Use the venv that i mentioned.

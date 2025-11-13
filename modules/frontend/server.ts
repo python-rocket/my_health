@@ -258,25 +258,74 @@ app.get('/api/recommendations/channels', async (req, res) => {
 // Endpoint to fetch testing results
 app.get('/api/testing-results', async (req, res) => {
     try {
+        // Get sort parameters from query string
+        const sortColumn = req.query.sort as string || 'updated_at';
+        const sortDirection = req.query.direction as string || 'DESC';
+        
+        // Validate sort column to prevent SQL injection
+        const allowedSortColumns = ['id', 'test_object', 'result_value', 'result_unit', 'reference_value', 'comments', 'flag', 'testing_date', 'testing_institution', 'testing_location', 'updated_at', 'updated_at_date'];
+        const validSortColumn = allowedSortColumns.includes(sortColumn) ? sortColumn : 'updated_at';
+        
+        // Validate sort direction
+        const validSortDirection = sortDirection.toUpperCase() === 'ASC' ? 'ASC' : 'DESC';
+        
+        // Check which optional columns exist
+        let hasTestingDateColumn = false;
+        let hasTestingInstitutionColumn = false;
+        let hasTestingLocationColumn = false;
+        try {
+            const checkColumnQuery = `
+                SELECT column_name 
+                FROM information_schema.columns 
+                WHERE table_name = 'testing_results' 
+                AND column_name IN ('testing_date', 'testing_institution', 'testing_location')
+            `;
+            const columnCheck = await pool.query(checkColumnQuery);
+            const existingColumns = columnCheck.rows.map((row: any) => row.column_name);
+            hasTestingDateColumn = existingColumns.includes('testing_date');
+            hasTestingInstitutionColumn = existingColumns.includes('testing_institution');
+            hasTestingLocationColumn = existingColumns.includes('testing_location');
+        } catch (err) {
+            console.warn('Could not check for optional columns:', err);
+        }
+        
+        // Build SELECT clause - include optional columns only if they exist
+        const selectColumns = [
+            'id',
+            'test_object',
+            'result_value',
+            'result_unit',
+            'reference_value',
+            'comments',
+            'flag',
+            ...(hasTestingDateColumn ? ['testing_date'] : []),
+            ...(hasTestingInstitutionColumn ? ['testing_institution'] : []),
+            ...(hasTestingLocationColumn ? ['testing_location'] : []),
+            'updated_at',
+            'updated_at_date'
+        ].join(',\n                ');
+        
+        // Adjust sort column if requested column doesn't exist
+        let finalSortColumn = validSortColumn;
+        if (validSortColumn === 'testing_date' && !hasTestingDateColumn) {
+            finalSortColumn = 'updated_at';
+        } else if (validSortColumn === 'testing_institution' && !hasTestingInstitutionColumn) {
+            finalSortColumn = 'updated_at';
+        } else if (validSortColumn === 'testing_location' && !hasTestingLocationColumn) {
+            finalSortColumn = 'updated_at';
+        }
+        
         const query = `
             SELECT 
-                id,
-                test_object,
-                result_value,
-                result_unit,
-                reference_value,
-                comments,
-                flag,
-                updated_at,
-                updated_at_date
+                ${selectColumns}
             FROM testing_results
-            ORDER BY updated_at DESC
+            ORDER BY ${finalSortColumn} ${validSortDirection}
         `;
         const result = await pool.query(query);
         res.json(result.rows);
     } catch (error) {
         console.error('Error fetching testing results:', error);
-        res.status(500).json({ error: 'Failed to fetch testing results' });
+        res.status(500).json({ error: 'Failed to fetch testing results', details: error instanceof Error ? error.message : String(error) });
     }
 });
 

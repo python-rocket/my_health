@@ -1,6 +1,8 @@
 import { uploadTestingResults, processTestingResults, fetchTestingResults } from '../../utils/api.js';
 
 let currentFileId: string | null = null;
+let currentSortColumn: string = 'testing_date';
+let currentSortDirection: 'ASC' | 'DESC' = 'DESC';
 
 export async function init() {
     setupUploadArea();
@@ -157,6 +159,17 @@ function resetUploadState() {
     }
 }
 
+function handleSort(column: string) {
+    // Toggle sort direction if clicking the same column, otherwise default to ASC
+    if (currentSortColumn === column) {
+        currentSortDirection = currentSortDirection === 'ASC' ? 'DESC' : 'ASC';
+    } else {
+        currentSortColumn = column;
+        currentSortDirection = 'ASC';
+    }
+    displayTestingResults();
+}
+
 async function displayTestingResults() {
     const container = document.getElementById('testing-results-table-container');
     if (!container) return;
@@ -164,7 +177,7 @@ async function displayTestingResults() {
     try {
         container.innerHTML = '<div class="loading">Loading testing results...</div>';
         
-        const results = await fetchTestingResults();
+        const results = await fetchTestingResults(currentSortColumn, currentSortDirection);
         
         if (results.length === 0) {
             container.innerHTML = '<p class="info-text">No testing results found. Upload a file to get started.</p>';
@@ -178,12 +191,40 @@ async function displayTestingResults() {
         // Create header
         const thead = document.createElement('thead');
         const headerRow = document.createElement('tr');
-        const headers = ['ID', 'Test Object', 'Result Value', 'Unit', 'Reference Value', 'Flag', 'Comments', 'Updated At'];
-        headers.forEach(headerText => {
+        
+        // Define headers with sortable columns
+        const headerConfig = [
+            { text: 'ID', column: 'id', sortable: false },
+            { text: 'Test Object', column: 'test_object', sortable: true },
+            { text: 'Result Value', column: 'result_value', sortable: false },
+            { text: 'Unit', column: 'result_unit', sortable: false },
+            { text: 'Reference Value', column: 'reference_value', sortable: false },
+            { text: 'Flag', column: 'flag', sortable: false },
+            { text: 'Comments', column: 'comments', sortable: false },
+            { text: 'Testing Date', column: 'testing_date', sortable: true },
+            { text: 'Testing Institution', column: 'testing_institution', sortable: false }
+        ];
+        
+        headerConfig.forEach(header => {
             const th = document.createElement('th');
-            th.textContent = headerText;
+            th.textContent = header.text;
+            
+            if (header.sortable) {
+                th.style.cursor = 'pointer';
+                th.style.userSelect = 'none';
+                th.classList.add('sortable-header');
+                
+                // Add sort indicator
+                if (currentSortColumn === header.column) {
+                    th.textContent += currentSortDirection === 'ASC' ? ' ↑' : ' ↓';
+                }
+                
+                th.addEventListener('click', () => handleSort(header.column));
+            }
+            
             headerRow.appendChild(th);
         });
+        
         thead.appendChild(headerRow);
         table.appendChild(thead);
         
@@ -197,9 +238,9 @@ async function displayTestingResults() {
                 row.classList.add('flag-high-low');
             }
             
-            // Format date
-            const updatedAt = result.updated_at 
-                ? new Date(result.updated_at).toLocaleString()
+            // Format dates
+            const testingDate = result.testing_date 
+                ? new Date(result.testing_date).toLocaleDateString()
                 : '-';
             
             // Format values
@@ -219,7 +260,8 @@ async function displayTestingResults() {
                 referenceValue,
                 result.flag || '-',
                 result.comments || '-',
-                updatedAt
+                testingDate,
+                result.testing_institution || '-'
             ];
             
             cells.forEach(cellText => {

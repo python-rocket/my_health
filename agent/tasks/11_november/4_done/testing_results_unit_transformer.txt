@@ -1,0 +1,23 @@
+Currently i have testing results in the table testing_results.
+Also i have a table will all possible units testing_results_units.
+
+1) TestingResultsUnitConverter
+Now inside of one category i want to be able to display testing results always in the same metric so they can be compared.
+Create a python class TestingResultsUnitConverter.
+Save it in youtube summarizer src/testing_results_unit_converter.py
+
+It should be able to convert any unit to any other unit inside the same category.
+Have a convert() function in the class with input arguments:
+unit_category, unit, unit_destination, value
+
+example: Mass Concentration,mg/L,mg/mL, 0.02
+
+In this case it should convert the 0.02mg/L into a value in mg/mL.
+The function should only return the value.
+
+Make the class modular so per category we have diffferent functions.
+
+2) Add an endpoint /testing_results/units/convert
+where i can convert any value using the TestingResultsUnitConverter
+
+

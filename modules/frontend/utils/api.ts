@@ -151,13 +151,25 @@ export interface TestingResult {
     reference_value: number | null;
     comments: string | null;
     flag: string | null;
+    testing_date: string | null;
+    testing_institution: string | null;
+    testing_location: string | null;
     updated_at: string | null;
     updated_at_date: string | null;
 }
 
-export async function fetchTestingResults(): Promise<TestingResult[]> {
+export async function fetchTestingResults(sortColumn?: string, sortDirection?: 'ASC' | 'DESC'): Promise<TestingResult[]> {
     try {
-        const response = await fetch('http://localhost:3001/api/testing-results');
+        const params = new URLSearchParams();
+        if (sortColumn) {
+            params.append('sort', sortColumn);
+        }
+        if (sortDirection) {
+            params.append('direction', sortDirection);
+        }
+        
+        const url = `http://localhost:3001/api/testing-results${params.toString() ? '?' + params.toString() : ''}`;
+        const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -165,6 +177,57 @@ export async function fetchTestingResults(): Promise<TestingResult[]> {
         return results;
     } catch (error) {
         console.error('Error fetching testing results:', error);
+        throw error;
+    }
+}
+
+export interface InsightsData {
+    success: boolean;
+    x_values: string[];
+    y_values: number[];
+    unit_label: string | null;
+    reference_value: number | null;
+    message?: string;
+}
+
+export async function fetchAvailableTestingObjects(): Promise<string[]> {
+    try {
+        const response = await fetch('http://localhost:3002/insights/testing-results/available-objects');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Raw response from available-objects endpoint:', data);
+        
+        if (data.success && Array.isArray(data.test_objects)) {
+            console.log('Successfully parsed test_objects array with', data.test_objects.length, 'items');
+            return data.test_objects;
+        }
+        
+        // If response format is unexpected, log it for debugging
+        console.error('Unexpected response format:', data);
+        throw new Error(`Invalid response format. Expected {success: true, test_objects: string[]}, got: ${JSON.stringify(data).substring(0, 200)}`);
+    } catch (error) {
+        console.error('Error fetching available testing objects:', error);
+        throw error;
+    }
+}
+
+export async function fetchInsightsData(testingObject: string): Promise<InsightsData> {
+    try {
+        const params = new URLSearchParams();
+        params.append('testing_object', testingObject);
+        
+        const url = `http://localhost:3002/insights/testing-results/?${params.toString()}`;
+        const response = await fetch(url);
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.detail || errorData.error || `HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching insights data:', error);
         throw error;
     }
 }

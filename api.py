@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator
 from typing import Optional, Dict, List
+from sqlalchemy import text
 import sys
 import os
 from pathlib import Path
@@ -17,6 +18,8 @@ sys.path.insert(0, current_dir)
 from modules.ai_doctor.ask.ask import Ask
 from modules.ai_doctor.ask.schema_extractor import extract_schema
 from modules.youtube_summarizer.src.utils.psql_client import PSQLClient
+from modules.matcher.testing_results_unit_converter import TestingResultsUnitConverter
+from modules.matcher.testing_object_matcher import TestingObjectMatcher
 
 app = FastAPI()
 
@@ -66,6 +69,9 @@ class TestingResultRow(BaseModel):
     reference_value: Optional[float] = None
     comments: Optional[str] = None
     flag: Optional[str] = None
+    testing_date: Optional[str] = None  # DATE format: YYYY-MM-DD
+    testing_institution: Optional[str] = None
+    testing_location: Optional[str] = None
 
 class TestingResultsResponse(BaseModel):
     success: bool
@@ -77,6 +83,12 @@ class TestingResultsResponse(BaseModel):
 
 class ProcessTestingResultsRequest(BaseModel):
     file_id: str
+
+class UnitConvertRequest(BaseModel):
+    unit_category: str
+    unit: str
+    unit_destination: str
+    value: float
 
 
 @app.post("/ask")
@@ -387,6 +399,15 @@ IMPORTANT: You MUST extract at least one test result row. If you cannot find any
                 else:
                     cleaned_row['reference_value'] = None
                 
+                # Validate testing_date format if present (YYYY-MM-DD)
+                if cleaned_row.get('testing_date'):
+                    import re
+                    date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+                    if not re.match(date_pattern, cleaned_row['testing_date']):
+                        raise ValueError(f"testing_date must be in YYYY-MM-DD format, got: {cleaned_row.get('testing_date')}")
+                else:
+                    cleaned_row['testing_date'] = None
+                
                 # Validate with Pydantic
                 validated_row = TestingResultRow(**cleaned_row)
                 validated_rows.append(validated_row.model_dump())
@@ -509,6 +530,368 @@ IMPORTANT: You MUST extract at least one test result row. If you cannot find any
     except Exception as e:
         error_msg = f"Error processing file: {str(e)}"
         print(f"\n❌ Unexpected Error: {error_msg}")
+        import traceback
+        print(f"   Traceback:\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=error_msg)
+
+# Initialize unit converter
+unit_converter = None
+try:
+    connection_string = os.getenv("PSQL_CONNECTION_STRING")
+    if connection_string:
+        unit_converter = TestingResultsUnitConverter(connection_string)
+except Exception as e:
+    print(f"Warning: Failed to initialize unit converter: {e}")
+
+# Initialize PSQL client for insights endpoints
+psql_client_insights = None
+try:
+    connection_string = os.getenv("PSQL_CONNECTION_STRING")
+    if connection_string:
+        psql_client_insights = PSQLClient(connection_string)
+except Exception as e:
+    print(f"Warning: Failed to initialize PSQL client for insights: {e}")
+
+# Initialize TestingObjectMatcher for transforming test_object values
+testing_object_matcher = None
+try:
+    connection_string = os.getenv("PSQL_CONNECTION_STRING")
+    if connection_string:
+        testing_object_matcher = TestingObjectMatcher()
+except Exception as e:
+    print(f"Warning: Failed to initialize TestingObjectMatcher: {e}")
+
+@app.post("/testing_results/units/convert")
+async def convert_unit(request: UnitConvertRequest):
+    """
+    Convert a value from one unit to another within the same category.
+    
+    Args:
+        request: UnitConvertRequest with unit_category, unit, unit_destination, and value
+        
+    Returns:
+        Converted value or None if conversion is not possible
+    """
+    try:
+        if not unit_converter:
+            raise HTTPException(status_code=500, detail="Unit converter not available")
+        
+        result = unit_converter.convert(
+            unit_category=request.unit_category,
+            unit=request.unit,
+            unit_destination=request.unit_destination,
+            value=request.value
+        )
+        
+        if result is None:
+            return {
+                "success": False,
+                "message": "Conversion not possible (unit may have can_convert=False or conversion not supported)",
+                "value": None
+            }
+        
+        return {
+            "success": True,
+            "value": result,
+            "unit_category": request.unit_category,
+            "unit": request.unit,
+            "unit_destination": request.unit_destination,
+            "original_value": request.value
+        }
+    except Exception as e:
+        error_msg = f"Error converting unit: {str(e)}"
+        print(f"\n❌ Unit Conversion Error: {error_msg}")
+        import traceback
+        print(f"   Traceback:\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=error_msg)
+
+@app.get("/insights/testing-results/available-objects")
+async def get_available_testing_objects():
+    """
+    Get list of unique testing objects from the testing_results table.
+    Values are normalized using TestingObjectMatcher before being returned.
+    
+    Returns:
+        List of unique normalized test_object values (excluding NULL values)
+    """
+    try:
+        if not psql_client_insights:
+            raise HTTPException(status_code=500, detail="Database connection not available")
+        
+        if not testing_object_matcher:
+            raise HTTPException(status_code=500, detail="TestingObjectMatcher not available")
+        
+        # Query unique test_object values where testing_date is not NULL
+        query = text("""
+            SELECT DISTINCT test_object 
+            FROM testing_results 
+            WHERE test_object IS NOT NULL 
+            AND testing_date IS NOT NULL
+            ORDER BY test_object
+        """)
+        
+        with psql_client_insights.engine.connect() as connection:
+            result = connection.execute(query)
+            test_objects = [row[0] for row in result.fetchall()]
+        
+        # Transform test_object values using TestingObjectMatcher
+        if test_objects:
+            df = pd.DataFrame({"test_object": test_objects})
+            df = testing_object_matcher._normalize_test_object(df, column="test_object")
+            # Get unique normalized values (in case multiple original values map to same normalized value)
+            normalized_objects = df["normalized_test_object"].dropna().unique().tolist()
+            normalized_objects.sort()
+        else:
+            normalized_objects = []
+        
+        return {
+            "success": True,
+            "test_objects": normalized_objects
+        }
+    except Exception as e:
+        error_msg = f"Error fetching available testing objects: {str(e)}"
+        print(f"\n❌ Error: {error_msg}")
+        import traceback
+        print(f"   Traceback:\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=error_msg)
+
+@app.get("/insights/testing-results/")
+async def get_insights_data(testing_object: str):
+    """
+    Get chart data for a specific testing object over time.
+    The testing_object parameter should be the normalized value (as returned by available-objects endpoint).
+    Returns normalized_test_object in the response.
+    
+    Args:
+        testing_object: The normalized name of the test object to visualize
+        
+    Returns:
+        Dictionary with:
+        - x_values: List of dates (testing_date)
+        - y_values: List of result values
+        - unit_label: Unified unit label (picks first available, logs warning if multiple)
+        - normalized_test_object: The normalized test object name
+        - reference_value: Reference value in the main unit (if available)
+    """
+    try:
+        if not psql_client_insights:
+            raise HTTPException(status_code=500, detail="Database connection not available")
+        
+        if not testing_object_matcher:
+            raise HTTPException(status_code=500, detail="TestingObjectMatcher not available")
+        
+        # Query all test_object values that might match (we'll filter by normalized value)
+        query = text("""
+            SELECT test_object, testing_date, result_value, result_unit
+            FROM testing_results
+            WHERE test_object IS NOT NULL
+            AND testing_date IS NOT NULL
+            AND result_value IS NOT NULL
+            ORDER BY testing_date ASC
+        """)
+        
+        with psql_client_insights.engine.connect() as connection:
+            result = connection.execute(query)
+            all_rows = result.fetchall()
+        
+        if not all_rows:
+            # Get reference value even if no data
+            reference_value = testing_object_matcher._main_reference.get(testing_object, None) if testing_object_matcher else None
+            return {
+                "success": True,
+                "x_values": [],
+                "y_values": [],
+                "unit_label": None,
+                "normalized_test_object": testing_object,
+                "reference_value": reference_value,
+                "message": f"No data found for testing object '{testing_object}' with valid testing_date"
+            }
+        
+        # Transform test_object values to find matching rows
+        unique_test_objects = list(set([row[0] for row in all_rows]))
+        df_mapping = pd.DataFrame({"test_object": unique_test_objects})
+        df_mapping = testing_object_matcher._normalize_test_object(df_mapping, column="test_object")
+        
+        # Create mapping from original to normalized
+        mapping_dict = dict(zip(df_mapping["test_object"], df_mapping["normalized_test_object"]))
+        
+        # Filter rows where normalized value matches the requested testing_object
+        # Build DataFrame with matching rows
+        matching_data = []
+        for row in all_rows:
+            original_test_object = row[0]
+            normalized_value = mapping_dict.get(original_test_object, original_test_object)
+            if normalized_value == testing_object:
+                matching_data.append({
+                    "normalized_test_object": normalized_value,
+                    "testing_date": row[1],
+                    "result_value": row[2],
+                    "result_unit": row[3]
+                })
+        
+        if not matching_data:
+            # Get reference value even if no matching data
+            reference_value = testing_object_matcher._main_reference.get(testing_object, None)
+            return {
+                "success": True,
+                "x_values": [],
+                "y_values": [],
+                "unit_label": None,
+                "normalized_test_object": testing_object,
+                "reference_value": reference_value,
+                "message": f"No data found for normalized testing object '{testing_object}' with valid testing_date"
+            }
+        
+        # Convert to DataFrame for unit filtering
+        df_matching = pd.DataFrame(matching_data)
+        
+        # Apply unit filtering and conversion using _filter_main_unit
+        df_filtered = testing_object_matcher._filter_main_unit(df_matching)
+        
+        if df_filtered.empty:
+            # Get reference value even if no data after filtering
+            reference_value = testing_object_matcher._main_reference.get(testing_object, None)
+            return {
+                "success": True,
+                "x_values": [],
+                "y_values": [],
+                "unit_label": None,
+                "normalized_test_object": testing_object,
+                "reference_value": reference_value,
+                "message": f"No data found for normalized testing object '{testing_object}' after unit filtering"
+            }
+        
+        # Extract dates and values from filtered DataFrame
+        x_values = [str(date) for date in df_filtered["testing_date"].tolist()]
+        y_values = df_filtered["result_value"].tolist()
+        
+        # Get unique units (should all be the same after filtering/conversion)
+        units = df_filtered["result_unit"].dropna().unique().tolist()
+        unit_label = units[0] if units else None
+        
+        if len(units) > 1:
+            import logging
+            logging.warning(
+                f"Multiple unit labels found for testing object '{testing_object}' after filtering: {units}. "
+                f"Using '{unit_label}' as unified unit."
+            )
+            print(f"⚠️  Warning: Multiple unit labels found for '{testing_object}' after filtering: {units}. Using '{unit_label}'.")
+        
+        # Get reference value from _main_reference mapping
+        reference_value = testing_object_matcher._main_reference.get(testing_object, None)
+        
+        return {
+            "success": True,
+            "x_values": x_values,
+            "y_values": y_values,
+            "unit_label": unit_label,
+            "normalized_test_object": testing_object,
+            "reference_value": reference_value
+        }
+    except Exception as e:
+        error_msg = f"Error fetching insights data: {str(e)}"
+        print(f"\n❌ Error: {error_msg}")
+        import traceback
+        print(f"   Traceback:\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=error_msg)
+
+@app.get("/testing-results")
+async def get_testing_results():
+    """
+    Get all testing results from the testing_results table.
+    Returns all columns including both original test_object and normalized_test_object.
+    
+    Returns:
+        List of testing result objects with all columns plus normalized_test_object
+    """
+    try:
+        if not psql_client_insights:
+            raise HTTPException(status_code=500, detail="Database connection not available")
+        
+        if not testing_object_matcher:
+            raise HTTPException(status_code=500, detail="TestingObjectMatcher not available")
+        
+        # Query all columns from testing_results table
+        query = text("""
+            SELECT 
+                id,
+                test_object,
+                result_value,
+                result_unit,
+                reference_value,
+                comments,
+                flag,
+                testing_date,
+                testing_institution,
+                testing_location,
+                updated_at,
+                updated_at_date
+            FROM testing_results
+            ORDER BY id DESC
+        """)
+        
+        with psql_client_insights.engine.connect() as connection:
+            result = connection.execute(query)
+            rows = result.fetchall()
+        
+        if not rows:
+            return {
+                "success": True,
+                "results": []
+            }
+        
+        # Convert rows to list of dictionaries with proper date/timestamp handling
+        columns = [
+            "id", "test_object", "result_value", "result_unit", "reference_value",
+            "comments", "flag", "testing_date", "testing_institution", "testing_location",
+            "updated_at", "updated_at_date"
+        ]
+        
+        results = []
+        for row in rows:
+            row_dict = {}
+            for i, col in enumerate(columns):
+                value = row[i]
+                # Convert dates and timestamps to strings for JSON serialization
+                if value is not None and col in ["testing_date", "updated_at_date"]:
+                    row_dict[col] = str(value) if hasattr(value, '__str__') else value
+                elif value is not None and col == "updated_at":
+                    row_dict[col] = str(value) if hasattr(value, '__str__') else value
+                else:
+                    row_dict[col] = value
+            results.append(row_dict)
+        
+        # Transform test_object values using TestingObjectMatcher
+        if results:
+            df = pd.DataFrame(results)
+            df = testing_object_matcher._normalize_test_object(df, column="test_object")
+            
+            # Convert DataFrame back to list of dictionaries
+            # Include both original test_object and normalized_test_object
+            transformed_results = []
+            for _, row in df.iterrows():
+                result_dict = {}
+                for col in df.columns:
+                    value = row[col]
+                    # Handle NaN values (convert to None for JSON)
+                    if pd.isna(value):
+                        result_dict[col] = None
+                    else:
+                        result_dict[col] = value
+                transformed_results.append(result_dict)
+            
+            return {
+                "success": True,
+                "results": transformed_results
+            }
+        else:
+            return {
+                "success": True,
+                "results": []
+            }
+    except Exception as e:
+        error_msg = f"Error fetching testing results: {str(e)}"
+        print(f"\n❌ Error: {error_msg}")
         import traceback
         print(f"   Traceback:\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=error_msg)

@@ -1,4 +1,4 @@
-Schema extracted at: 2025-11-12 19:53:02
+Schema extracted at: 2025-11-13 18:44:51
 
 ## public.channels (BASE TABLE)
   - id: text NOT NULL
@@ -65,6 +65,16 @@ Schema extracted at: 2025-11-12 19:53:02
   - flag: text NULL
   - updated_at: timestamp without time zone NULL DEFAULT CURRENT_TIMESTAMP
   - updated_at_date: date NULL DEFAULT CURRENT_DATE
+  - testing_institution: text NULL
+  - testing_location: text NULL
+  - testing_date: date NULL
+
+## public.testing_results_units (BASE TABLE)
+  - id: integer NOT NULL DEFAULT nextval('testing_results_units_id_seq'::regclass)
+  - category: text NOT NULL
+  - unit: text NOT NULL
+  - can_convert: boolean NOT NULL DEFAULT true
+  - description: text NULL
 
 ## public.topics (BASE TABLE)
   - id: bigint NOT NULL

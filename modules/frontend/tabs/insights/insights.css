@@ -1,0 +1,92 @@
+/* Insights Tab Styles */
+.insights-controls {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.select-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d1d1f;
+}
+
+.testing-object-select {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 10px 16px;
+    font-size: 15px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    background: #fff;
+    color: #1d1d1f;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.testing-object-select:hover:not(:disabled) {
+    border-color: #007aff;
+}
+
+.testing-object-select:focus {
+    outline: none;
+    border-color: #007aff;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+.testing-object-select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: #f5f5f7;
+}
+
+.chart-container {
+    margin-top: 32px;
+    min-height: 400px;
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e5e5e7;
+}
+
+.chart-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    color: #86868b;
+}
+
+.placeholder-text {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+#insights-chart {
+    max-height: 500px;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    color: #86868b;
+    font-size: 15px;
+}
+
+.error {
+    padding: 20px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    color: #721c24;
+    text-align: center;
+    margin-top: 20px;
+}
+

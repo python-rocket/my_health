@@ -6,29 +6,37 @@ Extract testing results from the provided document and convert them into a CSV f
 ## Output Format
 You must return a valid CSV file with the following columns in this exact order:
 - test_object (TEXT) - The name of the test or what is being tested
-- result_value (FLOAT) - The numeric result value. MUST be a valid float number (e.g., 95.0, 14.5, 220.0). If the value has a < or > sign (e.g., <0.3, >100), remove the sign and return only the numeric value (e.g., 0.3, 100). If not available, use empty string.
+- result_value (FLOAT) - The numeric result value. MUST be a valid float number (e.g., 95.0, 14.5, 220.0). If the value has a < or > sign (e.g., <0.3, >100), remove the sign and return only the numeric value (e.g., 0.3, 100). If not available, use empty string. **For tests that are just "positive" or "negative" (e.g., mutation tests), use 1.0 for positive and -1.0 for negative.**
 - result_unit (TEXT) - The unit of measurement for the result (e.g., "mg/dL", "mmol/L", "g/L", etc.)
-- reference_value (FLOAT) - The reference/normal range value. MUST be a valid float number (e.g., 70.0, 12.0, 200.0). If the value has a < or > sign (e.g., <0.3, >100), remove the sign and return only the numeric value (e.g., 0.3, 100). If not available, use empty string.
+- reference_value (FLOAT) - The reference/normal range value. MUST be a valid float number (e.g., 70.0, 12.0, 200.0). If the value has a < or > sign (e.g., <0.3, >100), remove the sign and return only the numeric value (e.g., 0.3, 100). If not available, use empty string. **For tests that are just "positive" or "negative" (e.g., mutation tests), use 1.0 for positive and -1.0 for negative.
+If there are many reference values based on gender and age use the one more close to male 31 years. **
 - comments (TEXT) - Any additional comments or notes about the test result
 - flag (TEXT) - Comparison flag indicating if result_value is low, high, or normal compared to reference_value. MUST be one of: "low", "high", or "normal". If reference_value is not available, use empty string.
-
+- testing_date (DATE) - The date when the test was performed. Extract this from the document (usually found in headers, footers, or metadata). Format as YYYY-MM-DD (e.g., 2024-01-15). If not available, use empty string.
+- testing_institution (TEXT) - The lab or doctor where the tests where taken. Should include the name of the laboratory or doctor.
+- testing_location (TEXT) - Should contain the country and adress of where the test was taken (if available)
 **Note: Do NOT include an 'id' column. The database will automatically generate unique IDs for each row.**
 
 ## Important Rules
 1. Extract ALL test results from the document, even if some fields are missing
 2. If a value is missing or not available, use NULL or empty string as appropriate
 3. **CRITICAL: result_value and reference_value MUST always be valid float numbers (e.g., 95.0, 14.5, 220.0). Never include units, symbols, or text in these fields. Extract only the numeric value.**
-4. **CRITICAL: If a value has a < or > sign (e.g., <0.3, >100, <5.0), remove the sign and return only the numeric value (e.g., 0.3, 100, 5.0). The comparison operators should be stripped before storing the value.**
-5. Units should be extracted separately into the result_unit column only
-6. Do NOT include an 'id' column - the database will auto-generate unique IDs
-7. Translate all text to English if the document is in another language
-8. Standardize test names where possible (e.g., "Glucose" instead of "Glukose" or "Glucosa")
-9. If the document contains multiple pages or sections, extract results from all of them
-10. For images, use vision capabilities to read text and extract structured data
-11. For PDFs, extract text from all pages
-12. For CSV files, map the existing columns to the required schema
-13. **If result_value or reference_value cannot be extracted as a valid float, use empty string (not NULL, not text, not "N/A")**
-14. **CRITICAL: The flag column MUST be calculated by comparing result_value to reference_value:**
+4. **CRITICAL: For tests that are just "positive" or "negative" (e.g., mutation tests, presence/absence tests):**
+   - If the result is "positive", use 1.0 for result_value
+   - If the result is "negative", use -1.0 for result_value
+   - If the reference is "positive", use 1.0 for reference_value
+   - If the reference is "negative", use -1.0 for reference_value
+5. **CRITICAL: If a value has a < or > sign (e.g., <0.3, >100, <5.0), remove the sign and return only the numeric value (e.g., 0.3, 100, 5.0). The comparison operators should be stripped before storing the value.**
+6. Units should be extracted separately into the result_unit column only
+7. Do NOT include an 'id' column - the database will auto-generate unique IDs
+8. Translate all text to English if the document is in another language
+9. Standardize test names where possible (e.g., "Glucose" instead of "Glukose" or "Glucosa")
+10. If the document contains multiple pages or sections, extract results from all of them
+11. For images, use vision capabilities to read text and extract structured data
+12. For PDFs, extract text from all pages
+13. For CSV files, map the existing columns to the required schema
+14. **If result_value or reference_value cannot be extracted as a valid float, use empty string (not NULL, not text, not "N/A")**
+15. **CRITICAL: The flag column MUST be calculated by comparing result_value to reference_value:**
     - If result_value < reference_value → flag = "low"
     - If result_value > reference_value → flag = "high"
     - If result_value = reference_value (or very close, within reasonable tolerance) → flag = "normal"
@@ -38,19 +46,23 @@ You must return a valid CSV file with the following columns in this exact order:
 ## CSV Format Requirements
 - Use comma (,) as delimiter
 - Use double quotes (") to escape fields containing commas or special characters
-- Include header row with exact column names: test_object,result_value,result_unit,reference_value,comments,flag
+- Include header row with exact column names: test_object,result_value,result_unit,reference_value,comments,flag,testing_date,testing_institution,testing_location
 - Each row should represent one test result
 - Do not include any markdown formatting or code blocks - return pure CSV
 - result_value and reference_value columns must contain only valid float numbers or empty strings
+- testing_date column must be in YYYY-MM-DD format or empty string
 
 ## Example Output
-test_object,result_value,result_unit,reference_value,comments,flag
-Glucose,95.0,mg/dL,70.0,,normal
-Total Cholesterol,220.0,mg/dL,200.0,,high
-Hemoglobin,14.5,g/dL,12.0,,normal
-Vitamin D,15.0,ng/mL,30.0,,low
-C-Reactive Protein,0.3,mg/L,3.0,,normal
+test_object,result_value,result_unit,reference_value,comments,flag,testing_date,testing_institution,testing_location
+Glucose,95.0,mg/dL,70.0,,normal,2024-01-15,LabCorp,"USA, New York"
+Total Cholesterol,220.0,mg/dL,200.0,,high,2024-01-15,LabCorp,"USA, New York"
+Hemoglobin,14.5,g/dL,12.0,,normal,2024-01-15,LabCorp,"USA, New York"
+Vitamin D,15.0,ng/mL,30.0,,low,2024-01-15,LabCorp,"USA, New York"
+C-Reactive Protein,0.3,mg/L,3.0,,normal,2024-01-15,LabCorp,"USA, New York"
+BRCA Mutation,1.0,,1.0,,normal,2024-01-15,LabCorp,"USA, New York"
+COVID-19 Test,-1.0,,-1.0,,normal,2024-01-15,LabCorp,"USA, New York"
 Note: If the document shows "<0.3" or ">100", extract as "0.3" or "100" (remove the comparison operator)
+Note: For positive/negative tests, use 1.0 for positive and -1.0 for negative
 
 ## Instructions
 1. Read the provided file using the appropriate tool (read_file, read_pdf, or read_image)

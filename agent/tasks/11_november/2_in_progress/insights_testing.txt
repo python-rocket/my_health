@@ -1,0 +1,16 @@
+
+feature request:
+We have our testing results. 
+Now i want to be able to see a change in values for a specifc testing object over time. 
+e.g i want to see for cortisol how the value changed over time
+Create a new tab in the frontend called insights.
+There add a visualisation with dates on X and the value on Y.
+Add a dropdown where i can choose any value available from the testing_results table column testing_objects.
+If i choose for example cortisol it should display the visualisation with the different values over time.
+
+Make sure to have in the frontend only the visualisation logic. 
+But in the fastapi backend i want the logic to actually prepare the data used for the visualisation.
+so there should be an endpoint providing the data for the X and Y axis. 
+something like /inights/testing_results/?testing_object={}
+--> And it should return the X values the Y values and also one unified unit label.
+If lets say "cortisol" would have different unit labels for now as a quick fix just assume they are all the same unit (just choose any of the possible options). Add a logging warning that this should be changed in the future to make sure to convert correctly.

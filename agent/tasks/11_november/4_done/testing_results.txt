@@ -1,0 +1,10 @@
+feature requests:
+now in the tab testing results below the uploader add a table which shows the data from 
+the table: testing_results.
+- We need to aslo write the date of the test into the database. Usually the test document has a date.
+It should be be the value in the database. For that in the database we need one extra column "testing_date".
+It should also be shown in the frontend.
+- some tests are just "positive" or "negative" (e.g test for mutation.) without having an explicit value.
+Add to the agent instructions that for such tests for positive the value 1 and for negative the value -1.
+And same for reference. 
+- Add to the table the option to sort by test_object column or by the new testing_date column
