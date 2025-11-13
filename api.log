@@ -1,8 +1,0 @@
-INFO:     Started server process [98357]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://0.0.0.0:3002 (Press CTRL+C to quit)
-Schema extracted and saved to /Users/Mischa/Arbeit/Data Pioneers/Git/my_health/modules/ai_doctor/ask/cache/db_schema.txt
-Database schema extracted successfully
-INFO:     127.0.0.1:59692 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59694 - "GET /health HTTP/1.1" 200 OK

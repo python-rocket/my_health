@@ -6,18 +6,8 @@
 
 
 # TODO
-
 ## USEFUL FOR ME
 
-test results
-- have unified unit if possible for comparison
-- test object matcher (c-reactive protein, CRP, crp...)
---> as first solution just have e.g first word
-
-
-metrics/insights:
-- e.g compare number of success 7 wake up compared to last time. Or compared to record per month.
-- e.g give avg ranking of sleep over the last 7 days
 
 daily protocol
 - define psql table format for protocol
@@ -36,11 +26,13 @@ daily protocol
 - audio: add openai audio so i can interact by speaking
 
 
-solutions
-- show all solutions with status filters (e.g open)
-- top solutions to try dashboard 
---> algo based on: manual ranking; solution mentioned in data sources; my experience with it based on protocol.
+metrics/insights:
+- e.g compare number of success 7 wake up compared to last time. Or compared to record per month.
+- e.g give avg ranking of sleep over the last 7 days
 
+
+solutions
+- show connected to my protocol (which i used, how good experience was and so on...)
 
 glossar
 - illnesses (hashimotos, crohns..)

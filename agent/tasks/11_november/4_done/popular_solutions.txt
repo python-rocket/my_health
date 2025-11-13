@@ -1,0 +1,20 @@
+feature request:
+I have solutions in the preference tab in the frontend.
+Now in the cockpit add a new category "Popular Solutions".
+It should show the 10 most popular solutions based on this query here:
+SELECT solution, count(distinct video_id)
+FROM v_video_solutions
+WHERE value
+group by solution 
+order  by count(*) DESC;
+
+Then each of the solutions should be clickable.
+If i click on it it should deatails about this solution.
+For that it can use this query here (using the clicked solution as an insert):
+SELECT distinct channel_id, video_id, video_title, video_summary FROM v_video_combined
+WHERE video_id In (SELECT video_id FROM v_video_solutions WHERE solution = 'Animal Based')
+
+Give me different options how it can be resolved on the frontend side.
+for example should it iopen an extra html url where the details are displayed.
+Or a popup with details? 
+Or other options?

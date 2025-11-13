@@ -42,7 +42,7 @@ export async function fetchPublicationTypes(): Promise<string[]> {
     }
 }
 
-export async function fetchChannelRecommendations(): Promise<Array<{name: string, visitCount: number}>> {
+export async function fetchChannelRecommendations(): Promise<Array<{name: string, channelId: string | null, visitCount: number}>> {
     try {
         const response = await fetch('http://localhost:3001/api/recommendations/channels');
         if (!response.ok) {
@@ -244,6 +244,75 @@ export async function fetchInsightsData(testingObject: string): Promise<Insights
         return data;
     } catch (error) {
         console.error('Error fetching insights data:', error);
+        throw error;
+    }
+}
+
+export interface PopularSolution {
+    solution: string;
+    video_count: number;
+    pubmed_count: number;
+}
+
+export interface PopularSolutionsResponse {
+    success: boolean;
+    solutions: PopularSolution[];
+}
+
+export async function fetchPopularSolutions(): Promise<PopularSolutionsResponse> {
+    try {
+        const response = await fetch('http://localhost:3002/popular-solutions');
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.detail || errorData.error || `HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching popular solutions:', error);
+        throw error;
+    }
+}
+
+export interface SolutionVideo {
+    channel_id: string;
+    channel_name: string;
+    video_id: string;
+    video_title: string;
+    video_summary: string | null;
+}
+
+export interface PubMedStudy {
+    pmid: string;
+    title: string | null;
+    authors: string | null;
+    publish_date: string | null;
+    pmcid: string | null;
+    abstract: string | null;
+    publication_types: string | null;
+    keywords: string | null;
+}
+
+export interface SolutionDetailsResponse {
+    success: boolean;
+    solution: string;
+    videos: SolutionVideo[];
+    studies: PubMedStudy[];
+}
+
+export async function fetchSolutionDetails(solutionName: string): Promise<SolutionDetailsResponse> {
+    try {
+        // URL encode the solution name to handle special characters
+        const encodedSolutionName = encodeURIComponent(solutionName);
+        const response = await fetch(`http://localhost:3002/solution-details/${encodedSolutionName}`);
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.detail || errorData.error || `HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching solution details:', error);
         throw error;
     }
 }

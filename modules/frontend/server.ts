@@ -5,6 +5,8 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { createWriteStream } from 'fs';
+import { Transform } from 'stream';
 
 // Load environment variables from current directory or parent directories
 const __filename = fileURLToPath(import.meta.url);
@@ -17,6 +19,62 @@ dotenv.config(); // Also load from process.env (for shell-set variables)
 
 const app = express();
 const port = 3001;
+
+// Setup logging
+const logsDir = path.join(__dirname, '..', '..', 'logs');
+const logFile = path.join(logsDir, 'frontend.log');
+
+// Ensure logs directory exists
+if (!fs.existsSync(logsDir)) {
+    fs.mkdirSync(logsDir, { recursive: true });
+}
+
+// Create write stream for log file with rotation (simple approach)
+let logStream = createWriteStream(logFile, { flags: 'a', encoding: 'utf-8' });
+
+// Custom logger function
+const logger = {
+    info: (message: string) => {
+        const timestamp = new Date().toISOString();
+        const logMessage = `[${timestamp}] [INFO] ${message}\n`;
+        process.stdout.write(logMessage);
+        logStream.write(logMessage);
+    },
+    error: (message: string) => {
+        const timestamp = new Date().toISOString();
+        const logMessage = `[${timestamp}] [ERROR] ${message}\n`;
+        process.stderr.write(logMessage);
+        logStream.write(logMessage);
+    },
+    warn: (message: string) => {
+        const timestamp = new Date().toISOString();
+        const logMessage = `[${timestamp}] [WARN] ${message}\n`;
+        process.stdout.write(logMessage);
+        logStream.write(logMessage);
+    }
+};
+
+// Override console methods to also log to file
+const originalConsoleLog = console.log;
+const originalConsoleError = console.error;
+const originalConsoleWarn = console.warn;
+
+console.log = (...args: any[]) => {
+    originalConsoleLog(...args);
+    logger.info(args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : String(arg)).join(' '));
+};
+
+console.error = (...args: any[]) => {
+    originalConsoleError(...args);
+    logger.error(args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : String(arg)).join(' '));
+};
+
+console.warn = (...args: any[]) => {
+    originalConsoleWarn(...args);
+    logger.warn(args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : String(arg)).join(' '));
+};
+
+logger.info(`Frontend server starting on port ${port}`);
 
 app.use(cors());
 app.use(express.json());
@@ -260,6 +318,7 @@ app.get('/api/recommendations/channels', async (req, res) => {
                     (SELECT c.name FROM channels c WHERE c.name = ga.expert_name LIMIT 1),
                     ga.expert_name
                 ) as name,
+                MAX(ga.youtube_channel_id) as channel_id,
                 SUM(ga.visit_count) as total_visits
             FROM guest_appearances ga
             WHERE COALESCE(
@@ -282,6 +341,7 @@ app.get('/api/recommendations/channels', async (req, res) => {
         
         const recommendations = result.rows.map(row => ({
             name: row.name,
+            channelId: row.channel_id,
             visitCount: parseInt(row.total_visits) || 0
         }));
 
@@ -367,6 +427,6 @@ app.get('/api/testing-results', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    logger.info(`Server running on http://localhost:${port}`);
 });
 

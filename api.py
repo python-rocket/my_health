@@ -11,6 +11,9 @@ import io
 import uuid
 import pandas as pd
 import json
+import logging
+from logging.handlers import RotatingFileHandler
+from datetime import datetime
 
 # Add current directory to path for imports
 current_dir = os.path.dirname(__file__)
@@ -20,6 +23,58 @@ from modules.ai_doctor.ask.schema_extractor import extract_schema
 from modules.youtube_summarizer.src.utils.psql_client import PSQLClient
 from modules.matcher.testing_results_unit_converter import TestingResultsUnitConverter
 from modules.matcher.testing_object_matcher import TestingObjectMatcher
+
+# Setup logging
+logs_dir = Path(__file__).parent / "logs"
+logs_dir.mkdir(exist_ok=True)
+
+# Create logger for API
+api_logger = logging.getLogger("api")
+api_logger.setLevel(logging.INFO)
+
+# Create file handler with rotation (max 10MB per file, keep 5 backups)
+log_file = logs_dir / "api.log"
+file_handler = RotatingFileHandler(
+    log_file,
+    maxBytes=10*1024*1024,  # 10MB
+    backupCount=5,
+    encoding='utf-8'
+)
+file_handler.setLevel(logging.INFO)
+
+# Create console handler
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+
+# Create formatter
+formatter = logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+
+# Add handlers to logger
+api_logger.addHandler(file_handler)
+api_logger.addHandler(console_handler)
+
+# Redirect print statements to logger
+class PrintLogger:
+    def write(self, message):
+        if message.strip():
+            api_logger.info(message.strip())
+    
+    def flush(self):
+        pass
+
+# Keep original print for critical startup messages
+_original_print = print
+def log_print(*args, **kwargs):
+    """Print that also logs to file"""
+    _original_print(*args, **kwargs)
+    message = ' '.join(str(arg) for arg in args)
+    if message.strip():
+        api_logger.info(message.strip())
 
 app = FastAPI()
 
@@ -38,11 +93,11 @@ try:
     connection_string = os.getenv("PSQL_CONNECTION_STRING")
     if connection_string:
         extract_schema(connection_string, str(schema_path))
-        print("Database schema extracted successfully")
+        api_logger.info("Database schema extracted successfully")
     else:
-        print("Warning: PSQL_CONNECTION_STRING not set, skipping schema extraction")
+        api_logger.warning("PSQL_CONNECTION_STRING not set, skipping schema extraction")
 except Exception as e:
-    print(f"Warning: Failed to extract schema on startup: {e}")
+    api_logger.warning(f"Failed to extract schema on startup: {e}")
 
 # Initialize Ask instance
 ask_instance = Ask()
@@ -118,7 +173,7 @@ try:
     if connection_string:
         psql_client = PSQLClient(connection_string)
 except Exception as e:
-    print(f"Warning: Failed to initialize PSQL client: {e}")
+    api_logger.warning(f"Failed to initialize PSQL client: {e}")
 
 @app.post("/agent")
 async def agent_endpoint(request: AgentRequest):
@@ -264,9 +319,9 @@ IMPORTANT: You MUST extract at least one test result row. If you cannot find any
             }
         except Exception as e:
             error_msg = f"Agent execution failed: {str(e)}"
-            print(f"\n❌ Agent Error: {error_msg}")
+            api_logger.error(f"Agent Error: {error_msg}")
             import traceback
-            print(f"   Traceback:\n{traceback.format_exc()}")
+            api_logger.error(f"Traceback:\n{traceback.format_exc()}")
             raise HTTPException(
                 status_code=500,
                 detail=error_msg
@@ -347,7 +402,7 @@ IMPORTANT: You MUST extract at least one test result row. If you cannot find any
         except Exception as e:
             # If CSV parsing fails, return error with proper status code
             error_msg = f"Failed to parse CSV: {str(e)}. Agent response preview: {agent_response[:500]}"
-            print(f"\n❌ CSV Parsing Error: {error_msg}")
+            api_logger.error(f"CSV Parsing Error: {error_msg}")
             raise HTTPException(
                 status_code=422, 
                 detail=error_msg
@@ -459,7 +514,7 @@ IMPORTANT: You MUST extract at least one test result row. If you cannot find any
         print(f"\n💾 [DATABASE WRITE] psql_client.write()")
         print(f"   📍 Stage: Writing to PostgreSQL database")
         if not psql_client:
-            print(f"   ❌ Error: Database connection not available")
+            api_logger.error("Database connection not available")
             raise HTTPException(status_code=500, detail="Database connection not available")
         
         print(f"   📊 Preparing DataFrame with {len(validated_rows)} rows")
@@ -529,9 +584,9 @@ IMPORTANT: You MUST extract at least one test result row. If you cannot find any
         raise
     except Exception as e:
         error_msg = f"Error processing file: {str(e)}"
-        print(f"\n❌ Unexpected Error: {error_msg}")
+        api_logger.error(f"Unexpected Error: {error_msg}")
         import traceback
-        print(f"   Traceback:\n{traceback.format_exc()}")
+        api_logger.error(f"Traceback:\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=error_msg)
 
 # Initialize unit converter
@@ -600,9 +655,9 @@ async def convert_unit(request: UnitConvertRequest):
         }
     except Exception as e:
         error_msg = f"Error converting unit: {str(e)}"
-        print(f"\n❌ Unit Conversion Error: {error_msg}")
+        api_logger.error(f"Unit Conversion Error: {error_msg}")
         import traceback
-        print(f"   Traceback:\n{traceback.format_exc()}")
+        api_logger.error(f"Traceback:\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=error_msg)
 
 @app.get("/insights/testing-results/available-objects")
@@ -650,9 +705,9 @@ async def get_available_testing_objects():
         }
     except Exception as e:
         error_msg = f"Error fetching available testing objects: {str(e)}"
-        print(f"\n❌ Error: {error_msg}")
+        api_logger.error(f"Error fetching available testing objects: {error_msg}")
         import traceback
-        print(f"   Traceback:\n{traceback.format_exc()}")
+        api_logger.error(f"Traceback:\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=error_msg)
 
 @app.get("/insights/testing-results/")
@@ -790,9 +845,9 @@ async def get_insights_data(testing_object: str):
         }
     except Exception as e:
         error_msg = f"Error fetching insights data: {str(e)}"
-        print(f"\n❌ Error: {error_msg}")
+        api_logger.error(f"Error fetching insights data: {error_msg}")
         import traceback
-        print(f"   Traceback:\n{traceback.format_exc()}")
+        api_logger.error(f"Traceback:\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=error_msg)
 
 @app.get("/testing-results")
@@ -891,9 +946,161 @@ async def get_testing_results():
             }
     except Exception as e:
         error_msg = f"Error fetching testing results: {str(e)}"
-        print(f"\n❌ Error: {error_msg}")
+        api_logger.error(f"Error fetching testing results: {error_msg}")
         import traceback
-        print(f"   Traceback:\n{traceback.format_exc()}")
+        api_logger.error(f"Traceback:\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=error_msg)
+
+@app.get("/popular-solutions")
+async def get_popular_solutions():
+    """
+    Get the top 10 most popular solutions based on video count.
+    
+    Returns:
+        List of solutions with their video counts, ordered by popularity (DESC)
+    """
+    try:
+        if not psql_client_insights:
+            raise HTTPException(status_code=500, detail="Database connection not available")
+        
+        # Query for top 10 popular solutions combining video and PubMed counts
+        # Orders by video count (most videos first)
+        query = text("""
+            WITH video AS (
+                SELECT solution, count(distinct video_id) as video_count
+                FROM v_video_solutions
+                WHERE value = true
+                GROUP BY solution 
+                ORDER BY count(distinct video_id) DESC
+            ),
+            pubmed AS (
+                SELECT search_query, count(distinct pmid) as pubmed_count
+                FROM pubmed_studies
+                WHERE search_query IN (SELECT name FROM solutions)
+                GROUP BY search_query
+                ORDER BY count(distinct pmid) DESC
+            )
+            SELECT 
+                v.solution,
+                v.video_count,
+                COALESCE(p.pubmed_count, 0) as pubmed_count
+            FROM video v
+            LEFT JOIN pubmed p ON v.solution = p.search_query
+            ORDER BY v.video_count DESC
+            LIMIT 10
+        """)
+        
+        with psql_client_insights.engine.connect() as connection:
+            result = connection.execute(query)
+            rows = result.fetchall()
+        
+        solutions = [
+            {
+                "solution": row[0],
+                "video_count": int(row[1]) if row[1] else 0,
+                "pubmed_count": int(row[2]) if row[2] else 0
+            }
+            for row in rows
+        ]
+        
+        return {
+            "success": True,
+            "solutions": solutions
+        }
+    except Exception as e:
+        error_msg = f"Error fetching popular solutions: {str(e)}"
+        api_logger.error(f"Error fetching popular solutions: {error_msg}")
+        import traceback
+        api_logger.error(f"Traceback:\n{traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=error_msg)
+
+@app.get("/solution-details/{solution_name}")
+async def get_solution_details(solution_name: str):
+    """
+    Get video details for a specific solution.
+    
+    Args:
+        solution_name: The name of the solution to get details for
+        
+    Returns:
+        List of videos with channel_id, video_id, video_title, and video_summary
+    """
+    try:
+        if not psql_client_insights:
+            raise HTTPException(status_code=500, detail="Database connection not available")
+        
+        # Query for video details for the specified solution
+        # Join with channels table to get channel name
+        query = text("""
+            SELECT DISTINCT 
+                vc.channel_id, 
+                c.name as channel_name,
+                vc.video_id, 
+                vc.video_title, 
+                vc.video_summary 
+            FROM v_video_combined vc
+            LEFT JOIN channels c ON vc.channel_id = c.id
+            WHERE vc.video_id IN (
+                SELECT video_id 
+                FROM v_video_solutions 
+                WHERE solution = :solution_name
+            )
+            ORDER BY vc.video_title
+            LIMIT 3
+        """)
+        
+        # Query for PubMed studies for the specified solution
+        pubmed_query = text("""
+            SELECT pmid, title, authors, publish_date, pmcid, abstract, publication_types, keywords
+            FROM pubmed_studies
+            WHERE search_query = :solution_name
+            ORDER BY updated_at_timestamp DESC
+            LIMIT 3
+        """)
+        
+        with psql_client_insights.engine.connect() as connection:
+            result = connection.execute(query, {"solution_name": solution_name})
+            rows = result.fetchall()
+            
+            pubmed_result = connection.execute(pubmed_query, {"solution_name": solution_name})
+            pubmed_rows = pubmed_result.fetchall()
+        
+        videos = [
+            {
+                "channel_id": row[0],
+                "channel_name": row[1] if row[1] else row[0],  # Fallback to channel_id if name is null
+                "video_id": row[2],
+                "video_title": row[3],
+                "video_summary": row[4]
+            }
+            for row in rows
+        ]
+        
+        studies = [
+            {
+                "pmid": row[0],
+                "title": row[1],
+                "authors": row[2],
+                "publish_date": row[3],
+                "pmcid": row[4],
+                "abstract": row[5],
+                "publication_types": row[6],
+                "keywords": row[7]
+            }
+            for row in pubmed_rows
+        ]
+        
+        return {
+            "success": True,
+            "solution": solution_name,
+            "videos": videos,
+            "studies": studies
+        }
+    except Exception as e:
+        error_msg = f"Error fetching solution details: {str(e)}"
+        api_logger.error(f"Error fetching solution details: {error_msg}")
+        import traceback
+        api_logger.error(f"Traceback:\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=error_msg)
 
 

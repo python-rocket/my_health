@@ -1,17 +1,23 @@
 <div class="content">
+    <!-- Deactivated: YouTube Channels section -->
+    <!--
     <div class="card">
         <h2>YouTube Channels</h2>
         <ul id="channels-list" class="channel-list">
             <li class="loading">Loading channels...</li>
         </ul>
     </div>
+    -->
     
+    <!-- Deactivated: My Solutions section -->
+    <!--
     <div class="card">
         <h2>My Solutions</h2>
         <div id="solutions-list">
             <div class="loading">Loading solutions...</div>
         </div>
     </div>
+    -->
     
     <div class="card">
         <h2>Channel Recommendations</h2>
@@ -19,6 +25,27 @@
         <ul id="recommendations-list" class="channel-list">
             <li class="loading">Loading recommendations...</li>
         </ul>
+    </div>
+    
+    <div class="card">
+        <h2>Popular Solutions</h2>
+        <p class="info-text">Top 10 solutions by video count</p>
+        <div id="popular-solutions-list">
+            <div class="loading">Loading popular solutions...</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for solution details -->
+<div id="solution-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modal-solution-title"></h2>
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+        </div>
+        <div class="modal-body" id="modal-videos-list">
+            <div class="loading">Loading videos...</div>
+        </div>
     </div>
 </div>
 

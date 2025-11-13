@@ -1,3 +1,0 @@
-Buffered: False
-This is a test
-After sleep

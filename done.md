@@ -29,6 +29,7 @@
 - feature: channel crawler
 - feature: search pubmed for solutions
 - feature: youtube download also podcast videos
+- feature: testing insight matcher (main name, main unit, main reference)
 
 ## DONE - frontend features
 - feature: add UI
@@ -36,3 +37,5 @@
 - feature: add preferences
 - feature: add ask tab
 - feature: show youtube recommendations
+- feature: testing results uploader
+- feature: testing results insights

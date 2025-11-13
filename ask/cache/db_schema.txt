@@ -1,4 +1,4 @@
-Schema extracted at: 2025-11-13 18:44:51
+Schema extracted at: 2025-11-13 21:21:57
 
 ## public.channels (BASE TABLE)
   - id: text NOT NULL

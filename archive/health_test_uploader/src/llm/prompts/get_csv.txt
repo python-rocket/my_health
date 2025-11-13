@@ -1,0 +1,5 @@
+Translate everything into english.
+Differenet pages can have different structure. Sometimes the reference might be available which gives a normal range for comparison.
+In the comments can be the information if the test value is to high or to low. Or any other comment in the document.
+List all the different test results in a unified csv format, which looks like this. Dont return any other text expect the pure csv text.
+category, object, result, reference, comments
